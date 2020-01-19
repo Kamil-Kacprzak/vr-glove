@@ -8,6 +8,8 @@
 BLEService imuService("1101");
 BLECharacteristic imuAccChar("2101", BLERead | BLENotify,12);
 BLECharacteristic imuGyroChar("2102", BLERead | BLENotify, 12);
+BLEDescriptor     imuAccDescriptor("3101",(byte*)"Acc Descriptor",15);
+BLEDescriptor     imuGyroDescriptor("3102",(byte*)"Gyr Descriptor",15);
 #include <Arduino_LSM9DS1.h>
 /*
  * The library takes care of the sensor initialisation and sets its values as follows:
@@ -40,7 +42,10 @@ void setup() {
   BLE.setAdvertisedService(imuService);
   imuService.addCharacteristic(imuAccChar);
   imuService.addCharacteristic(imuGyroChar);
+  imuAccChar.addDescriptor(imuAccDescriptor);
+  imuGyroChar.addDescriptor(imuGyroDescriptor);
   BLE.addService(imuService);
+  
   imuAccChar.writeValue((byte)0x01); 
   imuGyroChar.writeValue((byte)0x01);
   BLE.advertise();
@@ -95,9 +100,7 @@ void loop() {
          Serial.println("Accelometer x    y    z");
          Serial.print("\t"+ String(gyro[0]) + "\t" + String(gyro[1]) + "\t" + String(gyro[2]));               
          Serial.println("\t\t\t\t\t"+ String(acc[0]) + "\t" + String(acc[1]) + "\t" + String(acc[2]));
-         
-         // TODO: Delete this part
-         delay(5000);
-    }       
+    }    
+    
   }
 }
