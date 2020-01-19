@@ -85,16 +85,16 @@ void loop() {
          }
          
          //Convert arrays into pointers to pass them through BLE characteristics
-         unsigned char *accChar = (unsigned char*)&acc;
-         unsigned char *gyroChar = (unsigned char*)&gyro;
+         byte *accChar = (byte*)&acc;
+         byte *gyroChar = (byte*)&gyro;
          imuAccChar.setValue(accChar,12);
          imuGyroChar.setValue(gyroChar,12);
          
          //Print data to serial monitor
          Serial.print("Gyroscope   x    y    z\t\t\t\t\t\t");
          Serial.println("Accelometer x    y    z");
-         Serial.print("\t\t"+ String(gyro[0]) + "\t" + String(gyro[1]) + "\t" + String(gyro[2]));               
-         Serial.println("\t\t\t\t\t\t"+ String(acc[0]) + "\t" + String(acc[1]) + "\t" + String(acc[2]));
+         Serial.print("\t"+ String(gyro[0]) + "\t" + String(gyro[1]) + "\t" + String(gyro[2]));               
+         Serial.println("\t\t\t\t\t"+ String(acc[0]) + "\t" + String(acc[1]) + "\t" + String(acc[2]));
          
          // TODO: Delete this part
          delay(5000);
