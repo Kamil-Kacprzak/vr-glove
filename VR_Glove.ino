@@ -118,7 +118,7 @@ void loop() {
             acc[i]  = acc[i]/10;
          }
          for (int i = 0;i<5;i++){
-             fingers[i] =  fingers[i]/10;
+            fingers[i] =  fingers[i]/10;
          }
          
          //Convert arrays into pointers to pass them through BLE characteristics
@@ -138,16 +138,11 @@ void loop() {
          Serial.println("\t\t\t\t\t"+ String(acc[0]) + "\t" + String(acc[1]) + "\t" + String(acc[2]));
         
          Serial.println("thumb\tpoint\tmid\theart\tpinky\t");
-         Serial.print(thumbV);
-         Serial.print("\t");
-         Serial.print(pointV);
-         Serial.print("\t");
-         Serial.print(midV);
-         Serial.print("\t");
-         Serial.print(heartV);
-         Serial.print("\t");
-         Serial.print(pinkyV);
-         Serial.print("\t");
+         for (int i = 0;i<5;i++){
+            Serial.print("\t");               
+            Serial.print(fingers[i]);
+         }
+         
         */
     }    
     
