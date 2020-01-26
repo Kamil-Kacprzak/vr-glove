@@ -19,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import com.example.vrglove.ui.main.SectionsPagerAdapter;
 
@@ -59,15 +60,18 @@ public class MainActivity extends AppCompatActivity
         public void onReceive(Context context, Intent intent) {
             final String action = intent.getAction();
             Switch switchBT= findViewById(R.id.switchBT);
+            TextView tvStatus = findViewById(R.id.textView_vrGlove_status);
             if (action.equals(BluetoothAdapter.ACTION_STATE_CHANGED)) {
                 final int state = intent.getIntExtra(BluetoothAdapter.EXTRA_STATE,
                         BluetoothAdapter.ERROR);
                 switch (state) {
                     case BluetoothAdapter.STATE_OFF:
                         switchBT.setChecked(false);
+                        tvStatus.setText("Turn on bluetooth");
                         break;
                     case BluetoothAdapter.STATE_ON:
                         switchBT.setChecked(true);
+                        tvStatus.setText("Ready to connect");
                         break;
                 }
             }
