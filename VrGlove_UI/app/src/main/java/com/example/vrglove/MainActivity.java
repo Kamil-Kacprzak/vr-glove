@@ -73,6 +73,19 @@ public class MainActivity extends AppCompatActivity
                         switchBT.setChecked(true);
                         tvStatus.setText("Ready to connect");
                         break;
+                    case BluetoothAdapter.STATE_CONNECTING:
+                        tvStatus.setText("Connecting");
+                        break;
+                    case BluetoothAdapter.STATE_DISCONNECTING:
+                        tvStatus.setText("Disconnecting");
+                        break;
+                    case BluetoothAdapter.STATE_TURNING_ON:
+                        tvStatus.setText("Turning on");
+                        break;
+                    case BluetoothAdapter.STATE_TURNING_OFF:
+                        tvStatus.setText("Turning off");
+                        break;
+
                 }
             }
         }
