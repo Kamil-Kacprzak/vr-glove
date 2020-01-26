@@ -46,19 +46,8 @@ public class PlaceholderFragment extends Fragment {
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-        View root ;
+        View root = inflater.inflate(R.layout.fragment_main, container, false);
 
-        switch (getArguments().getInt(ARG_SECTION_NUMBER))
-        {
-            case 1:
-                    root = inflater.inflate(R.layout.fragment_main, container, false);
-                    break;
-            case 2:
-                 root = inflater.inflate(R.layout.fragment_open_gl, container, false);
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + getArguments().getInt(ARG_SECTION_NUMBER));
-        }
         pageViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

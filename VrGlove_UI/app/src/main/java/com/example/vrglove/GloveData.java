@@ -1,51 +1,45 @@
 package com.example.vrglove;
 
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link openGL.OnFragmentInteractionListener} interface
+ * {@link GloveData.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link openGL#newInstance} factory method to
+ * Use the {@link GloveData#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class openGL extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+public class GloveData extends Fragment
+    implements View.OnClickListener{
 
     private OnFragmentInteractionListener mListener;
 
-    public openGL() {
-        // Required empty public constructor
+    public GloveData() {
     }
 
     /**
      * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @return A new instance of fragment openGL.
+     * this fragment using the provided parameters
+     * @return A new instance of fragment GloveData.
      */
-    // TODO: Rename and change types and number of parameters
-    public static openGL newInstance() {
-        openGL fragment = new openGL();
-        Bundle bundle = new Bundle();
-        fragment.setArguments(bundle);
+    public static GloveData newInstance() {
+        GloveData fragment = new GloveData();
+        Bundle args = new Bundle();
+        fragment.setArguments(args);
         return fragment;
     }
 
@@ -53,8 +47,6 @@ public class openGL extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
@@ -62,17 +54,13 @@ public class openGL extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_open_gl, container, false);
+        View vw =  inflater.inflate(R.layout.fragment_main, container, false);
+        Switch switchBt = vw.findViewById(R.id.switchBT);
+        switchBt.setOnClickListener(this);
+        return vw;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
-
-    @Override
+        @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         if (context instanceof OnFragmentInteractionListener) {
@@ -88,6 +76,26 @@ public class openGL extends Fragment {
         super.onDetach();
         mListener = null;
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.switchBT:
+                Switch switchBT = v.findViewById(R.id.switchBT);
+                BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+                if (switchBT.isChecked()){
+                    if (!mBluetoothAdapter.isEnabled()) {
+                        mBluetoothAdapter.enable();
+                    }
+                }else{
+                    if (mBluetoothAdapter.isEnabled()) {
+                        mBluetoothAdapter.disable();
+                    }
+                }
+                break;
+        }
+    }
+
 
     /**
      * This interface must be implemented by activities that contain this

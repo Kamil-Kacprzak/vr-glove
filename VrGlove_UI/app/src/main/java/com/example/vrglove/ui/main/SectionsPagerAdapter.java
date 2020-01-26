@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.example.vrglove.GloveData;
 import com.example.vrglove.R;
+import com.example.vrglove.openGL;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -29,7 +31,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        switch (position)
+        {
+            case 0 :
+                 return GloveData.newInstance();
+
+            case 1 :
+                return  openGL.newInstance();
+            default:
+                return PlaceholderFragment.newInstance(position + 1);
+        }
     }
 
     @Nullable
