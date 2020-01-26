@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">VrGlove</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Data</string>
+    <string name="tab_text_2">Animation</string>
+    <string name="hello_openGL_fragment">OPEN GL does job here!</string>
+    <string name="bluetooth_switch">Bluetooth</string>
+    <string name="vrglove_status">VR Glove</string>
+    <string name="vrglove_connect">Connect</string>
+    <string name="vrglove_disconnect">Disconnect</string>
+    <string name="accelerometer">Accelerometer readings</string>
+    <string name="gyroscope">Gyroscope readings</string>
+    <string name="thumb_readings">Thumb: </string>
+    <string name="index_readings">Index: </string>
+    <string name="middle_readings">Middle: </string>
+    <string name="ring_readings">Ring: </string>
+    <string name="pinky_readings">Pinky: </string>
+    <string name="fingers_readings">Fingers readings</string>
 </resources>
