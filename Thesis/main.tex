@@ -1,0 +1,43 @@
+\documentclass[inf, h]{pjatkThesis}
+
+
+\usepackage{times}
+\usepackage[polish]{babel}
+
+\usepackage{graphicx}
+
+
+\usepackage{makeidx}
+
+\usepackage{lipsum}
+
+\author{Kamil Kacprzak}
+\album{s14004}
+\title{Rozwój technologii wirtualnej rzeczywistości na przykładzie rękawicy-kontrolera}
+\type{Praca inżynierska}
+\supervisor{dr inż. Michał Tomaszewski}
+\location{Warszawa}
+\date{Luty, 2020}
+
+\begin{document}
+
+\tableofcontents
+\listoffigures
+%\listoftables
+
+\include{_Abstrakt}
+% TODO: Comment it out after first real citation
+\cite{Tomaszewski2000}
+\pagenumbering{arabic}
+\baselineskip=22pt
+
+\include{_Wprowadzenie}
+\include{_Rozdzial_I}
+
+%\include{znakiPolskieTest}
+%\addcontentsline{toc}{chapter}{Literatura}
+
+\bibliographystyle{abbrv}
+\bibliography{bibliografia}
+    
+\end{document}

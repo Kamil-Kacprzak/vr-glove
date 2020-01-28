@@ -1,0 +1,6 @@
+\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {1}Zagadnienia wykorzystania szablonu}{3}%
+\contentsline {section}{\numberline {1.1}Structure}{3}%
+\contentsline {subsection}{\numberline {1.1.1}Top Matter}{3}%
+\contentsline {subsubsection}{Wypunktowanie}{3}%
+\contentsline {section}{\numberline {1.2}Minimalizacja parametrów funkcji plenoptycznej}{3}%
