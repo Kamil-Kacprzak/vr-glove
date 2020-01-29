@@ -131,19 +131,17 @@ void loop() {
          fingersChar.setValue(flexChar,20);
          
          //Print data to serial monitor
-        /*
-         Serial.print("Gyroscope   x    y    z\t\t\t\t\t\t");
-         Serial.println("Accelometer x    y    z");
-         Serial.print("\t"+ String(gyro[0]) + "\t" + String(gyro[1]) + "\t" + String(gyro[2]));               
-         Serial.println("\t\t\t\t\t"+ String(acc[0]) + "\t" + String(acc[1]) + "\t" + String(acc[2]));
         
-         Serial.println("thumb\tpoint\tmid\theart\tpinky\t");
+         Serial.println("Gyroscope   x    y    z\t\tAccelometer x    y    z\tthumb\tpoint\tmid\theart\tpinky\t");
+         Serial.print("\t"+ String(gyro[0]) + "\t" + String(gyro[1]) + "\t" + String(gyro[2]));               
+         Serial.print("\t"+ String(acc[0]) + "\t" + String(acc[1]) + "\t" + String(acc[2]));
+
          for (int i = 0;i<5;i++){
             Serial.print("\t");               
             Serial.print(fingers[i]);
          }
-         
-        */
+         Serial.println("");
+        
     }    
     
   }

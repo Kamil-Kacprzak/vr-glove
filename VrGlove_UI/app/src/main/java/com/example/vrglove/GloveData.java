@@ -7,6 +7,7 @@ import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattCallback;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattDescriptor;
+import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothManager;
 import android.bluetooth.le.BluetoothLeScanner;
 import android.bluetooth.le.ScanCallback;
@@ -31,6 +32,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.UUID;
@@ -56,7 +58,7 @@ public class GloveData extends Fragment
     implements View.OnClickListener{
 
     private OnFragmentInteractionListener mListener;
-    private Queue<Runnable> commandQueue;
+    private Queue<Runnable> commandQueue = new LinkedList<Runnable>();
 
     private Handler bleHandler = new Handler();
     private boolean commandQueueBusy;
@@ -169,26 +171,31 @@ public class GloveData extends Fragment
                         VrGlove.setGatt(gatt);
                     }
 
-                    if(VrGlove.getGattState() == 2){
-                        VrGlove.getGatt().discoverServices();
-                       while (VrGlove.getGatt().getServices().size() == 0 || VrGlove.getGatt().getServices().equals(null)){
-                            new Handler().postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    VrGlove.getGatt().discoverServices();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if(VrGlove.getGattState() == 2){
+                                VrGlove.getGatt().discoverServices();
+                                while (VrGlove.getGatt().getServices().size() == 0 || VrGlove.getGatt().getServices().equals(null)){
+                                    new Handler().postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            VrGlove.getGatt().discoverServices();
+                                        }
+                                    }, 2000);
                                 }
-                            }, 2000);
-                       }
-                        VrGlove.setServices(VrGlove.getGatt().getServices());
-                        BluetoothGattCharacteristic mCharacteristic;
-                        for (int i = 0x2101;i<0x2104;i++){
-                            mCharacteristic = VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(i));
-                            readCharacteristic((mCharacteristic));
-                        }
+                                VrGlove.setServices(VrGlove.getGatt().getServices());
+                                BluetoothGattCharacteristic mCharacteristic;
+                                for (int i = 0x2101;i<0x2104;i++){
+                                    mCharacteristic = VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(i));
+                                    readCharacteristic((mCharacteristic));
+                                }
 //                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2101)));
 //                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2102)));
 //                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2103)));
-                    }
+                            }
+                        }
+                    }, 2000);
 
                 }
                 break;
@@ -321,6 +328,27 @@ public class GloveData extends Fragment
         public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
             super.onCharacteristicRead(gatt, characteristic, status);
 
+
+            // Copy the byte array so we have a threadsafe copy
+            final byte[] value = new byte[characteristic.getValue().length];
+            System.arraycopy(characteristic.getValue(), 0, value, 0, characteristic.getValue().length );
+
+            final BluetoothGattCharacteristic mCharacteristic = characteristic;
+            // Characteristic has new value so pass it on for processing
+            bleHandler.post(new Runnable() {
+                @Override
+                public void run() {  // VrGlove.onCharacteristicUpdate(BluetoothPeripheral.this, value, characteristic);
+                    if(mCharacteristic.getUuid().equals(convertFromInteger(0x2101))){
+                        VrGlove.setAccReadings(value);
+                    }else if (mCharacteristic.getUuid().equals(convertFromInteger(0x2102))){
+                        VrGlove.setGyroReadings(value);
+                    }else if(mCharacteristic.getUuid().equals(convertFromInteger(0x2103))){
+                        VrGlove.setFingersReadings(value);
+                    }else{
+                        Toast.makeText(getActivity(),"Unknown characteristic",Toast.LENGTH_SHORT);
+                    }
+                }
+            });
         }
 
 

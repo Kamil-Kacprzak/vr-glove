@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView_pinky_reading"
-        android:layout_width="37dp"
-        android:layout_height="23dp"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,8 +19,8 @@
 
     <TextView
         android:id="@+id/textView_ring_reading"
-        android:layout_width="37dp"
-        android:layout_height="23dp"
+        android:layout_width="55dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,8 +29,8 @@
 
     <TextView
         android:id="@+id/textView_middle_reading"
-        android:layout_width="37dp"
-        android:layout_height="23dp"
+        android:layout_width="46dp"
+        android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView_fingers"
         app:layout_constraintTop_toBottomOf="@+id/textView_fingers"
@@ -38,8 +38,8 @@
 
     <TextView
         android:id="@+id/textView_index_reading"
-        android:layout_width="37dp"
-        android:layout_height="23dp"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView_fingers"
         app:layout_constraintTop_toBottomOf="@+id/textView_fingers" />
@@ -106,8 +106,8 @@
 
     <TextView
         android:id="@+id/textView_gyr_Y"
-        android:layout_width="36dp"
-        android:layout_height="25dp"
+        android:layout_width="75dp"
+        android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView_accelerometer"
         app:layout_constraintHorizontal_bias="0.618"
@@ -117,8 +117,8 @@
 
     <TextView
         android:id="@+id/textView_gyr_X"
-        android:layout_width="29dp"
-        android:layout_height="38dp"
+        android:layout_width="73dp"
+        android:layout_height="55dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView_accelerometer"
         app:layout_constraintHorizontal_bias="0.428"
@@ -128,8 +128,8 @@
 
     <TextView
         android:id="@+id/textView_gyr_Z"
-        android:layout_width="25dp"
-        android:layout_height="32dp"
+        android:layout_width="75dp"
+        android:layout_height="59dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.373"
@@ -214,8 +214,8 @@
 
     <TextView
         android:id="@+id/textView_acc_X"
-        android:layout_width="29dp"
-        android:layout_height="38dp"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView_accelerometer"
         app:layout_constraintStart_toStartOf="parent"
@@ -224,19 +224,19 @@
 
     <TextView
         android:id="@+id/textView_acc_Y"
-        android:layout_width="36dp"
-        android:layout_height="25dp"
+        android:layout_width="71dp"
+        android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView_accelerometer"
-        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintHorizontal_bias="0.661"
         app:layout_constraintStart_toEndOf="@+id/textView_acc_X"
         app:layout_constraintTop_toBottomOf="@+id/textView_accelerometer"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.053" />
 
     <TextView
         android:id="@+id/textView_acc_Z"
-        android:layout_width="25dp"
-        android:layout_height="32dp"
+        android:layout_width="74dp"
+        android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.439"
@@ -269,8 +269,8 @@
 
     <TextView
         android:id="@+id/textView_thumb_reading"
-        android:layout_width="37dp"
-        android:layout_height="23dp"
+        android:layout_width="40dp"
+        android:layout_height="41dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView_fingers"
         app:layout_constraintTop_toBottomOf="@+id/textView_fingers"

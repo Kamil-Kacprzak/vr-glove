@@ -20,12 +20,12 @@ public class VrGlove {
     private static BluetoothDevice device;
     private static BluetoothGatt gatt;
     private static int gattState;
+    private static boolean mIsStateChanged;
     private static List<BluetoothGattService> services;
-    private static byte[] gyroReadings;
-    private static byte[] accReadings;
-    private static byte[] fingersReadings;
+    private static byte[] gyroReadings; //2102
+    private static byte[] accReadings; //2101
+    private static byte[] fingersReadings; //2103
     private static View vw;
-
 
     public VrGlove(){
 
@@ -33,6 +33,7 @@ public class VrGlove {
     public VrGlove(BluetoothDevice device, View vw){
         this.device = device;
         this.vw = vw;
+        this.mIsStateChanged =false;
     }
 
     public static BluetoothGatt getGatt() {
@@ -62,7 +63,6 @@ public class VrGlove {
     public static void setGyroReadings(byte[] gyroReadings) {
         VrGlove.gyroReadings = gyroReadings;
         getGyroReadings();
-        Log.d("My tag","Getting here");
     }
 
     public static void setAccReadings(byte[] accReadings) {
@@ -75,7 +75,6 @@ public class VrGlove {
         getFingersReadings();
     }
 
-    //TODO : update text fields -  tests. Service -> Characteristic -> data in class -> setting data in view
     public static void getGyroReadings() {
         TextView x =  vw.findViewById(R.id.textView_gyr_X);
         TextView y =  vw.findViewById(R.id.textView_gyr_Y);
@@ -120,5 +119,13 @@ public class VrGlove {
         ring.setText(String.format("%s",f));
         f = ByteBuffer.wrap(fingersReadings,16,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
         pinky.setText(String.format("%s",f));
+    }
+
+    public static boolean ismIsStateChanged() {
+        return mIsStateChanged;
+    }
+
+    public static void setmIsStateChanged(boolean mIsStateChanged) {
+        VrGlove.mIsStateChanged = mIsStateChanged;
     }
 }
