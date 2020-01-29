@@ -57,6 +57,8 @@ public class GloveData extends Fragment
 
     private OnFragmentInteractionListener mListener;
     private Queue<Runnable> commandQueue;
+
+    private Handler bleHandler = new Handler();
     private boolean commandQueueBusy;
     private View vw;
 
@@ -169,10 +171,23 @@ public class GloveData extends Fragment
 
                     if(VrGlove.getGattState() == 2){
                         VrGlove.getGatt().discoverServices();
+                       while (VrGlove.getGatt().getServices().size() == 0 || VrGlove.getGatt().getServices().equals(null)){
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    VrGlove.getGatt().discoverServices();
+                                }
+                            }, 2000);
+                       }
                         VrGlove.setServices(VrGlove.getGatt().getServices());
-                        readCharacteristic(VrGlove.getServices().get(0).getCharacteristic(convertFromInteger(0x2101)));
-                        readCharacteristic(VrGlove.getServices().get(0).getCharacteristic(convertFromInteger(0x2102)));
-                        readCharacteristic(VrGlove.getServices().get(0).getCharacteristic(convertFromInteger(0x2103)));
+                        BluetoothGattCharacteristic mCharacteristic;
+                        for (int i = 0x2101;i<0x2104;i++){
+                            mCharacteristic = VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(i));
+                            readCharacteristic((mCharacteristic));
+                        }
+//                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2101)));
+//                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2102)));
+//                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2103)));
                     }
 
                 }
@@ -259,7 +274,7 @@ public class GloveData extends Fragment
             });
         }
     }
-    Handler bleHandler = new Handler();
+
 
     private void completedCommand() {
         commandQueueBusy = false;
@@ -307,6 +322,7 @@ public class GloveData extends Fragment
             super.onCharacteristicRead(gatt, characteristic, status);
 
         }
+
 
         @Override
         public void onCharacteristicChanged(BluetoothGatt gatt, final BluetoothGattCharacteristic characteristic) {
