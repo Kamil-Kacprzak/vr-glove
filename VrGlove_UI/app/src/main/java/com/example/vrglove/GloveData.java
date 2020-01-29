@@ -58,10 +58,10 @@ public class GloveData extends Fragment
     implements View.OnClickListener{
 
     private OnFragmentInteractionListener mListener;
-    private Queue<Runnable> commandQueue = new LinkedList<Runnable>();
+  //  private Queue<Runnable> commandQueue = new LinkedList<Runnable>();
 
     private Handler bleHandler = new Handler();
-    private boolean commandQueueBusy;
+  //  private boolean commandQueueBusy;
     private View vw;
 
     public GloveData() {
@@ -189,10 +189,16 @@ public class GloveData extends Fragment
                                 for (int i = 0x2101;i<0x2104;i++){
                                     mCharacteristic = VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(i));
                                     readCharacteristic((mCharacteristic));
+                                    BluetoothGattDescriptor descriptor = mCharacteristic.getDescriptor(convertFromInteger(0x2902)); //0x2902 / desc
+                                    descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE ); // ENABLE_INDICATION_VALUE  /  ENABLE_NOTIFICATION_VALUE
+                                    try {
+                                        Thread.sleep(2000);
+                                    } catch (InterruptedException e) {
+                                        e.printStackTrace();
+                                    }
+                                    VrGlove.getGatt().writeDescriptor(descriptor);
                                 }
-//                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2101)));
-//                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2102)));
-//                        readCharacteristic(VrGlove.getServices().get(2).getCharacteristic(convertFromInteger(0x2103)));
+
                             }
                         }
                     }, 2000);
@@ -216,6 +222,7 @@ public class GloveData extends Fragment
     }
 
     private boolean readCharacteristic(final BluetoothGattCharacteristic characteristic) {
+
         if(VrGlove.getGatt() == null) {
             Log.e(TAG, "ERROR: Gatt is 'null', ignoring read request");
             return false;
@@ -233,61 +240,64 @@ public class GloveData extends Fragment
             return false;
         }
 
+        VrGlove.getGatt().setCharacteristicNotification(characteristic, true);
+
         // Enqueue the read command now that all checks have been passed
-        boolean result = commandQueue.add(new Runnable() {
-            @Override
-            public void run() {
-                if(!VrGlove.getGatt().readCharacteristic(characteristic)) {
-                    Log.e(TAG, String.format("ERROR: readCharacteristic failed for characteristic: %s", characteristic.getUuid()));
-                    completedCommand();
-                }
-            }
-        });
-
-        if(result) {
-            nextCommand();
-        } else {
-            Log.e(TAG, "ERROR: Could not enqueue read characteristic command");
-        }
-        return result;
-    }
-
-    private void nextCommand() {
-        // If there is still a command being executed then bail out
-        if(commandQueueBusy) {
-            return;
-        }
-
-        // Check if we still have a valid gatt object
-        if (VrGlove.getGatt() == null) {
-            commandQueue.clear();
-            commandQueueBusy = false;
-            return;
-        }
-
-        // Execute the next command in the queue
-        if (commandQueue.size() > 0) {
-            final Runnable bluetoothCommand = commandQueue.peek();
-            commandQueueBusy = true;
-
-            bleHandler.post(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                        bluetoothCommand.run();
-                    } catch (Exception ex) {
-                    }
-                }
-            });
-        }
+//        boolean result = commandQueue.add(new Runnable() {
+//            @Override
+//            public void run() {
+//                if(!VrGlove.getGatt().readCharacteristic(characteristic)) {
+//                    Log.e(TAG, String.format("ERROR: readCharacteristic failed for characteristic: %s", characteristic.getUuid()));
+//                    completedCommand();
+//                }
+//            }
+//        });
+//
+//        if(result) {
+//            nextCommand();
+//        } else {
+//            Log.e(TAG, "ERROR: Could not enqueue read characteristic command");
+//        }
+        return true;
     }
 
 
-    private void completedCommand() {
-        commandQueueBusy = false;
-        commandQueue.poll();
-        nextCommand();
-    }
+//    private void nextCommand() {
+//        // If there is still a command being executed then bail out
+//        if(commandQueueBusy) {
+//            return;
+//        }
+//
+//        // Check if we still have a valid gatt object
+//        if (VrGlove.getGatt() == null) {
+//            commandQueue.clear();
+//            commandQueueBusy = false;
+//            return;
+//        }
+//
+//        // Execute the next command in the queue
+//        if (commandQueue.size() > 0) {
+//            final Runnable bluetoothCommand = commandQueue.peek();
+//            commandQueueBusy = true;
+//
+//            bleHandler.post(new Runnable() {
+//                @Override
+//                public void run() {
+//                    try {
+//                        bluetoothCommand.run();
+//                    } catch (Exception ex) {
+//                    }
+//                }
+//            });
+//        }
+//    }
+
+
+//    private void completedCommand() {
+//        commandQueueBusy = false;
+//        commandQueue.poll();
+//        nextCommand();
+//    }
 
     private final BluetoothGattCallback bluetoothGattCallback = new BluetoothGattCallback() {
         @Override
@@ -327,28 +337,28 @@ public class GloveData extends Fragment
         @Override
         public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
             super.onCharacteristicRead(gatt, characteristic, status);
-
-
-            // Copy the byte array so we have a threadsafe copy
-            final byte[] value = new byte[characteristic.getValue().length];
-            System.arraycopy(characteristic.getValue(), 0, value, 0, characteristic.getValue().length );
-
-            final BluetoothGattCharacteristic mCharacteristic = characteristic;
-            // Characteristic has new value so pass it on for processing
-            bleHandler.post(new Runnable() {
-                @Override
-                public void run() {  // VrGlove.onCharacteristicUpdate(BluetoothPeripheral.this, value, characteristic);
-                    if(mCharacteristic.getUuid().equals(convertFromInteger(0x2101))){
-                        VrGlove.setAccReadings(value);
-                    }else if (mCharacteristic.getUuid().equals(convertFromInteger(0x2102))){
-                        VrGlove.setGyroReadings(value);
-                    }else if(mCharacteristic.getUuid().equals(convertFromInteger(0x2103))){
-                        VrGlove.setFingersReadings(value);
-                    }else{
-                        Toast.makeText(getActivity(),"Unknown characteristic",Toast.LENGTH_SHORT);
-                    }
-                }
-            });
+//
+//
+//            // Copy the byte array so we have a threadsafe copy
+//            final byte[] value = new byte[characteristic.getValue().length];
+//            System.arraycopy(characteristic.getValue(), 0, value, 0, characteristic.getValue().length );
+//
+//            final BluetoothGattCharacteristic mCharacteristic = characteristic;
+//            // Characteristic has new value so pass it on for processing
+//            bleHandler.post(new Runnable() {
+//                @Override
+//                public void run() {  // VrGlove.onCharacteristicUpdate(BluetoothPeripheral.this, value, characteristic);
+//                    if(mCharacteristic.getUuid().equals(convertFromInteger(0x2101))){
+//                        VrGlove.setAccReadings(value);
+//                    }else if (mCharacteristic.getUuid().equals(convertFromInteger(0x2102))){
+//                        VrGlove.setGyroReadings(value);
+//                    }else if(mCharacteristic.getUuid().equals(convertFromInteger(0x2103))){
+//                        VrGlove.setFingersReadings(value);
+//                    }else{
+//                        Toast.makeText(getActivity(),"Unknown characteristic",Toast.LENGTH_SHORT);
+//                    }
+//                }
+//            });
         }
 
 
@@ -375,7 +385,6 @@ public class GloveData extends Fragment
                     }
                 }
             });
-
         }
 
         @Override
