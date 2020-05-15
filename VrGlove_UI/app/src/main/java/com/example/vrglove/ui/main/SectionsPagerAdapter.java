@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.vrglove.GloveData;
 import com.example.vrglove.R;
-import com.example.vrglove.openGL;
+import com.example.vrglove.OpenGL;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -18,6 +18,7 @@ import com.example.vrglove.openGL;
  */
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
+    //Set tab titles
     @StringRes
     private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
     private final Context mContext;
@@ -27,6 +28,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         mContext = context;
     }
 
+    // Set a view to display in tab
     @Override
     public Fragment getItem(int position) {
         // getItem is called to instantiate the fragment for the given page.
@@ -35,9 +37,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         {
             case 0 :
                  return GloveData.newInstance();
-
             case 1 :
-                return  openGL.newInstance();
+                return  OpenGL.newInstance();
             default:
                 return PlaceholderFragment.newInstance(position + 1);
         }

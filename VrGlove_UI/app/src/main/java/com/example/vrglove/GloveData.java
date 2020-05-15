@@ -54,6 +54,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
  * Use the {@link GloveData#newInstance} factory method to
  * create an instance of this fragment.
  */
+
 public class GloveData extends Fragment
     implements View.OnClickListener{
 

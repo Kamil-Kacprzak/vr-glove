@@ -8,16 +8,11 @@ import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -25,7 +20,7 @@ import com.example.vrglove.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity
     implements GloveData.OnFragmentInteractionListener,
-                 openGL.OnFragmentInteractionListener{
+                 OpenGL.OnFragmentInteractionListener{
 
     public Uri mListener;
 
@@ -55,22 +50,23 @@ public class MainActivity extends AppCompatActivity
         this.mListener = uri;
     }
 
+    // Change the state of the BT toggle button, based on bluetooth state received from phone
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             final String action = intent.getAction();
-            Switch switchBT= findViewById(R.id.switchBT);
+            Switch tbBT= findViewById(R.id.switchBT);
             TextView tvStatus = findViewById(R.id.textView_vrGlove_status);
             if (action.equals(BluetoothAdapter.ACTION_STATE_CHANGED)) {
                 final int state = intent.getIntExtra(BluetoothAdapter.EXTRA_STATE,
                         BluetoothAdapter.ERROR);
                 switch (state) {
                     case BluetoothAdapter.STATE_OFF:
-                        switchBT.setChecked(false);
+                        tbBT.setChecked(false);
                         tvStatus.setText("Turn on bluetooth");
                         break;
                     case BluetoothAdapter.STATE_ON:
-                        switchBT.setChecked(true);
+                        tbBT.setChecked(true);
                         tvStatus.setText("Ready to connect");
                         break;
                     case BluetoothAdapter.STATE_CONNECTING:

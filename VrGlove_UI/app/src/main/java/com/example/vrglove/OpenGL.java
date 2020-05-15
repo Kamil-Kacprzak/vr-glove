@@ -14,27 +14,27 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link openGL.OnFragmentInteractionListener} interface
+ * {@link OpenGL.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link openGL#newInstance} factory method to
+ * Use the {@link OpenGL#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class openGL extends Fragment {
+public class OpenGL extends Fragment {
 
 
     private OnFragmentInteractionListener mListener;
 
-    public openGL() {
+    public OpenGL() {
     }
 
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @return A new instance of fragment openGL.
+     * @return A new instance of fragment OpenGL.
      */
-    public static openGL newInstance() {
-        openGL fragment = new openGL();
+    public static OpenGL newInstance() {
+        OpenGL fragment = new OpenGL();
         Bundle bundle = new Bundle();
         fragment.setArguments(bundle);
         return fragment;
