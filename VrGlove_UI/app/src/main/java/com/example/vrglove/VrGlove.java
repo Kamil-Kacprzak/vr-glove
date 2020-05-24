@@ -133,9 +133,10 @@ public class VrGlove {
 //        f = ByteBuffer.wrap(fingersReadings,16,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
 //        pinky.setText(String.format("%s",f));
 //    }
-//
+
 
     public static void getGyroReadings() {
+       Runnable t = () -> {
         List<TextView> lGyroReadings= new ArrayList<>();
 
         lGyroReadings.add((TextView) vw.findViewById(R.id.textView_gyr_X));
@@ -145,63 +146,89 @@ public class VrGlove {
         if (!updateFieldsData(lGyroReadings, DataType.ACC)){
             Log.e("VRGloveData ","Unkown call to update data from gyroscope");
         }
+       };
+       new Thread(t).start();
     }
 
     public static void getAccReadings() {
-        List<TextView> lAccReadings= new ArrayList<>();
+        Runnable t = () -> {
+            List<TextView> lAccReadings= new ArrayList<>();
 
-        lAccReadings.add((TextView) vw.findViewById(R.id.textView_acc_X));
-        lAccReadings.add((TextView) vw.findViewById(R.id.textView_acc_Y));
-        lAccReadings.add((TextView) vw.findViewById(R.id.textView_acc_Z));
+            lAccReadings.add((TextView) vw.findViewById(R.id.textView_acc_X));
+            lAccReadings.add((TextView) vw.findViewById(R.id.textView_acc_Y));
+            lAccReadings.add((TextView) vw.findViewById(R.id.textView_acc_Z));
 
-        if (!updateFieldsData(lAccReadings, DataType.ACC)){
-            Log.e("VRGloveData ","Unkown call to update data from accelerometer");
-        }
+            if (!updateFieldsData(lAccReadings, DataType.ACC)){
+                Log.e("VRGloveData ","Unkown call to update data from accelerometer");
+            }
+        };
+        new Thread(t).start();
     }
 
     public static void getFingersReadings() {
-        List<TextView> lFingersViews = new ArrayList<>();
+        Runnable t = () -> {
+            List<TextView> lFingersViews = new ArrayList<>();
 
-        lFingersViews.add((TextView) vw.findViewById(R.id.textView_thumb_reading));
-        lFingersViews.add((TextView) vw.findViewById(R.id.textView_index_reading));
-        lFingersViews.add((TextView) vw.findViewById(R.id.textView_middle_reading));
-        lFingersViews.add((TextView) vw.findViewById(R.id.textView_ring_reading));
-        lFingersViews.add((TextView) vw.findViewById(R.id.textView_pinky_reading));
+            lFingersViews.add((TextView) vw.findViewById(R.id.textView_thumb_reading));
+            lFingersViews.add((TextView) vw.findViewById(R.id.textView_index_reading));
+            lFingersViews.add((TextView) vw.findViewById(R.id.textView_middle_reading));
+            lFingersViews.add((TextView) vw.findViewById(R.id.textView_ring_reading));
+            lFingersViews.add((TextView) vw.findViewById(R.id.textView_pinky_reading));
 
-        if (!updateFieldsData(lFingersViews, DataType.FINGERS)){
-            Log.e("VRGloveData ","Unkown call to update data from fingers");
-        }
+            if (!updateFieldsData(lFingersViews, DataType.FINGERS)){
+                Log.e("VRGloveData ","Unkown call to update data from fingers");
+            }
+        };
+
+        new Thread(t).start();
     }
 
     private static boolean updateFieldsData(List<TextView> kFieldsData, DataType type){
-        byte[] data;
-        String[] sPrefixes = null;
+        byte[] data = getDataSource(type);
+        String[] sPrefixes = getPrefixes(type);
         int offset = 0;
-
-        switch (type) {
-            case GYRO:
-                data = gyroReadings;
-                sPrefixes = new String[] {"X:","Y:","Z:"};
-                break;
-            case ACC:
-                data = accReadings;
-                sPrefixes = new String[]{"X:", "Y:", "Z:"};
-            case FINGERS:
-                data = fingersReadings;
-                break;
-            default:
-                return false;
-        }
 
         for( int i = 0; i < kFieldsData.size(); i++){
             float  f = ByteBuffer.wrap(data, offset,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
             if(sPrefixes != null) {
-                kFieldsData.get(i).setText(String.format(sPrefixes[i]+"%s",f));
+                kFieldsData.get(i).setText(String.format("%s %f",sPrefixes[i],f));
             }else {
                 kFieldsData.get(i).setText(String.format("%s",f));
             }
             offset +=4;
         }
         return true;
+    }
+
+    private static String[] getPrefixes(DataType type){
+        String[] sPrefixes;
+
+        if(type == DataType.GYRO || type == DataType.ACC){
+            sPrefixes = new String[]{"X:", "Y:", "Z:"};
+        }else{
+            sPrefixes = null;
+        }
+
+        return sPrefixes;
+    }
+
+    private static byte[] getDataSource(DataType type){
+        byte[] data;
+
+        switch (type) {
+            case GYRO:
+                data = gyroReadings;
+                break;
+            case ACC:
+                data = accReadings;
+                break;
+            case FINGERS:
+                data = fingersReadings;
+                break;
+            default:
+                return null;
+        }
+
+        return data;
     }
 }
