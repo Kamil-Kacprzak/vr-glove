@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.HashMap;
 import java.util.List;
 
 public class VrGlove {
@@ -27,9 +28,8 @@ public class VrGlove {
     private static byte[] fingersReadings; //2103
     private static View vw;
 
-    public VrGlove(){
+    private static HashMap<String,Float[]> dataSet = new HashMap<>();
 
-    }
     public VrGlove(BluetoothDevice device, View vw){
         this.device = device;
         this.vw = vw;
@@ -80,12 +80,19 @@ public class VrGlove {
         TextView y =  vw.findViewById(R.id.textView_gyr_Y);
         TextView z =  vw.findViewById(R.id.textView_gyr_Z);
 
+        Float[] data = new Float[3];
+
         float f = ByteBuffer.wrap(gyroReadings,0,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        x.setText(String.format("X:%s",f));
+        data[0] = f;
+        x.setText(String.format("X:%.2f",f));
         f = ByteBuffer.wrap(gyroReadings,4,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        y.setText(String.format("Y:%s",f));
+        data[1] = f;
+        y.setText(String.format("Y:%.2f",f));
         f = ByteBuffer.wrap(gyroReadings,8,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        z.setText(String.format("Z:%s",f));
+        z.setText(String.format("Z:%.2f",f));
+        data[2] = f;
+
+        dataSet.put("Gyro",data);
     }
 
     public static void getAccReadings() {
@@ -93,13 +100,19 @@ public class VrGlove {
         TextView y =  vw.findViewById(R.id.textView_acc_Y);
         TextView z =  vw.findViewById(R.id.textView_acc_Z);
 
-        float f = ByteBuffer.wrap(accReadings,0,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        x.setText(String.format("X:%s",f));
-         f = ByteBuffer.wrap(accReadings,4,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        y.setText(String.format("Y:%s",f));
-         f = ByteBuffer.wrap(accReadings,8,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        z.setText(String.format("Z:%s",f));
+        Float[] data = new Float[3];
 
+        float f = ByteBuffer.wrap(accReadings,0,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
+        data[0] = f;
+        x.setText(String.format("X:%.2f",f));
+         f = ByteBuffer.wrap(accReadings,4,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
+        data[1] = f;
+         y.setText(String.format("Y:%.2f",f));
+         f = ByteBuffer.wrap(accReadings,8,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
+        data[2] = f;
+         z.setText(String.format("Z:%.2f",f));
+
+        dataSet.put("Acc",data);
     }
 
     public static void getFingersReadings() {
@@ -109,16 +122,25 @@ public class VrGlove {
         TextView ring =  vw.findViewById(R.id.textView_ring_reading);
         TextView pinky =  vw.findViewById(R.id.textView_pinky_reading);
 
+        Float[] data = new Float[5];
+
         float f = ByteBuffer.wrap(fingersReadings,0,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        thumb.setText(String.format("%s",f));
+        thumb.setText(String.format("%.0f",f));
+        data[0] = f;
         f = ByteBuffer.wrap(fingersReadings,4,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        index.setText(String.format("%s",f));
+        index.setText(String.format("%.0f",f));
+        data[1] = f;
         f = ByteBuffer.wrap(fingersReadings,8,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        middle.setText(String.format("%s",f));
+        middle.setText(String.format("%.0f",f));
+        data[2] = f;
         f = ByteBuffer.wrap(fingersReadings,12,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        ring.setText(String.format("%s",f));
+        data[3] = f;
+        ring.setText(String.format("%.0f",f));
         f = ByteBuffer.wrap(fingersReadings,16,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-        pinky.setText(String.format("%s",f));
+        data[4] = f;
+        pinky.setText(String.format("%.0f",f));
+
+        dataSet.put("Fingers",data);
     }
 
     public static boolean ismIsStateChanged() {
