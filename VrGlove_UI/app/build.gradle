@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 android {
     compileSdkVersion 28
@@ -37,3 +38,9 @@ dependencies {
 	api project(":sceneformux")
     implementation "com.android.support:appcompat-v7:28.0.0"
 }
+
+
+sceneform.asset('sampledata/Final_hand.gltf',
+        'default',
+        'sampledata/Final_hand.sfa',
+        'src/main/assets/Final_hand')
