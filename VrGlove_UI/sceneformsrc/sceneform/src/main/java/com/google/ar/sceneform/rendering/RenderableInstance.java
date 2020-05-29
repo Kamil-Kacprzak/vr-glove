@@ -1,8 +1,9 @@
 package com.google.ar.sceneform.rendering;
 
 import android.net.Uri;
-import android.support.annotation.Nullable;
-import android.support.annotation.Size;
+import androidx.annotation.Nullable;
+import androidx.annotation.Size;
+
 import android.util.Log;
 import com.google.android.filament.Engine;
 import com.google.android.filament.Entity;
@@ -43,7 +44,7 @@ public class RenderableInstance {
 
   /**
    * Interface for modifying the bone transforms for this specific RenderableInstance. Used by
-   * {@link com.google.ar.sceneform.SkeletonNode} to make it possible to control a bone by moving a
+   * { @ link com.google.ar.sceneform.SkeletonNode} to make it possible to control a bone by moving a
    * node.
    */
   public interface SkinningModifier {

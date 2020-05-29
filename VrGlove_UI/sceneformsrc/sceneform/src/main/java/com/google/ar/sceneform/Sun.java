@@ -1,8 +1,10 @@
 package com.google.ar.sceneform;
 
-import android.support.annotation.ColorInt;
-import android.support.annotation.Nullable;
-import android.support.annotation.VisibleForTesting;
+
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
 
 import com.google.ar.sceneform.math.Quaternion;
 import com.google.ar.sceneform.math.Vector3;
@@ -22,7 +24,8 @@ import com.google.ar.sceneform.utilities.Preconditions;
  * the default directional light.
  */
 public class Sun extends Node {
-  @ColorInt static final int DEFAULT_SUNLIGHT_COLOR = 0xfff2d3c4;
+  @ColorInt
+  static final int DEFAULT_SUNLIGHT_COLOR = 0xfff2d3c4;
   static final Vector3 DEFAULT_SUNLIGHT_DIRECTION = new Vector3(0.7f, -1.0f, -0.8f);
 
   // The Light estimate scale and offset allow the final change in intensity to be controlled to
