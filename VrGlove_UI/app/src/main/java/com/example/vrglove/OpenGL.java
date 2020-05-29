@@ -10,6 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.ar.core.exceptions.CameraNotAvailableException;
+import com.google.ar.sceneform.Camera;
+import com.google.ar.sceneform.SceneView;
+import com.google.ar.sceneform.math.Quaternion;
+import com.google.ar.sceneform.math.Vector3;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +30,8 @@ public class OpenGL extends Fragment
 
 
     private OnFragmentInteractionListener mListener;
+    private View vw;
+    private SceneView sceneView;
 
     public OpenGL() {
     }
@@ -53,7 +61,29 @@ public class OpenGL extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_open_gl, container, false);
+        vw = inflater.inflate(R.layout.fragment_open_gl, container, false);
+        sceneView = vw.findViewById(R.id.scene_view);
+//
+//        Camera camera = sceneView.getScene().getCamera();
+//        camera.setLocalRotation(Quaternion.axisAngle(Vector3.right(), -30.0f));
+
+        return vw;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        sceneView.pause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        try {
+            sceneView.resume();
+        } catch (CameraNotAvailableException e) {
+            e.printStackTrace();
+        }
     }
 
     public void onButtonPressed(Uri uri) {

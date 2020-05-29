@@ -5,5 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".OpenGL">
 
+    <com.google.ar.sceneform.SceneView
+        android:id="@+id/scene_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WhiteSmoke"/>
 
 </FrameLayout>
