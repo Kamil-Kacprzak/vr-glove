@@ -19,7 +19,8 @@ import android.view.ViewGroup;
  * Use the {@link OpenGL#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class OpenGL extends Fragment {
+public class OpenGL extends Fragment
+        implements View.OnClickListener {
 
 
     private OnFragmentInteractionListener mListener;
@@ -76,6 +77,11 @@ public class OpenGL extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 
     /**
