@@ -4,17 +4,29 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.ar.sceneform.Camera;
+import com.google.ar.sceneform.Node;
+import com.google.ar.sceneform.Scene;
 import com.google.ar.sceneform.SceneView;
 import com.google.ar.sceneform.math.Quaternion;
 import com.google.ar.sceneform.math.Vector3;
+import com.google.ar.sceneform.rendering.Color;
+import com.google.ar.sceneform.rendering.MaterialFactory;
+import com.google.ar.sceneform.rendering.ModelRenderable;
+import com.google.ar.sceneform.ux.TransformableNode;
+
+import java.util.concurrent.CompletableFuture;
+
+import static androidx.constraintlayout.widget.Constraints.TAG;
 
 
 /**
@@ -32,6 +44,7 @@ public class OpenGL extends Fragment
     private OnFragmentInteractionListener mListener;
     private View vw;
     private SceneView sceneView;
+    private ModelRenderable finalHandRenderable;
 
     public OpenGL() {
     }
@@ -62,12 +75,47 @@ public class OpenGL extends Fragment
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         vw = inflater.inflate(R.layout.fragment_open_gl, container, false);
-        sceneView = vw.findViewById(R.id.scene_view);
-//
-//        Camera camera = sceneView.getScene().getCamera();
-//        camera.setLocalRotation(Quaternion.axisAngle(Vector3.right(), -30.0f));
+
+        generateSceneView();
 
         return vw;
+    }
+
+    private void generateSceneView() {
+        int c = ContextCompat.getColor(getContext(), R.color.WhiteSmoke);
+        sceneView = vw.findViewById(R.id.scene_view);
+
+        Camera camera = sceneView.getScene().getCamera();
+        camera.setLocalPosition(new Vector3(0,0,2));
+        camera.setLocalRotation(Quaternion.axisAngle(Vector3.right(), -30.0f));
+
+
+        MaterialFactory.makeOpaqueWithColor(getContext(), new Color(c))
+                .thenAccept(
+                        material -> {
+            ModelRenderable.builder()
+                    .setSource(getContext(),Uri.parse("Final_hand.sfb"))
+                    .build()
+                    .thenAccept(this::onRenderableLoades)
+                    .exceptionally(
+                            throwable -> {
+                                Log.e(TAG, "Unable to load Renderable.", throwable);
+                                return null;
+                            });
+                        });
+
+    }
+
+    private void onRenderableLoades(ModelRenderable finalHandRenderable) {
+        if(finalHandRenderable == null){
+            Log.e(TAG, "Renderable is null");
+            return;
+        }
+        Node coreNode = new Node();
+        finalHandRenderable.setShadowReceiver(false);
+        coreNode.setRenderable(finalHandRenderable);
+        sceneView.getScene().addChild(coreNode);
+        coreNode.setLocalPosition(new Vector3(0.0f,0.0f,-2.0f));
     }
 
     @Override
