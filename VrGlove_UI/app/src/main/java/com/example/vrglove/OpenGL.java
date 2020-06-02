@@ -45,6 +45,7 @@ public class OpenGL extends Fragment
     private View vw;
     private SceneView sceneView;
     private ModelRenderable finalHandRenderable;
+    private Camera camera;
 
     public OpenGL() {
     }
@@ -84,25 +85,26 @@ public class OpenGL extends Fragment
     private void generateSceneView() {
         int c = ContextCompat.getColor(getContext(), R.color.WhiteSmoke);
         sceneView = vw.findViewById(R.id.scene_view);
-
-        Camera camera = sceneView.getScene().getCamera();
-        camera.setLocalPosition(new Vector3(0,0,2));
-        camera.setLocalRotation(Quaternion.axisAngle(Vector3.right(), -30.0f));
-
+        camera = sceneView.getScene().getCamera();
+        sceneView.getScene().addChild(camera);
 
         MaterialFactory.makeOpaqueWithColor(getContext(), new Color(c))
                 .thenAccept(
                         material -> {
-            ModelRenderable.builder()
-                    .setSource(getContext(),Uri.parse("Final_hand.sfb"))
-                    .build()
-                    .thenAccept(this::onRenderableLoades)
-                    .exceptionally(
-                            throwable -> {
-                                Log.e(TAG, "Unable to load Renderable.", throwable);
-                                return null;
-                            });
+                            ModelRenderable.builder()
+                                    .setSource(getContext(),Uri.parse("Final_hand.sfb"))
+                                    .build()
+                                    .thenAccept(this::onRenderableLoades)
+                                    .exceptionally(
+                                            throwable -> {
+                                                Log.e(TAG, "Unable to load Renderable.", throwable);
+                                                return null;
+                                            });
                         });
+
+
+//        camera.setLocalPosition(new Vector3(0.0f,0.0f,0.0f));
+//        camera.setLocalRotation(Quaternion.axisAngle(Vector3.right(), -30.0f));
 
     }
 
@@ -111,11 +113,14 @@ public class OpenGL extends Fragment
             Log.e(TAG, "Renderable is null");
             return;
         }
+        this.finalHandRenderable = finalHandRenderable;
         Node coreNode = new Node();
         finalHandRenderable.setShadowReceiver(false);
+//        coreNode.setParent(camera);
+        coreNode.setLocalPosition(new Vector3(0.0f,0.0f,-2.0f));
+        coreNode.setLocalRotation(Quaternion.axisAngle(new Vector3(0f, 1f, 0), 90f));
         coreNode.setRenderable(finalHandRenderable);
         sceneView.getScene().addChild(coreNode);
-        coreNode.setLocalPosition(new Vector3(0.0f,0.0f,-2.0f));
     }
 
     @Override
