@@ -92,7 +92,7 @@ public class OpenGL extends Fragment
                 .thenAccept(
                         material -> {
                             ModelRenderable.builder()
-                                    .setSource(getContext(),Uri.parse("Final_hand.sfb"))
+                                    .setSource(getContext(),Uri.parse("Final_hand_L.sfb"))
                                     .build()
                                     .thenAccept(this::onRenderableLoades)
                                     .exceptionally(
@@ -103,8 +103,8 @@ public class OpenGL extends Fragment
                         });
 
 
-//        camera.setLocalPosition(new Vector3(0.0f,0.0f,0.0f));
-//        camera.setLocalRotation(Quaternion.axisAngle(Vector3.right(), -30.0f));
+        camera.setLocalPosition(new Vector3(0.0f,0.0f,0.0f));
+//        camera.setLocalRotation(Quaternion.axisAngle(new Vector3(1,0,0), -10.0f));
 
     }
 
@@ -113,12 +113,17 @@ public class OpenGL extends Fragment
             Log.e(TAG, "Renderable is null");
             return;
         }
+
         this.finalHandRenderable = finalHandRenderable;
-        Node coreNode = new Node();
         finalHandRenderable.setShadowReceiver(false);
-//        coreNode.setParent(camera);
-        coreNode.setLocalPosition(new Vector3(0.0f,0.0f,-2.0f));
-        coreNode.setLocalRotation(Quaternion.axisAngle(new Vector3(0f, 1f, 0), 90f));
+
+        Node coreNode = new Node();
+        coreNode.setLocalPosition(new Vector3(0f,0f,-0.7f));
+
+        Quaternion rotation1 = Quaternion.axisAngle(new Vector3(0.0f, 0.0f, 1.0f), 90f);
+        Quaternion rotation2 = Quaternion.axisAngle(new Vector3(1.0f, 0.0f, 0.0f), 90f);
+        coreNode.setLocalRotation(Quaternion.multiply(rotation1, rotation2));
+
         coreNode.setRenderable(finalHandRenderable);
         sceneView.getScene().addChild(coreNode);
     }
