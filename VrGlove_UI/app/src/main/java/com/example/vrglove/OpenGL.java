@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.ar.sceneform.Camera;
@@ -24,6 +25,8 @@ import com.google.ar.sceneform.rendering.MaterialFactory;
 import com.google.ar.sceneform.rendering.ModelRenderable;
 import com.google.ar.sceneform.ux.TransformableNode;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.concurrent.CompletableFuture;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
@@ -46,6 +49,7 @@ public class OpenGL extends Fragment
     private SceneView sceneView;
     private ModelRenderable finalHandRenderable;
     private Camera camera;
+    private Node coreNode;
 
     public OpenGL() {
     }
@@ -90,22 +94,55 @@ public class OpenGL extends Fragment
 
         MaterialFactory.makeOpaqueWithColor(getContext(), new Color(c))
                 .thenAccept(
-                        material -> {
-                            ModelRenderable.builder()
-                                    .setSource(getContext(),Uri.parse("Final_hand_L.sfb"))
-                                    .build()
-                                    .thenAccept(this::onRenderableLoades)
-                                    .exceptionally(
-                                            throwable -> {
-                                                Log.e(TAG, "Unable to load Renderable.", throwable);
-                                                return null;
-                                            });
-                        });
+                        material -> ModelRenderable.builder()
+                                .setSource(getContext(),Uri.parse("Final_hand_L.sfb"))
+                                .build()
+                                .thenAccept(this::onRenderableLoades)
+                                .exceptionally(
+                                        throwable -> {
+                                            Log.e(TAG, "Unable to load Renderable.", throwable);
+                                            return null;
+                                        }));
 
 
         camera.setLocalPosition(new Vector3(0.0f,0.0f,0.0f));
 //        camera.setLocalRotation(Quaternion.axisAngle(new Vector3(1,0,0), -10.0f));
 
+        // TODO: enable animation and access bone list
+//        finalHandRenderable.getBoneParent();
+//        Toast.makeText(getActivity(),bones,Toast.LENGTH_SHORT);
+
+        new Thread (()-> startDataListener()).start();
+
+    }
+
+    private void startDataListener() {
+        while(true){
+            if(VrGlove.ismIsStateChanged()){
+                float[] pos;
+                // TODO: Add rotation
+//                float[] rot = new float[3];
+//                Quaternion[] quat = new Quaternion[3];
+                pos = parseAccData(VrGlove.getDataSet().get("Acc"));
+
+                this.coreNode.setLocalPosition(new Vector3(pos[0],pos[1],pos[2]));
+
+//                this.coreNode.setLocalRotation(Quaternion.multiply(Quaternion.multiply(quat[0],quat[1]),quat[2]));
+            }
+        }
+    }
+
+    private float[] parseAccData(Float[] accs) {
+        float[] result = new float[3];
+        for(int i = 0 ; i < accs.length ; i++){
+            result[i] = accs[i].floatValue();
+        }
+
+        // TODO: Figure how to parse data and remove this lines
+        result[0] = 0f;
+        result[1] = 0f;
+        result[2] = -0.7f;
+        return result;
     }
 
     private void onRenderableLoades(ModelRenderable finalHandRenderable) {
@@ -114,10 +151,10 @@ public class OpenGL extends Fragment
             return;
         }
 
-        this.finalHandRenderable = finalHandRenderable;
         finalHandRenderable.setShadowReceiver(false);
+        this.finalHandRenderable = finalHandRenderable;
 
-        Node coreNode = new Node();
+        coreNode = new Node();
         coreNode.setLocalPosition(new Vector3(0f,0f,-0.7f));
 
         Quaternion rotation1 = Quaternion.axisAngle(new Vector3(0.0f, 0.0f, 1.0f), 90f);

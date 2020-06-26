@@ -21,61 +21,62 @@ public class VrGlove {
     private static BluetoothDevice device;
     private static BluetoothGatt gatt;
     private static int gattState;
-    private static boolean mIsStateChanged;
+    private volatile static boolean mIsStateChanged;
     private static List<BluetoothGattService> services;
     private static byte[] gyroReadings; //2102
     private static byte[] accReadings; //2101
     private static byte[] fingersReadings; //2103
     private static View vw;
 
-    private static HashMap<String,Float[]> dataSet = new HashMap<>();
 
-    public VrGlove(BluetoothDevice device, View vw){
-        this.device = device;
-        this.vw = vw;
-        this.mIsStateChanged =false;
+    private volatile static HashMap<String,Float[]> dataSet = new HashMap<>();
+
+     VrGlove(BluetoothDevice device, View vw){
+         VrGlove.device = device;
+         VrGlove.vw = vw;
+        VrGlove.mIsStateChanged =false;
     }
 
-    public static BluetoothGatt getGatt() {
+     static BluetoothGatt getGatt() {
         return gatt;
     }
 
-    public static void setGatt(BluetoothGatt gatt) {
+     static void setGatt(BluetoothGatt gatt) {
         VrGlove.gatt = gatt;
     }
 
-    public static int getGattState() {
+     static int getGattState() {
         return gattState;
     }
 
-    public static void setGattState(int gattState) {
+     static void setGattState(int gattState) {
         VrGlove.gattState = gattState;
     }
 
-    public static List<BluetoothGattService> getServices() {
+    static List<BluetoothGattService> getServices() {
         return services;
     }
 
-    public static void setServices(List<BluetoothGattService> services) {
+     static void setServices(List<BluetoothGattService> services) {
         VrGlove.services = services;
     }
 
-    public static void setGyroReadings(byte[] gyroReadings) {
+     static void setGyroReadings(byte[] gyroReadings) {
         VrGlove.gyroReadings = gyroReadings;
         getGyroReadings();
     }
 
-    public static void setAccReadings(byte[] accReadings) {
+     static void setAccReadings(byte[] accReadings) {
         VrGlove.accReadings = accReadings;
         getAccReadings();
     }
 
-    public static void setFingersReadings(byte[] fingersReadings) {
+     static void setFingersReadings(byte[] fingersReadings) {
         VrGlove.fingersReadings = fingersReadings;
         getFingersReadings();
     }
 
-    public static void getGyroReadings() {
+    private static void getGyroReadings() {
         TextView x =  vw.findViewById(R.id.textView_gyr_X);
         TextView y =  vw.findViewById(R.id.textView_gyr_Y);
         TextView z =  vw.findViewById(R.id.textView_gyr_Z);
@@ -93,9 +94,10 @@ public class VrGlove {
         data[2] = f;
 
         dataSet.put("Gyro",data);
+        setmIsStateChanged(true);
     }
 
-    public static void getAccReadings() {
+    private static void getAccReadings() {
         TextView x =  vw.findViewById(R.id.textView_acc_X);
         TextView y =  vw.findViewById(R.id.textView_acc_Y);
         TextView z =  vw.findViewById(R.id.textView_acc_Z);
@@ -113,9 +115,10 @@ public class VrGlove {
          z.setText(String.format("Z:%.2f",f));
 
         dataSet.put("Acc",data);
+        setmIsStateChanged(true);
     }
 
-    public static void getFingersReadings() {
+    private static void getFingersReadings() {
         TextView thumb =  vw.findViewById(R.id.textView_thumb_reading);
         TextView index =  vw.findViewById(R.id.textView_index_reading);
         TextView middle =  vw.findViewById(R.id.textView_middle_reading);
@@ -141,6 +144,8 @@ public class VrGlove {
         pinky.setText(String.format("%.0f",f));
 
         dataSet.put("Fingers",data);
+       // TODO: Create update for fingers
+        // setmIsStateChanged(true);
     }
 
     public static boolean ismIsStateChanged() {
@@ -149,5 +154,9 @@ public class VrGlove {
 
     public static void setmIsStateChanged(boolean mIsStateChanged) {
         VrGlove.mIsStateChanged = mIsStateChanged;
+    }
+
+    public static HashMap<String, Float[]> getDataSet() {
+        return dataSet;
     }
 }
