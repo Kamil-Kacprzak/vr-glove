@@ -304,27 +304,29 @@ public class GloveData extends Fragment
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
             super.onConnectionStateChange(gatt, status, newState);
-            TextView tvStatus = getActivity().findViewById(R.id.textView_vrGlove_status);
-            switch (newState){
-                case STATE_CONNECTED:
-                    VrGlove.setGattState(newState);
-                    tvStatus.setText("Connected");
-                    break;
-                case STATE_CONNECTING:
-                    VrGlove.setGattState(newState);
-                    tvStatus.setText("Connecting");
-                    break;
-                case STATE_DISCONNECTING:
-                    VrGlove.setGattState(newState);
-                    tvStatus.setText("Disconnecting");
-                    break;
-                case STATE_DISCONNECTED:
-                    VrGlove.getGatt().close();
-                    VrGlove.setGattState(newState);
-                default:
-                    tvStatus.setText("Disconnected");
-                    break;
-            }
+            getActivity().runOnUiThread(() -> {
+                TextView tvStatus = getActivity().findViewById(R.id.textView_vrGlove_status);
+                switch (newState){
+                    case STATE_CONNECTED:
+                        VrGlove.setGattState(newState);
+                        tvStatus.setText("Connected");
+                        break;
+                    case STATE_CONNECTING:
+                        VrGlove.setGattState(newState);
+                        tvStatus.setText("Connecting");
+                        break;
+                    case STATE_DISCONNECTING:
+                        VrGlove.setGattState(newState);
+                        tvStatus.setText("Disconnecting");
+                        break;
+                    case STATE_DISCONNECTED:
+                        VrGlove.getGatt().close();
+                        VrGlove.setGattState(newState);
+                    default:
+                        tvStatus.setText("Disconnected");
+                        break;
+                }
+            });
         }
 
         @Override

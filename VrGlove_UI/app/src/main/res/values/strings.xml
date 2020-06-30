@@ -16,4 +16,5 @@
     <string name="ring_readings">Ring: </string>
     <string name="pinky_readings">Pinky: </string>
     <string name="fingers_readings">Fingers readings</string>
+    <string name="fabText">Recalibrate</string>
 </resources>
