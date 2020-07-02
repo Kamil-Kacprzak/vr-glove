@@ -12,27 +12,24 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.ar.sceneform.Camera;
 import com.google.ar.sceneform.Node;
-import com.google.ar.sceneform.Scene;
 import com.google.ar.sceneform.SceneView;
 import com.google.ar.sceneform.math.Quaternion;
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.Color;
 import com.google.ar.sceneform.rendering.MaterialFactory;
 import com.google.ar.sceneform.rendering.ModelRenderable;
-import com.google.ar.sceneform.ux.TransformableNode;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.concurrent.CompletableFuture;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
+import static java.lang.Math.PI;
+import static java.lang.Math.atan;
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
 
 
 /**
@@ -57,6 +54,13 @@ public class OpenGL extends Fragment
     //Animation
     private boolean isCalibrating;
     private float[] accAngles, gyroAngles, modelAngles;
+
+    private static final float dtNanoToSec = 1.0f / 1000000000.0f;
+    private long lastTimestamp = 0;
+    private static long currentTimestamp;
+    private float[] velocity = new float[3],pos = new float[3],
+                                rotationVec = new float[3];
+
 
     public OpenGL() {
     }
@@ -90,6 +94,10 @@ public class OpenGL extends Fragment
         accAngles = new float[3];
         gyroAngles= new float[3];
         modelAngles= new float[3];
+        velocity = new float[3];
+        pos = new float[3];
+        rotationVec = new float[3];
+
         FloatingActionButton myFab = (FloatingActionButton) vw.findViewById(R.id.fab);
         myFab.setOnClickListener(v -> fabListener());
         isCalibrating = false;
@@ -99,8 +107,13 @@ public class OpenGL extends Fragment
     }
 
     private void fabListener() {
-        //TODO: reset button - angles, bool for listener, postition rotation
         isCalibrating = true;
+
+        lastTimestamp = 0;
+        velocity = new float[3];
+        pos = new float[3];
+        rotationVec = new float[3];
+
         accAngles = new float[3];
         gyroAngles= new float[3];
         modelAngles= new float[3];
@@ -160,7 +173,6 @@ public class OpenGL extends Fragment
 
 
         camera.setLocalPosition(new Vector3(0.0f,0.0f,0.0f));
-//        camera.setLocalRotation(Quaternion.axisAngle(new Vector3(1,0,0), -10.0f));
 
         new Thread (()-> startDataListener()).start();
 
@@ -171,33 +183,66 @@ public class OpenGL extends Fragment
     }
 
     private void startDataListener() {
-        TextView tvStatus = getActivity().findViewById(R.id.textView_vrGlove_status);
         while(true){
             if(VrGlove.ismIsStateChanged() && !isCalibrating){
-                // TODO: Add rotation and movement from here
-                /*
-                    take pos 0 at start
-                    calculate acc for rotation
-                    complimentary filter for acc and gyro
-
-                    double integral from acc for position
-                    scalling to the screen
-                 */
-                float[] pos = new float[3];
                 Quaternion[] quat = new Quaternion[3];
 
                 calculateRotation();
-                quat[0] = Quaternion.axisAngle(new Vector3(0.0f,0.0f,-1.0f),modelAngles[0]);
+                quat[0] = Quaternion.axisAngle(new Vector3(0.0f,0.0f,-1.0f),modelAngles[0]); // up/down
                 quat[1] = Quaternion.axisAngle(new Vector3(1.0f,0.0f,0.0f),modelAngles[1]);
                 quat[2] = Quaternion.axisAngle(new Vector3(0.0f,1.0f,0.0f),modelAngles[2]);
-                Quaternion resultOrientation = Quaternion.multiply(Quaternion.multiply(quat[2],quat[1]),quat[0]);
+                Quaternion resultOrientation = Quaternion.multiply(Quaternion.multiply(quat[1],quat[0]),quat[2]);
                 this.coreNode.setLocalRotation(resultOrientation);
 
-               // pos = parseAccData(VrGlove.getDataSet().get("Acc"));
-              //  this.coreNode.setLocalPosition(new Vector3(pos[0],pos[1],pos[2]));
+                parseAccData();
+                this.coreNode.setLocalPosition(new Vector3(0.4f*pos[0],0.4f*pos[2],-0.7f+(0.4f*pos[1])));
                 VrGlove.setmIsStateChanged(false);
             }
         }
+    }
+
+    private void parseAccData() {
+        long currentTime = currentTimestamp;
+        Float[] accSet = VrGlove.getDataSet().get("Acc");
+        if(lastTimestamp != 0){
+            final float dT = (currentTime - lastTimestamp) * dtNanoToSec;
+            float[] tmpAngles = modelAngles;
+            tmpAngles[0] -= 15.0f;
+            tmpAngles[1] -= 20.0f;
+            //TODO
+            float[] accDataPostRotation = removeRotation(accSet, tmpAngles);
+            //removes gravity
+            accDataPostRotation[2] -= 0.98f;
+            accDataPostRotation = restoreRotation(accDataPostRotation, rotationVec);
+
+            //Double integral to obtain velocity from acceleration, and position from velocity
+            for(int i = 0; i < velocity.length; i++){
+                velocity[i] += accDataPostRotation[i]*dT;
+            }
+            for(int i = 0; i < pos.length; i++){
+                pos[i] += accDataPostRotation[i]*dT;
+            }
+        }
+        lastTimestamp = currentTime;
+    }
+
+    private float[] restoreRotation(float[] accDataPostRotation, float[] rotationV) {
+        //TODO: Restore original data by multiplying inverse rotV
+        for (int i =0; i< accDataPostRotation.length; i++){
+//            accDataPostRotation[i] *= (-1*rotationVec[i]);
+        }
+        return accDataPostRotation;
+    }
+
+    private float[] removeRotation(Float[] accSet, float[] angles) {
+        float[] result = new float[3];
+        //TODO: Multiply times rotation vector
+//        rotationVec = ...angles
+        for (int i =0; i< accSet.length; i++){
+            result[i] = accSet[i];
+//            result[i] *= rotationVec[i];
+        }
+        return result;
     }
 
     private void calculateRotation() {
@@ -208,8 +253,8 @@ public class OpenGL extends Fragment
         if(accSet != null && gyroSet != null){
             if(accSet.length == gyroSet.length){
                 for(int i = 0 ; i < accSet.length ; i++) {
-                    accInput[i]  = accSet[i].floatValue();
-                    gyroInput[i] = gyroSet[i].floatValue();
+                    accInput[i]  = accSet[i];
+                    gyroInput[i] = gyroSet[i];
                 }
             }
             calculateAccAngles(accInput);
@@ -219,23 +264,31 @@ public class OpenGL extends Fragment
     }
 
     private void calculateAccAngles(float[] accInput) {
+        accAngles[0] = (float) (atan(accInput[1] / sqrt(pow(accInput[0], 2) + pow(accInput[2], 2))) * 180 / PI);
+        accAngles[1] = (float) (atan(-1 * accInput[0] / sqrt(pow(accInput[1], 2) + pow(accInput[2], 2))) * 180 / PI);
     }
 
     private void calculateGyroAngles(float[] gyroInput) {
-        String msg = "Angles values are ";
-        String msg1 = "gyro input values are ";
         for(int i = 0; i< gyroAngles.length; i++){
             gyroAngles[i] += gyroInput[i];
-            msg += i+" "+gyroAngles[i]+" , ";
-            msg1 += i+" "+gyroInput[i]+" , ";
         }
-        Log.i("gyroAngles",msg);
-        Log.i("gyroAngles",msg1);
     }
 
     private float[] complimentaryFilter(float[] accAngles, float[] gyroAngles) {
-        //TODO : finish filter
-        return gyroAngles;
+        float[] result = new float[3];
+        //Adjust accelerometer angles to position of the board on the glove
+        float[] tmp = accAngles;
+        tmp[0] *= -1.0f;
+        tmp[1] *= -1.0f;
+
+        tmp[0] += 15.0f;
+        tmp[1] += 20.0f;
+        //Complimentary filter
+        float filterValue = 0.94f;
+        result[0] = filterValue * gyroAngles[0] + (1 - filterValue) * tmp[0];
+        result[1] = filterValue * gyroAngles[1] + (1 - filterValue) * tmp[1];
+        result[2] = gyroAngles[2];
+        return result;
     }
 
     private void onRenderableLoades(ModelRenderable finalHandRenderable) {
@@ -300,6 +353,10 @@ public class OpenGL extends Fragment
     @Override
     public void onClick(View v) {
 
+    }
+
+    public static void setCurrentTimestamp(long timestamp){
+        currentTimestamp = timestamp;
     }
 
     /**

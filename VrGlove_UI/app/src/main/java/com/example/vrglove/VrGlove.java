@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.security.Timestamp;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -98,11 +100,13 @@ public class VrGlove {
     }
 
     private static void getAccReadings() {
+        OpenGL.setCurrentTimestamp(System.nanoTime());
         TextView x =  vw.findViewById(R.id.textView_acc_X);
         TextView y =  vw.findViewById(R.id.textView_acc_Y);
         TextView z =  vw.findViewById(R.id.textView_acc_Z);
 
         Float[] data = new Float[3];
+
 
         float f = ByteBuffer.wrap(accReadings,0,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
         data[0] = f;
