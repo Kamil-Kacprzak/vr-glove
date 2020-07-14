@@ -39,7 +39,6 @@ float gyroAngleX, gyroAngleY, gyroAngleZ;
 
 void setup() {
   Serial.begin(9600);
-  while(!Serial);
   
   if (!IMU.begin()) {
     Serial.println("Failed to initialize IMU!");
@@ -76,7 +75,7 @@ void setup() {
 void loop() {
   /*
    * At the moment (05.2020) there is a bug in nano 33 ble that regards disconnecting from central. Sometimes after
-   * doing so board can act as in it' still connected or it doesn't remove connection which will not allow for new 
+   * doing so board can act as in it's still connected or it doesn't remove connection which will not allow for new 
    * connection to happen
    */
   BLEDevice central = BLE.central();
@@ -157,4 +156,5 @@ void loop() {
          Serial.println(""); 
     }        
   }
+   central.disconnect();
 }
