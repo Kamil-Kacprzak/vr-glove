@@ -20,7 +20,7 @@ import com.example.vrglove.ui.main.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity
     implements GloveData.OnFragmentInteractionListener,
-                 OpenGL.OnFragmentInteractionListener{
+                 ModelRenderer.OnFragmentInteractionListener{
 
     public Uri mListener;
 

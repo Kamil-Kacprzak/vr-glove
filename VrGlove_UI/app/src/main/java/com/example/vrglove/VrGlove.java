@@ -3,14 +3,11 @@ package com.example.vrglove;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattService;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
-import java.security.Timestamp;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -100,7 +97,7 @@ public class VrGlove {
     }
 
     private static void getAccReadings() {
-        OpenGL.setCurrentTimestamp(System.nanoTime());
+        ModelRenderer.setCurrentTimestamp(System.nanoTime());
         TextView x =  vw.findViewById(R.id.textView_acc_X);
         TextView y =  vw.findViewById(R.id.textView_acc_Y);
         TextView z =  vw.findViewById(R.id.textView_acc_Z);

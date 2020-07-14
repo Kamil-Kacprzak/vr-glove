@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.vrglove.GloveData;
 import com.example.vrglove.R;
-import com.example.vrglove.OpenGL;
+import com.example.vrglove.ModelRenderer;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -38,7 +38,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 0 :
                  return GloveData.newInstance();
             case 1 :
-                return  OpenGL.newInstance();
+                return  ModelRenderer.newInstance();
             default:
                 return PlaceholderFragment.newInstance(position + 1);
         }

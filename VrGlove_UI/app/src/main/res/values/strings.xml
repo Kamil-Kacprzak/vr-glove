@@ -17,4 +17,5 @@
     <string name="pinky_readings">Pinky: </string>
     <string name="fingers_readings">Fingers readings</string>
     <string name="fabText">Recalibrate</string>
+    <string name="positioning">Positioning</string>
 </resources>

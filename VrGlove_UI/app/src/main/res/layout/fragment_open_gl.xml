@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".OpenGL">
+    tools:context=".ModelRenderer">
 
     <com.google.ar.sceneform.SceneView
         android:id="@+id/scene_view"
@@ -12,13 +12,29 @@
         android:layout_height="match_parent"
         android:background="@color/Crimson"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:src="@android:drawable/ic_popup_sync"
-        android:contentDescription="@string/fabText"
-        android:layout_margin="16dp" />
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|end">
 
+        <Switch
+            android:id="@+id/positionSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:text="@string/positioning"
+            android:layout_marginTop="35dp"
+            android:checked="true"
+            android:textColor="@color/WhiteSmoke"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@android:drawable/ic_popup_sync"
+            android:contentDescription="@string/fabText"
+            android:layout_margin="16dp" />
+    </LinearLayout>
 </FrameLayout>
