@@ -21,6 +21,7 @@ public class VrGlove {
     private static BluetoothGatt gatt;
     private static int gattState;
     private volatile static boolean mIsStateChanged;
+    private volatile static boolean mIsFingersReadings;
     private static List<BluetoothGattService> services;
     private static byte[] gyroReadings; //2102
     private static byte[] accReadings; //2101
@@ -34,6 +35,7 @@ public class VrGlove {
          VrGlove.device = device;
          VrGlove.vw = vw;
         VrGlove.mIsStateChanged =false;
+         VrGlove.mIsFingersReadings = false;
     }
 
      static BluetoothGatt getGatt() {
@@ -144,9 +146,9 @@ public class VrGlove {
         data[4] = f;
         pinky.setText(String.format("%.0f",f));
 
+        //Thumb,Index,Middle,Ring,Pinky
         dataSet.put("Fingers",data);
-       // TODO: Create update for fingers
-        // setmIsStateChanged(true);
+        setmIsFingersReadings(true);
     }
 
     public static boolean ismIsStateChanged() {
@@ -155,6 +157,14 @@ public class VrGlove {
 
     public static void setmIsStateChanged(boolean mIsStateChanged) {
         VrGlove.mIsStateChanged = mIsStateChanged;
+    }
+
+    public static boolean ismIsFingersReadings() {
+        return mIsFingersReadings;
+    }
+
+    public static void setmIsFingersReadings(boolean mIsFingersReadings) {
+        VrGlove.mIsFingersReadings = mIsFingersReadings;
     }
 
     public static HashMap<String, Float[]> getDataSet() {

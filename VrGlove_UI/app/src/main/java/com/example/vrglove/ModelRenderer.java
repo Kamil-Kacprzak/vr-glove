@@ -14,8 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Switch;
 import android.widget.Toast;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.ar.sceneform.Camera;
 import com.google.ar.sceneform.Node;
@@ -53,6 +53,8 @@ public class ModelRenderer extends Fragment
     private ModelRenderable finalHandRenderable;
     private Camera camera;
     private Node coreNode;
+    private int c;
+    private String modelName;
 
     //Animation
     private boolean isCalibrating;
@@ -63,6 +65,15 @@ public class ModelRenderer extends Fragment
     private long lastTimestamp = 0;
     private static long currentTimestamp;
     private float[] velocity = new float[3],pos = new float[3],oldPos = new float[3];
+
+    //Thumb,Index,Middle,Ring,Pinky
+    private final float[][] sensorsBoundarySettings ={
+            {390,530},
+            {370,580},
+            {480,670},
+            {480,720},
+            {470,720}
+    };
 
 
     public ModelRenderer() {
@@ -99,6 +110,7 @@ public class ModelRenderer extends Fragment
         modelAngles= new float[3];
         velocity = new float[3];
         pos = new float[3];
+
 
         FloatingActionButton myFab = (FloatingActionButton) vw.findViewById(R.id.fab);
         myFab.setOnClickListener(v -> fabListener());
@@ -169,15 +181,17 @@ public class ModelRenderer extends Fragment
     }
 
     private void generateSceneView() {
-        int c = ContextCompat.getColor(getContext(), R.color.WhiteSmoke);
+        c = ContextCompat.getColor(getContext(), R.color.WhiteSmoke);
         sceneView = vw.findViewById(R.id.scene_view);
         camera = sceneView.getScene().getCamera();
         sceneView.getScene().addChild(camera);
+        modelName = "Final_hand_L.sfb";
+//        modelName = "ThumbsUp_hand_L.sfb";
 
         MaterialFactory.makeOpaqueWithColor(getContext(), new Color(c))
                 .thenAccept(
                         material -> ModelRenderable.builder()
-                                .setSource(getContext(),Uri.parse("Final_hand_L.sfb"))
+                                .setSource(getContext(),Uri.parse(modelName))
                                 .build()
                                 .thenAccept(this::onRenderableLoades)
                                 .exceptionally(
@@ -191,30 +205,52 @@ public class ModelRenderer extends Fragment
 
         new Thread (()-> startDataListener()).start();
 
-        // TODO: Animate data from here
-//        finalHandRenderable.getBoneParent();
-//        Toast.makeText(getActivity(),bones,Toast.LENGTH_SHORT);
-
     }
 
     private void startDataListener() {
         while(true){
-            if(VrGlove.ismIsStateChanged() && !isCalibrating){
-                Quaternion[] quat = new Quaternion[3];
+            if(!isCalibrating){
+                if(VrGlove.ismIsStateChanged()){
+                    Quaternion[] quat = new Quaternion[3];
 
-                calculateRotation();
-                quat[0] = Quaternion.axisAngle(new Vector3(0.0f,0.0f,-1.0f),modelAngles[0]); // up/down
-                quat[1] = Quaternion.axisAngle(new Vector3(1.0f,0.0f,0.0f),modelAngles[1]);
-                quat[2] = Quaternion.axisAngle(new Vector3(0.0f,1.0f,0.0f),modelAngles[2]);
-                Quaternion resultOrientation = Quaternion.multiply(Quaternion.multiply(quat[1],quat[0]),quat[2]);
-                this.coreNode.setLocalRotation(resultOrientation);
+                    calculateRotation();
+                    quat[0] = Quaternion.axisAngle(new Vector3(0.0f,0.0f,-1.0f),modelAngles[0]); // up/down
+                    quat[1] = Quaternion.axisAngle(new Vector3(1.0f,0.0f,0.0f),modelAngles[1]);
+                    quat[2] = Quaternion.axisAngle(new Vector3(0.0f,1.0f,0.0f),modelAngles[2]);
+                    Quaternion resultOrientation = Quaternion.multiply(Quaternion.multiply(quat[1],quat[0]),quat[2]);
+                    this.coreNode.setLocalRotation(resultOrientation);
 
-                if(renderPosition){
-                    parseAccDataToDisplacement();
-                    this.coreNode.setLocalPosition(new Vector3(0.4f*pos[0],0.4f*pos[2],-0.7f+(0.4f*pos[1])));
+                    if(renderPosition){
+                        parseAccDataToDisplacement();
+                        this.coreNode.setLocalPosition(
+                                new Vector3(0.4f*pos[0],0.4f*pos[2],-0.7f+(0.4f*pos[1])));
+                    }
+                    VrGlove.setmIsStateChanged(false);
                 }
-                VrGlove.setmIsStateChanged(false);
+                if(VrGlove.ismIsFingersReadings()){
+                    replaceModel();
+                    VrGlove.setmIsFingersReadings(false);
+                }
+
             }
+        }
+    }
+
+    private void replaceModel() {
+        Float[] fingersSet = VrGlove.getDataSet().get("Fingers");
+        if(fingersSet != null && finalHandRenderable != null){
+            for(int i = 0; i<fingersSet.length; i++){
+                if(fingersSet[i] < sensorsBoundarySettings[i][0]){
+                    fingersSet[i] = sensorsBoundarySettings[i][0];
+                }else if(fingersSet[i] > sensorsBoundarySettings[i][1]){
+                    fingersSet[i] = sensorsBoundarySettings[i][1];
+                }
+            }
+
+            //TODO: Recognize fingers patterns
+
+
+            //TODO: Replace model with parameter
         }
     }
 
