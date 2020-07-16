@@ -40,12 +40,12 @@ dependencies {
 
 }
 
-sceneform.asset('sampledata/Final_hand.gltf',
-        'default',
-        'sampledata/Final_hand.sfa',
-        'src/main/assets/Final_hand')
-
 sceneform.asset('sampledata/Final_hand_L.gltf',
         'default',
         'sampledata/Final_hand_L.sfa',
         'src/main/assets/Final_hand_L')
+
+sceneform.asset('sampledata/ThumbsUp_hand_L.obj',
+        'default',
+        'sampledata/ThumbsUp_hand_L.sfa',
+        'src/main/assets/ThumbsUp_hand_L')
