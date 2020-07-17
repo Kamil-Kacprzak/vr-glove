@@ -6,6 +6,8 @@ import android.bluetooth.BluetoothGattService;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.HashMap;
@@ -27,6 +29,8 @@ public class VrGlove {
     private static byte[] accReadings; //2101
     private static byte[] fingersReadings; //2103
     private static View vw;
+    public static boolean init = true;
+    private static FloatingActionButton myFab;
 
 
     private volatile static HashMap<String,Float[]> dataSet = new HashMap<>();
@@ -118,6 +122,13 @@ public class VrGlove {
          z.setText(String.format("Z:%.2f",f));
 
         dataSet.put("Acc",data);
+        if(init){
+            myFab = vw.findViewById(R.id.fab);
+            if(myFab != null){
+                myFab.callOnClick();
+                init = false;
+            }
+        }
         setmIsStateChanged(true);
     }
 

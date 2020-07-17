@@ -61,15 +61,16 @@ public class ModelRenderer extends Fragment
     private static final float dtNanoToSec = 1.0f / 1000000000.0f;
     private long lastTimestamp = 0;
     private static long currentTimestamp;
-    private float[] velocity = new float[3],pos = new float[3],oldPos = new float[3];
+    private float[] velocity = new float[3],pos = new float[3],oldPos = new float[3],
+            gravityV = new float[3];
 
     //Thumb,Index,Middle,Ring,Pinky
     private final float[][] sensorsBoundarySettings ={
-            {390,530},
-            {370,580},
-            {480,670},
-            {480,720},
-            {470,720}
+            {520,680},
+            {400,580},
+            {520,670},
+            {500,750},
+            {480,620}
     };
     private final int[][] modelRequirements =
             {
@@ -79,7 +80,6 @@ public class ModelRenderer extends Fragment
                     {1,0,0,0,1}, // Mahalo
                     {1,0,0,0,0}  // Thumb Up
             };
-
 
     public ModelRenderer() {
     }
@@ -191,6 +191,15 @@ public class ModelRenderer extends Fragment
                 isCalibrating = false;
             }
         }.start();
+
+        Float[] accSet = VrGlove.getDataSet().get("Acc");
+        if(accSet != null){
+            for (int i = 0; i< accSet.length; i++){
+                gravityV[i] = accSet[i];
+            }
+        }else{
+            gravityV = new float[3];
+        }
 
     }
 
@@ -381,7 +390,11 @@ public class ModelRenderer extends Fragment
             float[] rotationM = getRotationMatrixFromAngles(tmpAngles);
 
             float[] accDataPostRotation = removeRotation(accSet != null ? accSet : new Float[3], rotationM);
-            accDataPostRotation[2] -= 0.98f;
+
+            for (int i = 0; i<accDataPostRotation.length; i++ ){
+                accDataPostRotation[i] -= gravityV[i];
+            }
+
 
             float[] invMatrix = invertMatrix(rotationM);
             float[] accDataWithoutG;
