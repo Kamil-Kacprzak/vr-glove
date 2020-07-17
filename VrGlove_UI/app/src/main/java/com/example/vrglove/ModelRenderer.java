@@ -157,6 +157,7 @@ public class ModelRenderer extends Fragment
         accAngles = new float[3];
         gyroAngles= new float[3];
         modelAngles= new float[3];
+        assignModelToNode(models[0]);
 
         new CountDownTimer(3000,1000) {
             private Toast cdMsgToast = null;

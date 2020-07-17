@@ -19,13 +19,24 @@
         android:layout_gravity="bottom|end">
 
         <Switch
+            android:id="@+id/rotationSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:text="@string/rotation"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:checked="true"
+            android:textColor="@color/WhiteSmoke"/>
+
+        <Switch
             android:id="@+id/positionSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:switchMinWidth="56dp"
             android:text="@string/positioning"
             android:layout_marginTop="35dp"
-            android:checked="true"
+            android:checked="false"
             android:textColor="@color/WhiteSmoke"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
