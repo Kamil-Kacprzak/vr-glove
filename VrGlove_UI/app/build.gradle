@@ -40,12 +40,27 @@ dependencies {
 
 }
 
-sceneform.asset('sampledata/Final_hand_L.gltf',
-        'default',
-        'sampledata/Final_hand_L.sfa',
-        'src/main/assets/Final_hand_L')
-
 sceneform.asset('sampledata/ThumbsUp_hand_L.obj',
         'default',
         'sampledata/ThumbsUp_hand_L.sfa',
         'src/main/assets/ThumbsUp_hand_L')
+
+sceneform.asset('sampledata/OpenPalm_hand_L.obj',
+        'default',
+        'sampledata/OpenPalm_hand_L.sfa',
+        'src/main/assets/OpenPalm_hand_L')
+
+sceneform.asset('sampledata/Peace_hand_L.obj',
+        'default',
+        'sampledata/Peace_hand_L.sfa',
+        'src/main/assets/Peace_hand_L')
+
+sceneform.asset('sampledata/Fist_hand_L.obj',
+        'default',
+        'sampledata/Fist_hand_L.sfa',
+        'src/main/assets/Fist_hand_L')
+
+sceneform.asset('sampledata/Mahalo_hand_L.obj',
+        'default',
+        'sampledata/Mahalo_hand_L.sfa',
+        'src/main/assets/Mahalo_hand_L')

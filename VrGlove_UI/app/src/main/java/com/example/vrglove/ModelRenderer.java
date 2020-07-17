@@ -181,7 +181,7 @@ public class ModelRenderer extends Fragment
                 ModelRenderable.builder()
                         .setSource(getContext(), Uri.parse(s))
                         .build()
-                        .thenAccept(this::onRenderableLoades)
+                        .thenAccept(renderable -> onRenderableLoades(renderable,s))
                         .exceptionally(
                                 throwable -> {
                                     Log.e("Model", "Unable to load Renderable.", throwable);
@@ -231,8 +231,11 @@ public class ModelRenderer extends Fragment
     }
 
     private void assignModelNames() {
-        modelNames[0] = "Final_hand_L.sfb";
-        modelNames[1] = "ThumbsUp_hand_L.sfb";
+        modelNames[0] = "OpenPalm_hand_L.sfb";
+        modelNames[1] = "Fist_hand_L.sfb";
+        modelNames[2] = "Peace_hand_L.sfb";
+        modelNames[3] = "Mahalo_hand_L.sfb";
+        modelNames[4] = "ThumbsUp_hand_L.sfb";
     }
 
     private void startDataListener() {
@@ -283,8 +286,13 @@ public class ModelRenderer extends Fragment
             }
 
             //TODO: Recognize fingers patterns
-            if(fingersReadings[1] > 500.0f){
+            ModelRenderable m = null;
+            if(fingersReadings[1] > 560.0f){
                 replace = true;
+                m = models[3];
+            }else if(fingersReadings[1] < 390.0f){
+                replace = true;
+                m = models[4];
             }else{
                 replace = false;
             }
@@ -293,7 +301,6 @@ public class ModelRenderer extends Fragment
             //TODO: Replace model number with parameter
             if(replace && !replacingInProgress){
                 replacingInProgress = true;
-                ModelRenderable m = models[1];
                 assignModelToNode(m);
             }
         }
@@ -484,15 +491,18 @@ public class ModelRenderer extends Fragment
         return result;
     }
 
-    private void onRenderableLoades(ModelRenderable finalHandRenderable) {
+    private void onRenderableLoades(ModelRenderable finalHandRenderable, String s) {
         if(finalHandRenderable == null){
             Log.e("ModelThenAcceptFunc", "Renderable is null");
             return;
         }
-
+        for(int i = 0; i < modelNames.length; i++){
+            if(modelNames[i].equals(s)){
+                modelsCount = i;
+            }
+        }
         finalHandRenderable.setShadowReceiver(false);
         this.models[modelsCount] = finalHandRenderable;
-        modelsCount++;
     }
 
     @Override
