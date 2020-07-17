@@ -3,9 +3,10 @@ package com.example.vrglove;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
 import android.bluetooth.BluetoothGattService;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -21,61 +22,66 @@ public class VrGlove {
     private static BluetoothDevice device;
     private static BluetoothGatt gatt;
     private static int gattState;
-    private static boolean mIsStateChanged;
+    private volatile static boolean mIsStateChanged;
+    private volatile static boolean mIsFingersReadings;
     private static List<BluetoothGattService> services;
     private static byte[] gyroReadings; //2102
     private static byte[] accReadings; //2101
     private static byte[] fingersReadings; //2103
     private static View vw;
+    public static boolean init = true;
+    private static FloatingActionButton myFab;
 
-    private static HashMap<String,Float[]> dataSet = new HashMap<>();
 
-    public VrGlove(BluetoothDevice device, View vw){
-        this.device = device;
-        this.vw = vw;
-        this.mIsStateChanged =false;
+    private volatile static HashMap<String,Float[]> dataSet = new HashMap<>();
+
+     VrGlove(BluetoothDevice device, View vw){
+         VrGlove.device = device;
+         VrGlove.vw = vw;
+        VrGlove.mIsStateChanged =false;
+         VrGlove.mIsFingersReadings = false;
     }
 
-    public static BluetoothGatt getGatt() {
+     static BluetoothGatt getGatt() {
         return gatt;
     }
 
-    public static void setGatt(BluetoothGatt gatt) {
+     static void setGatt(BluetoothGatt gatt) {
         VrGlove.gatt = gatt;
     }
 
-    public static int getGattState() {
+     static int getGattState() {
         return gattState;
     }
 
-    public static void setGattState(int gattState) {
+     static void setGattState(int gattState) {
         VrGlove.gattState = gattState;
     }
 
-    public static List<BluetoothGattService> getServices() {
+    static List<BluetoothGattService> getServices() {
         return services;
     }
 
-    public static void setServices(List<BluetoothGattService> services) {
+     static void setServices(List<BluetoothGattService> services) {
         VrGlove.services = services;
     }
 
-    public static void setGyroReadings(byte[] gyroReadings) {
+     static void setGyroReadings(byte[] gyroReadings) {
         VrGlove.gyroReadings = gyroReadings;
         getGyroReadings();
     }
 
-    public static void setAccReadings(byte[] accReadings) {
+     static void setAccReadings(byte[] accReadings) {
         VrGlove.accReadings = accReadings;
         getAccReadings();
     }
 
-    public static void setFingersReadings(byte[] fingersReadings) {
+     static void setFingersReadings(byte[] fingersReadings) {
         VrGlove.fingersReadings = fingersReadings;
         getFingersReadings();
     }
 
-    public static void getGyroReadings() {
+    private static void getGyroReadings() {
         TextView x =  vw.findViewById(R.id.textView_gyr_X);
         TextView y =  vw.findViewById(R.id.textView_gyr_Y);
         TextView z =  vw.findViewById(R.id.textView_gyr_Z);
@@ -93,14 +99,17 @@ public class VrGlove {
         data[2] = f;
 
         dataSet.put("Gyro",data);
+        setmIsStateChanged(true);
     }
 
-    public static void getAccReadings() {
+    private static void getAccReadings() {
+        ModelRenderer.setCurrentTimestamp(System.nanoTime());
         TextView x =  vw.findViewById(R.id.textView_acc_X);
         TextView y =  vw.findViewById(R.id.textView_acc_Y);
         TextView z =  vw.findViewById(R.id.textView_acc_Z);
 
         Float[] data = new Float[3];
+
 
         float f = ByteBuffer.wrap(accReadings,0,4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
         data[0] = f;
@@ -113,9 +122,17 @@ public class VrGlove {
          z.setText(String.format("Z:%.2f",f));
 
         dataSet.put("Acc",data);
+        if(init){
+            myFab = vw.findViewById(R.id.fab);
+            if(myFab != null){
+                myFab.callOnClick();
+                init = false;
+            }
+        }
+        setmIsStateChanged(true);
     }
 
-    public static void getFingersReadings() {
+    private static void getFingersReadings() {
         TextView thumb =  vw.findViewById(R.id.textView_thumb_reading);
         TextView index =  vw.findViewById(R.id.textView_index_reading);
         TextView middle =  vw.findViewById(R.id.textView_middle_reading);
@@ -140,7 +157,9 @@ public class VrGlove {
         data[4] = f;
         pinky.setText(String.format("%.0f",f));
 
+        //Thumb,Index,Middle,Ring,Pinky
         dataSet.put("Fingers",data);
+        setmIsFingersReadings(true);
     }
 
     public static boolean ismIsStateChanged() {
@@ -149,5 +168,17 @@ public class VrGlove {
 
     public static void setmIsStateChanged(boolean mIsStateChanged) {
         VrGlove.mIsStateChanged = mIsStateChanged;
+    }
+
+    public static boolean ismIsFingersReadings() {
+        return mIsFingersReadings;
+    }
+
+    public static void setmIsFingersReadings(boolean mIsFingersReadings) {
+        VrGlove.mIsFingersReadings = mIsFingersReadings;
+    }
+
+    public static HashMap<String, Float[]> getDataSet() {
+        return dataSet;
     }
 }

@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 28
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.vrglove"
-        minSdkVersion 23
-        targetSdkVersion 29
+        minSdkVersion 24
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -18,19 +19,48 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+	api project(":sceneformux")
+    implementation "com.android.support:appcompat-v7:28.0.0"
+
 }
+
+sceneform.asset('sampledata/ThumbsUp_hand_L.obj',
+        'default',
+        'sampledata/ThumbsUp_hand_L.sfa',
+        'src/main/assets/ThumbsUp_hand_L')
+
+sceneform.asset('sampledata/OpenPalm_hand_L.obj',
+        'default',
+        'sampledata/OpenPalm_hand_L.sfa',
+        'src/main/assets/OpenPalm_hand_L')
+
+sceneform.asset('sampledata/Peace_hand_L.obj',
+        'default',
+        'sampledata/Peace_hand_L.sfa',
+        'src/main/assets/Peace_hand_L')
+
+sceneform.asset('sampledata/Fist_hand_L.obj',
+        'default',
+        'sampledata/Fist_hand_L.sfa',
+        'src/main/assets/Fist_hand_L')
+
+sceneform.asset('sampledata/Mahalo_hand_L.obj',
+        'default',
+        'sampledata/Mahalo_hand_L.sfa',
+        'src/main/assets/Mahalo_hand_L')
