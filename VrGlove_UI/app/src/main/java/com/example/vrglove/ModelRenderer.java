@@ -3,10 +3,6 @@ package com.example.vrglove;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,8 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Switch;
 import android.widget.Toast;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.ar.core.exceptions.CameraNotAvailableException;
 import com.google.ar.sceneform.Camera;
 import com.google.ar.sceneform.Node;
@@ -23,6 +21,8 @@ import com.google.ar.sceneform.SceneView;
 import com.google.ar.sceneform.math.Quaternion;
 import com.google.ar.sceneform.math.Vector3;
 import com.google.ar.sceneform.rendering.ModelRenderable;
+
+import java.util.Objects;
 
 import static java.lang.Math.PI;
 import static java.lang.Math.atan;
@@ -48,10 +48,8 @@ public class ModelRenderer extends Fragment
     private View vw;
     private SceneView sceneView;
     private ModelRenderable[] models;
-    private Camera camera;
     private Node coreNode, renderedNow;
-    private int c;
-    private String[] modelName;
+    private String[] modelNames;
     private static int modelsCount = 0;
 
     //Animation
@@ -93,9 +91,6 @@ public class ModelRenderer extends Fragment
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-
-        }
     }
 
     @Override
@@ -110,13 +105,13 @@ public class ModelRenderer extends Fragment
         pos = new float[3];
 
         models = new ModelRenderable[5];
-        modelName = new String[5];
+        modelNames = new String[5];
 
 
-        FloatingActionButton myFab = (FloatingActionButton) vw.findViewById(R.id.fab);
+        FloatingActionButton myFab = vw.findViewById(R.id.fab);
         myFab.setOnClickListener(v -> fabListener());
 
-        Switch posSwitch = (Switch) vw.findViewById(R.id.positionSwitch);
+        Switch posSwitch = vw.findViewById(R.id.positionSwitch);
         posSwitch.setOnClickListener(v -> switchListener(posSwitch, myFab));
 
         isCalibrating = false;
@@ -126,11 +121,7 @@ public class ModelRenderer extends Fragment
     }
 
     private void switchListener(Switch posSwitch, FloatingActionButton myFab) {
-        if(posSwitch.isChecked()){
-            renderPosition = true;
-        }else{
-            renderPosition = false;
-        }
+        renderPosition = posSwitch.isChecked();
         myFab.callOnClick();
     }
 
@@ -146,7 +137,7 @@ public class ModelRenderer extends Fragment
         gyroAngles= new float[3];
         modelAngles= new float[3];
 
-        CountDownTimer cd = new CountDownTimer(3000,1000) {
+        new CountDownTimer(3000,1000) {
             private Toast cdMsgToast = null;
             @Override
             public void onTick(long l) {
@@ -182,9 +173,31 @@ public class ModelRenderer extends Fragment
     }
 
     private void generateSceneView() {
-        c = ContextCompat.getColor(getContext(), R.color.WhiteSmoke);
+        renderView();
+        assignModelNames();
+
+        for (String s : modelNames) {
+            if (s != null && !s.equals("")) {
+                ModelRenderable.builder()
+                        .setSource(getContext(), Uri.parse(s))
+                        .build()
+                        .thenAccept(this::onRenderableLoades)
+                        .exceptionally(
+                                throwable -> {
+                                    Log.e("Model", "Unable to load Renderable.", throwable);
+                                    return null;
+                                });
+            }
+        }
+
+        loadStartingModel();
+
+        new Thread (this::startDataListener).start();
+    }
+
+    private void renderView() {
         sceneView = vw.findViewById(R.id.scene_view);
-        camera = sceneView.getScene().getCamera();
+        Camera camera = sceneView.getScene().getCamera();
         sceneView.getScene().addChild(camera);
 
         coreNode = new Node();
@@ -194,41 +207,39 @@ public class ModelRenderer extends Fragment
         Quaternion rotation2 = Quaternion.axisAngle(new Vector3(1.0f, 0.0f, 0.0f), 90f);
         coreNode.setLocalRotation(Quaternion.multiply(rotation1, rotation2));
         sceneView.getScene().addChild(coreNode);
+    }
 
-        //TODO
-        modelName[0] = "Final_hand_L.sfb";
-        modelName[1] = "ThumbsUp_hand_L.sfb";
-//        for (int i = 0; i< modelName.length; i++){
-        for (int i = 0; i< 2; i++){
+    private void loadStartingModel() {
+        new Thread(() -> {
+            while(models[0] == null){
+                try{
+                    Thread.sleep(100);
+                }catch(InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
 
-                ModelRenderable.builder()
-                .setSource(getContext(),Uri.parse(modelName[i]))
-                .build()
-                .thenAccept(this::onRenderableLoades)
-                .exceptionally(
-                        throwable -> {
-                            Log.e("Model", "Unable to load Renderable.", throwable);
-                            return null;
-                        });
-        }
+            Objects.requireNonNull(getActivity()).runOnUiThread(() ->{
+                Node render = new Node();
+                render.setRenderable(models[0]);
+                renderedNow = render;
 
-        Node render = new Node();
-        render.setRenderable(models[0]);
-        renderedNow = render;
+                coreNode.addChild(render);
+                replacingInProgress = false;
+            } );
+        }).start();
+    }
 
-        coreNode.addChild(render);
-        replacingInProgress = false;
-
-        camera.setLocalPosition(new Vector3(0.0f,0.0f,0.0f));
-
-        new Thread (()-> startDataListener()).start();
-
+    private void assignModelNames() {
+        modelNames[0] = "Final_hand_L.sfb";
+        modelNames[1] = "ThumbsUp_hand_L.sfb";
     }
 
     private void startDataListener() {
         while(true){
             if(!isCalibrating){
                 if(VrGlove.ismIsStateChanged()){
+                    //TODO: Add orientation flag and button to determine 1/0 Orientation
                     Quaternion[] quat = new Quaternion[3];
 
                     calculateRotation();
@@ -249,7 +260,6 @@ public class ModelRenderer extends Fragment
                     replaceModel();
                     VrGlove.setmIsFingersReadings(false);
                 }
-
             }
         }
     }
@@ -258,47 +268,31 @@ public class ModelRenderer extends Fragment
         boolean replace;
 
         Float[] fingersSet = VrGlove.getDataSet().get("Fingers");
-        if(fingersSet != null && models != null){
-            for(int i = 0; i<fingersSet.length; i++){
-                if(fingersSet[i] < sensorsBoundarySettings[i][0]){
-                    fingersSet[i] = sensorsBoundarySettings[i][0];
-                }else if(fingersSet[i] > sensorsBoundarySettings[i][1]){
-                    fingersSet[i] = sensorsBoundarySettings[i][1];
+        float[] fingersReadings = new float[5];
+        for (int i = 0; i< (fingersSet != null ? fingersSet.length : 0); i++){
+            fingersReadings[i] = fingersSet[i];
+        }
+
+        if(fingersReadings[0] != 0.0f && models != null){
+            for(int i = 0; i<fingersReadings.length; i++){
+                if(fingersReadings[i] < sensorsBoundarySettings[i][0]){
+                    fingersReadings[i] = sensorsBoundarySettings[i][0];
+                }else if(fingersReadings[i] > sensorsBoundarySettings[i][1]){
+                    fingersReadings[i] = sensorsBoundarySettings[i][1];
                 }
             }
 
             //TODO: Recognize fingers patterns
-            if(fingersSet[1] > 500.0f){
+            if(fingersReadings[1] > 500.0f){
                 replace = true;
             }else{
                 replace = false;
             }
 
 
-            //TODO: Replace model with parameter
-
+            //TODO: Replace model number with parameter
             if(replace && !replacingInProgress){
                 replacingInProgress = true;
-//                modelName = "ThumbsUp_hand_L.sfb";
-
-//                Objects.requireNonNull(getActivity()).runOnUiThread(() -> {
-//                    try {
-//                        final ModelRenderable model = ModelRenderable.builder()
-//                                .setSource(getContext(), Uri.parse(modelName))
-//                                .build()
-//                                .get();
-//                        assignModelToNode(model);
-//                    } catch (ExecutionException e) {
-//                        Log.e("Model", "Execution: Unable to load Renderable.\n");
-//                        e.printStackTrace();
-//                    } catch (InterruptedException e) {
-//                        Log.e("Model", "Interrupted: Unable to load Renderable.\n");
-//                        e.printStackTrace();
-//                    }catch (Exception e) {
-//                        Log.e("Model", "WTF: Unable to load Renderable.\n");
-//                        e.printStackTrace();
-//                    }
-//                });
                 ModelRenderable m = models[1];
                 assignModelToNode(m);
             }
@@ -307,13 +301,11 @@ public class ModelRenderer extends Fragment
 
     private void assignModelToNode(ModelRenderable modelRenderable) {
         if(modelRenderable == null){
-            Log.e("ModelThenAcceptFunc", "Renderable is null");
+            Log.e("ModelReplace", "Renderable is null");
             return;
         }
 
-        modelRenderable.setShadowReceiver(false);
-
-        getActivity().runOnUiThread(() ->{
+        Objects.requireNonNull(getActivity()).runOnUiThread(() ->{
                     Node render = new Node();
                     render.setRenderable(modelRenderable);
                     coreNode.removeChild(renderedNow);
@@ -331,7 +323,7 @@ public class ModelRenderer extends Fragment
             float[] tmpAngles = modelAngles;
             float[] rotationM = getRotationMatrixFromAngles(tmpAngles);
 
-            float[] accDataPostRotation = removeRotation(accSet, rotationM);
+            float[] accDataPostRotation = removeRotation(accSet != null ? accSet : new Float[3], rotationM);
             accDataPostRotation[2] -= 0.98f;
 
             float[] invMatrix = invertMatrix(rotationM);
@@ -501,13 +493,6 @@ public class ModelRenderer extends Fragment
         finalHandRenderable.setShadowReceiver(false);
         this.models[modelsCount] = finalHandRenderable;
         modelsCount++;
-
-//        Node render = new Node();
-//        render.setRenderable(finalHandRenderable);
-//        renderedNow = render;
-//
-//        coreNode.addChild(render);
-//        replacingInProgress = false;
     }
 
     @Override
@@ -523,12 +508,6 @@ public class ModelRenderer extends Fragment
             sceneView.resume();
         } catch (CameraNotAvailableException e) {
             e.printStackTrace();
-        }
-    }
-
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
         }
     }
 
