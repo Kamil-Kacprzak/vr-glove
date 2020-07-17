@@ -48,6 +48,7 @@ public class ModelRenderer extends Fragment
     private View vw;
     private SceneView sceneView;
     private ModelRenderable[] models;
+    private ModelRenderable currentModel;
     private Node coreNode, renderedNow;
     private String[] modelNames;
     private static int modelsCount = 0;
@@ -56,7 +57,7 @@ public class ModelRenderer extends Fragment
     private boolean isCalibrating, replacingInProgress;
     private float[] accAngles, gyroAngles, modelAngles;
 
-    private static boolean renderPosition = true;
+    private static boolean renderPosition = false, renderRotation = true;
     private static final float dtNanoToSec = 1.0f / 1000000000.0f;
     private long lastTimestamp = 0;
     private static long currentTimestamp;
@@ -70,6 +71,14 @@ public class ModelRenderer extends Fragment
             {480,720},
             {470,720}
     };
+    private final int[][] modelRequirements =
+            {
+                    {1,1,1,1,1}, // Open hand
+                    {0,0,0,0,0}, // Fist
+                    {0,1,1,0,0}, // Peace
+                    {1,0,0,0,1}, // Mahalo
+                    {1,0,0,0,0}  // Thumb Up
+            };
 
 
     public ModelRenderer() {
@@ -112,7 +121,10 @@ public class ModelRenderer extends Fragment
         myFab.setOnClickListener(v -> fabListener());
 
         Switch posSwitch = vw.findViewById(R.id.positionSwitch);
-        posSwitch.setOnClickListener(v -> switchListener(posSwitch, myFab));
+        posSwitch.setOnClickListener(v -> posSwitchListener(posSwitch, myFab));
+
+        Switch rotSwitch = vw.findViewById(R.id.rotationSwitch);
+        rotSwitch.setOnClickListener(v -> rotSwitchListener(rotSwitch, myFab));
 
         isCalibrating = false;
         generateSceneView();
@@ -120,9 +132,18 @@ public class ModelRenderer extends Fragment
         return vw;
     }
 
-    private void switchListener(Switch posSwitch, FloatingActionButton myFab) {
+    private void posSwitchListener(Switch posSwitch, FloatingActionButton myFab) {
         renderPosition = posSwitch.isChecked();
         myFab.callOnClick();
+    }
+
+    private void rotSwitchListener(Switch posSwitch, FloatingActionButton myFab) {
+        renderRotation = posSwitch.isChecked();
+        myFab.callOnClick();
+
+        Quaternion rotation1 = Quaternion.axisAngle(new Vector3(0.0f, 0.0f, 1.0f), 90f);
+        Quaternion rotation2 = Quaternion.axisAngle(new Vector3(1.0f, 0.0f, 0.0f), 90f);
+        coreNode.setLocalRotation(Quaternion.multiply(rotation1, rotation2));
     }
 
     private void fabListener() {
@@ -223,6 +244,7 @@ public class ModelRenderer extends Fragment
                 Node render = new Node();
                 render.setRenderable(models[0]);
                 renderedNow = render;
+                currentModel = models[0];
 
                 coreNode.addChild(render);
                 replacingInProgress = false;
@@ -242,15 +264,16 @@ public class ModelRenderer extends Fragment
         while(true){
             if(!isCalibrating){
                 if(VrGlove.ismIsStateChanged()){
-                    //TODO: Add orientation flag and button to determine 1/0 Orientation
-                    Quaternion[] quat = new Quaternion[3];
+                   if(renderRotation){
+                        Quaternion[] quat = new Quaternion[3];
 
-                    calculateRotation();
-                    quat[0] = Quaternion.axisAngle(new Vector3(0.0f,0.0f,-1.0f),modelAngles[0]); // up/down
-                    quat[1] = Quaternion.axisAngle(new Vector3(1.0f,0.0f,0.0f),modelAngles[1]);
-                    quat[2] = Quaternion.axisAngle(new Vector3(0.0f,1.0f,0.0f),modelAngles[2]);
-                    Quaternion resultOrientation = Quaternion.multiply(Quaternion.multiply(quat[1],quat[0]),quat[2]);
-                    this.coreNode.setLocalRotation(resultOrientation);
+                        calculateRotation();
+                        quat[0] = Quaternion.axisAngle(new Vector3(0.0f,0.0f,-1.0f),modelAngles[0]); // up/down
+                        quat[1] = Quaternion.axisAngle(new Vector3(1.0f,0.0f,0.0f),modelAngles[1]);
+                        quat[2] = Quaternion.axisAngle(new Vector3(0.0f,1.0f,0.0f),modelAngles[2]);
+                        Quaternion resultOrientation = Quaternion.multiply(Quaternion.multiply(quat[1],quat[0]),quat[2]);
+                        this.coreNode.setLocalRotation(resultOrientation);
+                    }
 
                     if(renderPosition){
                         parseAccDataToDisplacement();
@@ -285,20 +308,9 @@ public class ModelRenderer extends Fragment
                 }
             }
 
-            //TODO: Recognize fingers patterns
-            ModelRenderable m = null;
-            if(fingersReadings[1] > 560.0f){
-                replace = true;
-                m = models[3];
-            }else if(fingersReadings[1] < 390.0f){
-                replace = true;
-                m = models[4];
-            }else{
-                replace = false;
-            }
+            ModelRenderable m = recognizeFingersPatterns(fingersReadings);
+            replace = m != null;
 
-
-            //TODO: Replace model number with parameter
             if(replace && !replacingInProgress){
                 replacingInProgress = true;
                 assignModelToNode(m);
@@ -306,12 +318,49 @@ public class ModelRenderer extends Fragment
         }
     }
 
+    private ModelRenderable recognizeFingersPatterns(float[] fingersReadings) {
+        ModelRenderable m = null;
+        int[] pattern = new int[5];
+
+        // Set 0 for bent finger, 1 for straight, -1 for other values
+        for (int i =0; i < fingersReadings.length; i++){
+            if(fingersReadings[i] < sensorsBoundarySettings[i][0]+30.0f){
+                pattern[i] = 0;
+            }else if(fingersReadings[i] > sensorsBoundarySettings[i][1]-30.0f){
+                pattern[i] = 1;
+            }else{
+                pattern[i] = -1;
+            }
+        }
+
+        //Iterate over all models patterns, break if pattern was found
+        for(int[] i : modelRequirements){
+            //Iterate over pattern values, break if difference was found
+            for (int j = 0; j < i.length; j++){
+                if(i[j] != pattern[j]){
+                    break;
+                }
+                m = models[j];
+            }
+            if(m != null){
+                break;
+            }
+        }
+
+        //Return model if it's different than current one and not null
+        if (m != null){
+            if(m != currentModel){
+                return m;
+            }
+        }
+        return null;
+    }
+
     private void assignModelToNode(ModelRenderable modelRenderable) {
         if(modelRenderable == null){
             Log.e("ModelReplace", "Renderable is null");
             return;
         }
-
         Objects.requireNonNull(getActivity()).runOnUiThread(() ->{
                     Node render = new Node();
                     render.setRenderable(modelRenderable);
