@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+	package
+		ADDED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:19:5-41
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+		ADDED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+		ADDED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:17:1-20:12
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml:18:5-63
+uses-sdk
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+		ADDED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+		ADDED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
+		INJECTED from E:\Projects\VR_Glove\VrGlove_UI\sceneformux\ux\src\main\AndroidManifest.xml
