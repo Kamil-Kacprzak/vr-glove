@@ -1,0 +1,22 @@
+@MISC{ Tomaszewski1999,
+	author = "Tomaszewski, Michał",
+	title = "VRML i JAVA (Zastosowania techniki programistycznej Java w tworzeniu rzeczywistości wirtualnej światów VRML",
+	year = "1999",
+}
+
+@CONFERENCE{ Tomaszewski1998,
+	author = "Tomaszewski, Michał",
+	title = "Zastosowania multimediów w języku JAVA",
+	booktitle = "INFO FESTIWAL 98",
+	year = "1998"
+}
+
+@ARTICLE{ Tomaszewski2000,
+	author = "Tomaszewski, Michał",
+	title = "Java w komputerach naręcznych",
+	journal = "Software 2.0",
+	year = "2000",
+	volume = "65",
+	number = "5/2000",
+	month = "May"
+}

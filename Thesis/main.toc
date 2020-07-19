@@ -1,6 +1,9 @@
+\babel@toc {english}{}
 \babel@toc {polish}{}
-\contentsline {chapter}{\numberline {1}Zagadnienia wykorzystania szablonu}{3}%
-\contentsline {section}{\numberline {1.1}Structure}{3}%
-\contentsline {subsection}{\numberline {1.1.1}Top Matter}{3}%
-\contentsline {subsubsection}{Wypunktowanie}{3}%
-\contentsline {section}{\numberline {1.2}Minimalizacja parametrów funkcji plenoptycznej}{3}%
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Zagadnienia wykorzystania szablonu}{1}%
+\contentsline {section}{\numberline {1.1}Structure}{1}%
+\contentsline {subsection}{\numberline {1.1.1}Top Matter}{1}%
+\contentsline {subsubsection}{Wypunktowanie}{1}%
+\contentsline {section}{\numberline {1.2}Minimalizacja parametrów funkcji plenoptycznej}{1}%
+\babel@toc {polish}{}
