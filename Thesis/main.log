@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  21 JUL 2020 12:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  21 JUL 2020 15:57
 entering extended mode
 **./main.tex
 (main.tex
@@ -695,7 +695,8 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (main.aux
 (Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
-(Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
+(Chapters/Komponenty.aux) (Chapters/Projekt_rekawicy.aux)
+(Chapters/Dedykowana_aplikacja.aux) (Chapters/Podsumowanie.aux)
 (Chapters/_Rozdzial_I.aux))
 \openout1 = `main.aux'.
 
@@ -768,25 +769,24 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 \c@lstlisting=\count292
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
- (main.toc)
+ (main.toc [1
+
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [1
-
-
-] [2] (main.lof)
+ [2] [3] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
-
-[3
+[4
 
 
 ]
 \openout2 = `Chapters/Abstrakt.aux'.
 
- (Chapters/Abstrakt.tex) [4
+ (Chapters/Abstrakt.tex) [5
 
 ]
 \openout2 = `Chapters/Wstep.aux'.
@@ -812,11 +812,25 @@ Rozdzia\l  2.
 
 
 ]
+\openout2 = `Chapters/Komponenty.aux'.
+
+ (Chapters/Komponenty.tex
+Rozdzia\l  3.
+) [4
+
+
+
+]
 \openout2 = `Chapters/Projekt_rekawicy.aux'.
 
  (Chapters/Projekt_rekawicy.tex
-Rozdzia\l  3.
-) [4
+Rozdzia\l  4.
+
+Overfull \hbox (2.32173pt too wide) in paragraph at lines 6--6
+[]\T1/ptm/b/n/17.28 Przegl¡d pod-ze-spo-ªów i tech-no-lo-gii u»y-tej w pro-
+ []
+
+) [5
 
 
 
@@ -824,8 +838,20 @@ Rozdzia\l  3.
 \openout2 = `Chapters/Dedykowana_aplikacja.aux'.
 
  (Chapters/Dedykowana_aplikacja.tex
-Rozdzia\l  4.
-) [5
+Rozdzia\l  5.
+
+LaTeX Warning: Marginpar on page 6 moved.
+
+) [6
+
+
+
+]
+\openout2 = `Chapters/Podsumowanie.aux'.
+
+ (Chapters/Podsumowanie.tex
+Rozdzia\l  6.
+) [7
 
 
 
@@ -833,12 +859,12 @@ Rozdzia\l  4.
 \openout2 = `Chapters/_Rozdzial_I.aux'.
 
  (Chapters/_Rozdzial_I.tex
-Rozdzia\l  5.
+Rozdzia\l  7.
 
-LaTeX Warning: Marginpar on page 6 moved.
+LaTeX Warning: Marginpar on page 8 moved.
 
 
-LaTeX Warning: Marginpar on page 6 moved.
+LaTeX Warning: Marginpar on page 8 moved.
 
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -850,46 +876,47 @@ LaTeX Font Info:    Trying to load font information for T1+pcr on input line 22
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 
-LaTeX Warning: Marginpar on page 6 moved.
+LaTeX Warning: Marginpar on page 8 moved.
 
-<Images/mobile-banner.png, id=66, 516.93124pt x 241.90375pt>
+<Images/mobile-banner.png, id=76, 516.93124pt x 241.90375pt>
 File: Images/mobile-banner.png Graphic file (type png)
 <use Images/mobile-banner.png>
 Package pdftex.def Info: Images/mobile-banner.png  used on input line 29.
 (pdftex.def)             Requested size: 258.46498pt x 120.95157pt.
-) [6
+) [8
 
 
 
- <./Images/mobile-banner.png>] (main.bbl) [7
+ <./Images/mobile-banner.png>] (main.bbl) [9
 
 
 ] (main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [8
+ [10
 
 ] (main.aux
 (Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
-(Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
+(Chapters/Komponenty.aux) (Chapters/Projekt_rekawicy.aux)
+(Chapters/Dedykowana_aplikacja.aux) (Chapters/Podsumowanie.aux)
 (Chapters/_Rozdzial_I.aux)) ) 
 Here is how much of TeX's memory you used:
- 25780 strings out of 492482
- 502320 string characters out of 3130125
- 832478 words of memory out of 3000000
- 29731 multiletter control sequences out of 15000+200000
+ 25879 strings out of 492482
+ 504447 string characters out of 3130125
+ 843711 words of memory out of 3000000
+ 29816 multiletter control sequences out of 15000+200000
  582206 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,83p,982b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,12n,83p,982b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files (x86)/Miktex/fonts/enc/dvips/bas
 e/8r.enc}<E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/
 Program Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (
 x86)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (14 pages, 232833 bytes).
+Output written on main.pdf (17 pages, 241383 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 105 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

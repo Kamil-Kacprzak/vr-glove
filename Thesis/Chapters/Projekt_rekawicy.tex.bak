@@ -7,7 +7,7 @@
 \label{sec:przeglad}
 
 	\subsection{Mikrokontroler}
-	\label{subsec:arduino}
+	\label{subsec:mikrokontroler}
 	
 	
 	
@@ -30,8 +30,8 @@
 \label{sec:budowa}
 
 \section{Oprogramowanie mikrokontrolera}
-\label{sec:oprogramowanie}
+\section{sec:oprogramowanie}
 
 
 \section{Dalszy rozwój projektu}
-\label{sec:rozwojPro}
+\section{sec:rozwojPro}
