@@ -1,9 +1,13 @@
 \babel@toc {english}{}
 \babel@toc {polish}{}
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Zagadnienia wykorzystania szablonu}{1}%
-\contentsline {section}{\numberline {1.1}Structure}{1}%
-\contentsline {subsection}{\numberline {1.1.1}Top Matter}{1}%
-\contentsline {subsubsection}{Wypunktowanie}{1}%
-\contentsline {section}{\numberline {1.2}Minimalizacja parametrów funkcji plenoptycznej}{1}%
+\contentsline {chapter}{\numberline {1}Wstęp}{1}%
 \babel@toc {polish}{}
+\contentsline {chapter}{\numberline {2}Zagadnienia}{3}%
+\contentsline {chapter}{\numberline {3}Projekt rękawicy}{4}%
+\contentsline {chapter}{\numberline {4}Dedykowana aplikacja w systemie Android}{5}%
+\contentsline {chapter}{\numberline {5}Zagadnienia wykorzystania szablonu}{6}%
+\contentsline {section}{\numberline {5.1}Structure}{6}%
+\contentsline {subsection}{\numberline {5.1.1}Top Matter}{6}%
+\contentsline {subsubsection}{Wypunktowanie}{6}%
+\contentsline {section}{\numberline {5.2}Minimalizacja parametrów funkcji plenoptycznej}{6}%

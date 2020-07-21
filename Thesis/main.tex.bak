@@ -2,13 +2,16 @@
 %
 \usepackage{times}
 \usepackage[polish,english]{babel}
+%
 \usepackage{graphicx}
+\graphicspath{ {Images/} }
+%
 \usepackage{makeidx}
 \usepackage{xargs} 
 \usepackage{lipsum}
 \usepackage[pdftex,dvipsnames]{xcolor}
 %
-%TODO Remove line below for final version, and review after
+%TODO Show \thiswillnotshow notes, remove line below for final version, and review after
 \setlength {\marginparwidth }{2cm}
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes} % use \usepackage[disable]{todonotes} to switch off
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
@@ -38,22 +41,28 @@ numberstyle = \tiny,
 
 \author{Kamil Kacprzak}
 \album{s14004}
-\title{Rozwój technologii wirtualnej i rozszerzonej rzeczywistości na przykładzie rękawicy-kontrolera}
+\title{Rozwój technologii wirtualnej rzeczywistości na przykładzie rękawicy-kontrolera}
 \type{Praca inżynierska}
 \supervisor{dr inż. Michał Tomaszewski}
 \location{Warszawa}
 \date{Czerwiec, 2020}
 
 \begin{document}
+%\pagestyle{fancy}
 \selectlanguage{polish} 
 \tableofcontents
 \listoffigures
 %\listoftables
 
-\include{_Abstrakt}
-\selectlanguage{polish} 
+\include{Chapters/_Abstrakt}
 
-\include{_Rozdzial_I}
+\selectlanguage{polish} 
+\pagenumbering{arabic}
+\baselineskip=22pt
+\include{Chapters/Wstep}
+\include{Chapters/Zagadnienia}
+\include{Chapters/Projekt }
+\include{Chapters/_Rozdzial_I}
 
 %
 %

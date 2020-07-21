@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  20 JUL 2020 00:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  21 JUL 2020 12:37
 entering extended mode
 **./main.tex
 (main.tex
@@ -694,22 +694,24 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (main.aux
-(_Abstrakt.aux) (_Rozdzial_I.aux))
+(Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
+(Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
+(Chapters/_Rozdzial_I.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 46
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 50
 .
 
 ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1ptm.fd"
@@ -736,28 +738,28 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 <head.jpg, id=28, 417.7206pt x 62.1522pt>
 File: head.jpg Graphic file (type jpg)
 <use head.jpg>
-Package pdftex.def Info: head.jpg  used on input line 46.
+Package pdftex.def Info: head.jpg  used on input line 50.
 (pdftex.def)             Requested size: 334.17693pt x 49.72182pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 46.
+(Font)              <12> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 46.
+(Font)              <8> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 46.
+(Font)              <6> on input line 50.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 46.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 50.
 
 [1
 
@@ -765,7 +767,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 ] [2] ABD: EveryShipout initializing macros
 \c@lstlisting=\count292
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 48.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
  (main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -782,60 +784,112 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 
 
 ]
-\openout2 = `_Abstrakt.aux'.
+\openout2 = `Chapters/Abstrakt.aux'.
 
- (_Abstrakt.tex [4
+ (Chapters/Abstrakt.tex) [4
 
-] [5] [6]) [7]
-\openout2 = `_Rozdzial_I.aux'.
+]
+\openout2 = `Chapters/Wstep.aux'.
 
- (_Rozdzial_I.tex
+ (Chapters/Wstep.tex
 Rozdzia\l  1.
+[1
 
-LaTeX Warning: Marginpar on page viii moved.
 
 
-LaTeX Warning: Marginpar on page 1 moved.
+])
+Underfull \hbox (badness 10000) in paragraph at lines 7--62
+
+ []
+
+[2]
+\openout2 = `Chapters/Zagadnienia.aux'.
+
+ (Chapters/Zagadnienia.tex
+Rozdzia\l  2.
+) [3
+
+
+
+]
+\openout2 = `Chapters/Projekt_rekawicy.aux'.
+
+ (Chapters/Projekt_rekawicy.tex
+Rozdzia\l  3.
+) [4
+
+
+
+]
+\openout2 = `Chapters/Dedykowana_aplikacja.aux'.
+
+ (Chapters/Dedykowana_aplikacja.tex
+Rozdzia\l  4.
+) [5
+
+
+
+]
+\openout2 = `Chapters/_Rozdzial_I.aux'.
+
+ (Chapters/_Rozdzial_I.tex
+Rozdzia\l  5.
+
+LaTeX Warning: Marginpar on page 6 moved.
+
+
+LaTeX Warning: Marginpar on page 6 moved.
 
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 24
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 22
 .
 
 ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [1
+)
+
+LaTeX Warning: Marginpar on page 6 moved.
+
+<Images/mobile-banner.png, id=66, 516.93124pt x 241.90375pt>
+File: Images/mobile-banner.png Graphic file (type png)
+<use Images/mobile-banner.png>
+Package pdftex.def Info: Images/mobile-banner.png  used on input line 29.
+(pdftex.def)             Requested size: 258.46498pt x 120.95157pt.
+) [6
 
 
 
-] (main.bbl)
-[2
+ <./Images/mobile-banner.png>] (main.bbl) [7
 
 
 ] (main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [3
+ [8
 
-] (main.aux (_Abstrakt.aux) (_Rozdzial_I.aux)) ) 
+] (main.aux
+(Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
+(Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
+(Chapters/_Rozdzial_I.aux)) ) 
 Here is how much of TeX's memory you used:
- 25698 strings out of 492482
- 499906 string characters out of 3130125
- 824863 words of memory out of 3000000
- 29679 multiletter control sequences out of 15000+200000
- 583284 words of font info for 66 fonts, out of 3000000 for 9000
+ 25780 strings out of 492482
+ 502320 string characters out of 3130125
+ 832478 words of memory out of 3000000
+ 29731 multiletter control sequences out of 15000+200000
+ 582206 words of font info for 65 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,11n,83p,513b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/Program Files (x86)/Miktex/
-fonts/enc/dvips/base/8r.enc}<E:/Program Files (x86)/Miktex/fonts/type1/urw/cour
-ier/ucrr8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb>
-<E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Fil
-es (x86)/Miktex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (12 pages, 144365 bytes).
+ 68i,11n,83p,982b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
+{E:/Program Files (x86)/Miktex/fonts/enc/dvips/bas
+e/8r.enc}<E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/
+Program Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (
+x86)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (14 pages, 232833 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

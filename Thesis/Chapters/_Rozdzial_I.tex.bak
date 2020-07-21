@@ -16,14 +16,20 @@
 
 \change{Delete it after first real citation}
 \unsure{Check after few pages if notes width command affects text}
-Jak to właściwie działa~\cite{Tomaszewski2000}
-\pagenumbering{arabic}
-\baselineskip=22pt
+Jak to właściwie działa, gdy odwołuje się do obrazu~\ref{fig:mobile}~\cite{Tomaszewski2000}
 
 \change{Remove code block after first real use}
 \begin{lstlisting}[language = Java , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
 Code goes here
 \end{lstlisting}
+
+\change{Remove picture after first real usage}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{mobile-banner}
+\caption{A picture of mobile}
+\label{fig:mobile}
+\end{figure}
 
 
 \section{Minimalizacja parametrów funkcji plenoptycznej}
