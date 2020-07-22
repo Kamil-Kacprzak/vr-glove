@@ -15,30 +15,30 @@
 \contentsline {subsection}{\numberline {3.2.3}Magnetometr}{4}%
 \contentsline {section}{\numberline {3.3}Stopnie swobody}{4}%
 \contentsline {section}{\numberline {3.4}Porównanie mikrokontrolerów}{4}%
+\contentsline {section}{\numberline {3.5}Monitorowanie położenia palców}{4}%
 \contentsline {chapter}{\numberline {4}Projekt rękawicy}{5}%
 \contentsline {section}{\numberline {4.1}Przegląd podzespołów i technologii użytej w projekcie}{5}%
-\contentsline {subsection}{\numberline {4.1.1}Mikrokontroler}{5}%
-\contentsline {subsection}{\numberline {4.1.2}Czujnik wygięcia}{5}%
-\contentsline {subsection}{\numberline {4.1.3}Rezystor}{5}%
-\contentsline {subsection}{\numberline {4.1.4}Połączenie podzespołów}{5}%
-\contentsline {section}{\numberline {4.2}Budowa rękawicy}{5}%
-\contentsline {section}{\numberline {4.3}Oprogramowanie mikrokontrolera}{5}%
-\contentsline {section}{\numberline {4.4}Dalszy rozwój projektu}{5}%
-\contentsline {chapter}{\numberline {5}Dedykowana aplikacja w systemie Android}{6}%
-\contentsline {section}{\numberline {5.1}Interfejs}{6}%
-\contentsline {section}{\numberline {5.2}Komunikacja}{6}%
-\contentsline {subsection}{\numberline {5.2.1}Porównanie Bluetooth z Bluetooth Low Energy(BLE)}{6}%
-\contentsline {subsection}{\numberline {5.2.2}Pobieranie danych}{6}%
-\contentsline {section}{\numberline {5.3}Google Sceneform SDK}{6}%
-\contentsline {subsection}{\numberline {5.3.1}Model ręki}{6}%
-\contentsline {subsection}{\numberline {5.3.2}Rozpoznanie i animacja modelu}{6}%
-\contentsline {subsection}{\numberline {5.3.3}Dodawanie nowego modelu}{6}%
-\contentsline {subsection}{\numberline {5.3.4}Rotacja}{6}%
-\contentsline {subsection}{\numberline {5.3.5}Przesunięcie}{6}%
-\contentsline {section}{\numberline {5.4}Dalszy rozwój aplikacji}{6}%
-\contentsline {chapter}{\numberline {6}Podsumowanie}{7}%
-\contentsline {chapter}{\numberline {7}Zagadnienia wykorzystania szablonu}{8}%
-\contentsline {section}{\numberline {7.1}Structure}{8}%
-\contentsline {subsection}{\numberline {7.1.1}Top Matter}{8}%
-\contentsline {subsubsection}{Wypunktowanie}{8}%
-\contentsline {section}{\numberline {7.2}Minimalizacja parametrów funkcji plenoptycznej}{8}%
+\contentsline {subsection}{\numberline {4.1.1}Mikrokontroler}{6}%
+\contentsline {subsection}{\numberline {4.1.2}Czujnik wygięcia}{8}%
+\contentsline {subsection}{\numberline {4.1.3}Rezystor}{10}%
+\contentsline {section}{\numberline {4.2}Budowa rękawicy}{12}%
+\contentsline {section}{\numberline {4.3}Oprogramowanie mikrokontrolera}{15}%
+\contentsline {section}{\numberline {4.4}Dalszy rozwój projektu}{15}%
+\contentsline {chapter}{\numberline {5}Dedykowana aplikacja w systemie Android}{17}%
+\contentsline {section}{\numberline {5.1}Interfejs}{17}%
+\contentsline {section}{\numberline {5.2}Komunikacja}{17}%
+\contentsline {subsection}{\numberline {5.2.1}Porównanie Bluetooth z Bluetooth Low Energy(BLE)}{17}%
+\contentsline {subsection}{\numberline {5.2.2}Pobieranie danych}{17}%
+\contentsline {section}{\numberline {5.3}Google Sceneform SDK}{17}%
+\contentsline {subsection}{\numberline {5.3.1}Model ręki}{17}%
+\contentsline {subsection}{\numberline {5.3.2}Rozpoznanie i animacja modelu}{17}%
+\contentsline {subsection}{\numberline {5.3.3}Dodawanie nowego modelu}{17}%
+\contentsline {subsection}{\numberline {5.3.4}Rotacja}{17}%
+\contentsline {subsection}{\numberline {5.3.5}Przesunięcie}{17}%
+\contentsline {section}{\numberline {5.4}Dalszy rozwój aplikacji}{17}%
+\contentsline {chapter}{\numberline {6}Podsumowanie}{18}%
+\contentsline {chapter}{\numberline {7}Zagadnienia wykorzystania szablonu}{19}%
+\contentsline {section}{\numberline {7.1}Structure}{19}%
+\contentsline {subsection}{\numberline {7.1.1}Top Matter}{19}%
+\contentsline {subsubsection}{Wypunktowanie}{19}%
+\contentsline {section}{\numberline {7.2}Minimalizacja parametrów funkcji plenoptycznej}{19}%

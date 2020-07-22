@@ -1,10 +1,14 @@
 \documentclass[inf, h]{pjatkThesis}
 %
+\usepackage{url}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
 \usepackage{times}
 \usepackage[polish,english]{babel}
 %
 \usepackage{graphicx}
 \graphicspath{ {Images/} }
+\usepackage{wrapfig}
 %
 \usepackage{makeidx}
 \usepackage{xargs} 
@@ -46,9 +50,10 @@ numberstyle = \tiny,
 \supervisor{dr inż. Michał Tomaszewski}
 \location{Warszawa}
 \date{Czerwiec, 2020}
-
+%
+%
+%
 \begin{document}
-%\pagestyle{fancy}
 \selectlanguage{polish} 
 \tableofcontents
 \listoffigures
