@@ -1,7 +1,6 @@
 \chapter{Dedykowana aplikacja w systemie Android}
 \label{ch:aplikacja}
 
-\change{TODO: ch:aplikacja }
 \change{TODO: Krótki opis "o aplikacji" i rozdziale }
 
 \section{Interfejs}
@@ -11,9 +10,8 @@
 \section{Komunikacja}
 \label{sec:komunikacja}
 
-	\subsection{Porównanie Bluetooth z Bluetooth Low Energy(BLE)}
+	\subsection{Obsługa Bluetooth Low Energy}
 	\label{subsec:ble}
-	
 	
 	
 	\subsection{Pobieranie danych}

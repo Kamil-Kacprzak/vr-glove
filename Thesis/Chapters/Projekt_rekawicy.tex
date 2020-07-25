@@ -1,27 +1,28 @@
 \chapter{Projekt rękawicy}
 \label{ch:rekawica}
-Istotą poniższego rozdziału jest pokazanie użytych w projekcie podzespołów i technologii oraz lepsze zrozumienie powodów dla których to właśnie te produkty zostały wybrane. Po zapoznaniu się z motywem, zostanie szczegółowo opisana specyfikacja tych produktów a także sposób ich poskładania w spójną całość, co sprawiło pewne problemy względem oryginalnego szkicu - próby oraz efekty rozwiązywania tych problemów również zostaną opisane w tym rozdziale. Po nakreśleniu podstawowych założeń projektu zostanie zaprezentowana finałowa wersja, a także szczegółowo zostanie omówiony kod rękawicy-kontrolera, który jest obsługiwany przez mikrokontroler i stanowi najważniejszą część tego projektu.  Po zaznajomieniu się z kodem aplikacji, będą zaprezentowane wady oraz możliwe ulepszenia projektu, jakie ukazały się w trakcie prac nad aplikacją obsługującą i wykorzystującą dane z rękawicy, w celu ich prezentacji o czym będzie więcej mowa w rozdziale~\ref{ch:aplikacja} dotyczącym tejże właśnie aplikacji.
-\improvement{Następny rozdział? - Dodaj sekcje mówiącym o wybraniu arduino ide oraz nie wybraniu istniejacych sdk aby napisac wlasne polaczenie BLE w javie bez unity}
+Istotą poniższego rozdziału jest pokazanie użytych w projekcie podzespołów i technologii oraz lepsze zrozumienie powodów dla których to właśnie te produkty zostały wybrane. Po zapoznaniu się z motywem, zostanie szczegółowo opisana specyfikacja tych produktów a także sposób ich poskładania w spójną całość, co sprawiło pewne problemy względem oryginalnego szkicu - próby oraz efekty rozwiązywania tych problemów również zostaną opisane w tym rozdziale. Po nakreśleniu podstawowych założeń projektu zostanie zaprezentowana finałowa wersja, a także szczegółowo zostanie omówiony kod rękawicy-kontrolera, który jest obsługiwany przez mikrokontroler i stanowi najważniejszą część tego projektu.\improvement{Następny rozdział?} Po zaznajomieniu się z kodem aplikacji, będą zaprezentowane wady oraz możliwe ulepszenia projektu, jakie ukazały się w trakcie prac nad aplikacją obsługującą i wykorzystującą dane z rękawicy, w celu ich prezentacji o czym będzie więcej mowa w rozdziale~\ref{ch:aplikacja} dotyczącym tejże właśnie aplikacji.
 
-\section{Przegląd podzespołów i technologii użytej w projekcie}
+\section{Przegląd podzespołów użytych w projekcie}
 \label{sec:przeglad}
-Jak dowiedzieliśmy się z rozdziału \ref{ch:komponenty} dotyczącego podstawowych komponentów rękawic, kluczowym dla powodzenia projektu jest ustalenie \begin{itemize}
-\item orientacji
-\item położenia 
-\item pozycji palców
-\end{itemize} W tym celu należy zebrać informacje z czujników, a następnie wszystkie te informacje należy przesłać do pożądanego urządzenia. Elementem które pozwala to osiągnąć w tym projekcie jest mikrokontroler Arduino nano 33 BLE, który odpowiada za dostarczenie informacji z żyroskopu, akcelerometru a także czujników wygięcia. Zasady działania pierwszych dwóch zostały opisane z podrozdziałach~\ref{subsec:gyro} oraz ~\ref{subsec:acc}. Natomiast w poniższych podrozdziałach zostanie opisane rozwiązanie zastosowane do odczytu położenia palców, zasada działania przy wykorzystaniu rezystorów oraz sposób połączenia wszystkich wspomnianych elementów w jeden finałowy kontroler.
+Jak dowiedzieliśmy się z rozdziału \ref{ch:komponenty} dotyczącego podstawowych komponentów rękawic, kluczowym dla powodzenia projektu jest ustalenie następujących pozycji: 
+\begin{itemize}
+\item orientacji dłoni względem punktu początkowego
+\item położenia względem punktu początkowego
+\item moment i stopień zgięcia palców 
+\end{itemize}
+ W tym celu należy zebrać informacje z czujników, a następnie wszystkie te informacje należy przesłać do pożądanego urządzenia. Elementem które pozwala to osiągnąć w tym projekcie jest mikrokontroler Arduino nano 33 BLE, który odpowiada za dostarczenie informacji z żyroskopu, akcelerometru a także czujników wygięcia. Zasady działania pierwszych dwóch zostały opisane z podrozdziałach~\ref{subsec:gyro} oraz ~\ref{subsec:acc}. Natomiast w poniższych podrozdziałach zostanie opisane rozwiązanie zastosowane do odczytu położenia palców, zasada działania przy wykorzystaniu rezystorów oraz sposób połączenia wszystkich wspomnianych elementów w jeden finałowy kontroler.
 	
 	
 	\subsection{Mikrokontroler}
 	\label{subsec:arduino}
-	Jak przed chwilą wspomniano, w projekcie wykorzystywana jest płytka od Arduino, która nosi nazwę Nano 33 BLE. Jest to małych rozmiarów płytka o  wymiarach 45 x 18 mm, pozwalająca na wysoką wydajność przy jednoczesnym małym poborze prądu, co zapewnia użyty mikrokontroler nRF52480 o taktowaniu 64 MHz. Do dyspozycji mamy również pamięć RAM o pojemności 256 kB oraz pamięć Flash o pojemności 1 MB. Warto na wstępie zauważyć że Nano 33 BLE pracuje domyślnie wyłącznie z napięciem 3,3 V. Nie należy podłączać bezpośrednio zasilania o większym napięciu. W celu podłączenia zasilania 5 V należy zlutować zworkę znajdującą się pomiędzy pinami RDT oraz A7 - temat ten nie zostaje jednak poruszony w tej pracy, ponieważ na potrzeby projektu używane jest zasilanie poprzez złącze micro USB które to również jest obsługiwane. Płytka ta posiada wiele użytecznych sensorów, jednak na potrzeby tej pracy została wybrana z powodu wbudowanej inercyjnej jednostki pomiarowej, dzięki czemu można było uprościć konstrukcję   oraz zmniejszyć ilość połączeń na rękawicy, wbudowanego modułu Bluetooth - a w tym przypadku modułu Bluetooth Low Energy obsługiwanego w standardzie 5.0, a to wszystko w przystępnej cenie co również było jednym z kryteriów przy tworzeniu tego projektu. Płytkę w momencie tworzenia tej pracy można kupić za 119 zł. Wartym uwagi jest fakt możliwości zakupu płytki bez wyprowadzonych złącz, co w przypadku opisywanego projektu pozwoli na zmniejszenie wymiarów oraz większą swobodę montażu.~\cite{botland-arduino}
+	Jak przed chwilą wspomniano, w projekcie wykorzystywana jest płytka od Arduino, która nosi nazwę Nano 33 BLE. Jest to małych rozmiarów płytka o  wymiarach 45 x 18 mm, pozwalająca na wysoką wydajność przy jednoczesnym małym poborze prądu, co zapewnia użyty mikrokontroler nRF52480 o taktowaniu 64 MHz. Do dyspozycji mamy również pamięć RAM o pojemności 256 kB oraz pamięć Flash o pojemności 1 MB. IMU które zostało zamontowane na płytce to LSM9DS1, które obsługuję akcelerometr, żyroskop oraz magnetometr w trzech osiach. Więcej infomracji na temat IMU jest przedstawione w części~\ref{sec:oprogramowanie}. Warto na wstępie zauważyć że Nano 33 BLE pracuje domyślnie wyłącznie z napięciem 3,3 V, w związku z czym nie należy podłączać bezpośrednio zasilania o większym napięciu. W celu podłączenia zasilania 5 V należy zlutować zworkę znajdującą się pomiędzy pinami RDT oraz A7 - temat ten nie zostaje jednak poruszony w tej pracy, ponieważ na potrzeby projektu używane jest zasilanie poprzez złącze micro USB które to również jest obsługiwane. Płytka ta posiada wiele użytecznych sensorów, jednak na potrzeby tej pracy została wybrana z powodu wbudowanej inercyjnej jednostki pomiarowej, dzięki czemu można było uprościć konstrukcję   oraz zmniejszyć ilość połączeń na rękawicy, wbudowanego modułu Bluetooth - a w tym przypadku modułu Bluetooth Low Energy obsługiwanego w standardzie 5.0, a to wszystko w przystępnej cenie co również było jednym z kryteriów przy tworzeniu tego projektu. Płytkę w momencie tworzenia tej pracy można kupić za 119 zł. Wartym uwagi jest fakt możliwości zakupu płytki bez wyprowadzonych złącz, co w przypadku opisywanego projektu pozwoli na zmniejszenie wymiarów oraz większą swobodę montażu.~\cite{botland-arduino}
 	
 	Z najważniejszych elementów układu płytki należy wiedzieć że posiada ona dwie diody po dwóch stronach portu micro USB - zielona indykuje podłączone zasilanie, natomiast pomarańczowa zaczyna mrugać gdy jest przesyłany kod do mikrokontrolera. Oprócz tego do dyspozycji są dwa piny wyjściowe zasilające o napięciu 3,3 V oraz 5 V, jeden pin zasilający wejściowy, którego ograniczenia zostały wspomniane w poprzednim paragrafie, a także dwa piny uziemiające, po jednym z każdej strony płytki. Posiada ona piny zarówno analogowe jak i cyfrowe, jednak na potrzeby tego projektu zostały użyte jedynie piny analogowe, których do dyspozycji jest aż osiem umiejscowionych po jednej stronie, przy czym warto zwrócić uwagę że piny A4 oraz A5 używane są jako magistrala I2C w związku z czym zalecane jest nie stosowanie tych wejść analogowych. Szczegółowy opis wejść/wyjść płytki przedstawiony jest na grafice~\ref{fig:arduino}.
 	
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.65]{arduino}
-\caption{Opis wejść oraz wyjść Arduino Nano 33 BLE z podręcznika producenta.}
+\includegraphics[scale=0.5]{arduino}
+\captionsource{Opis wejść oraz wyjść Arduino Nano 33 BLE}{\url{https://content.arduino.cc/assets/Pinout-NANOble_latest.pdf}}
 \label{fig:arduino}
 \end{figure}
 
@@ -29,7 +30,7 @@ Jak dowiedzieliśmy się z rozdziału \ref{ch:komponenty} dotyczącego podstawow
 
 	\subsection{Czujnik wygięcia}
 	\label{subsec:wygiecie}	
-	Kluczowym dla działania kontrolera jest możliwość określenia pozycji palców względem dłoni. Ma to wiele zastosowań zarówno wizualnych jak i praktycznych. Ważne jest aby odwzorować świat rzeczywisty tak dokładnie jak to możliwe - im lepsze odwzorowanie tym bardziej zmysły użytkownika zostaną oszukane, podwyższając komfort użytkowania technologii wirtualnej rzeczywistości. Za stroną praktyczną natomiast przemawia możliwość śledzenia palców w celu dokładnego ich użycia w stworzonym środowisku np. do ściskania i podnoszenia obiektów czy też korzystania z klawiatury wirtualnej. Jak wspomniano w rozdziale~\ref{ch:komponenty} dotyczącym komponentów komercyjnych rękawic - większość producentów decyduję się na użycie wielu inercyjnych jednostek pomiarowych, na podstawie których są w stanie dokładnie określić położenia każdej części palca, bądź też specjalistycznych sensorów służących do pomiaru stopnia wygięcia czujnika względem pozycji prostej. \improvement{Dodaj jakieś źródło flex sensor albo imu na palcach}
+	Kluczowym dla działania kontrolera jest możliwość określenia pozycji palców względem dłoni. Ma to wiele zastosowań zarówno wizualnych jak i praktycznych. Ważne jest aby odwzorować świat rzeczywisty tak dokładnie jak to możliwe - im lepsze odwzorowanie tym bardziej zmysły użytkownika zostaną oszukane, podwyższając komfort użytkowania technologii wirtualnej rzeczywistości. Za stroną praktyczną natomiast przemawia możliwość śledzenia palców w celu dokładnego ich użycia w stworzonym środowisku np. do ściskania i podnoszenia obiektów czy też korzystania z klawiatury wirtualnej. Jak wspomniano w rozdziale~\ref{ch:komponenty} dotyczącym komponentów komercyjnych rękawic - wśród znanych producentów na rynku, decyduję się na użycie wielu inercyjnych jednostek pomiarowych, na podstawie których są w stanie dokładnie określić położenia każdej części palca, bądź też nie aż tak popularne rozwiązanie, które wykorzystujące specjalistyczne sensory służące do pomiaru stopnia wygięcia czujnika względem pozycji prostej.
 Czujnik ten po podłączeniu do prądu zwiększa swój opór wraz ze zwiększonym stopniem odchylenia. Oba te rozwiązania pomimo wysokiej dokładności pomiarów nie są rozwiązaniami tanimi. W związku z tym na potrzeby stworzenia taniego kontrolera, należało znaleźć rozwiązanie bardziej przystępna a jednocześnie pozwalające na osiągnięcie tego samego celu.
 	
 	Aby osiągnąć postawione założenia zostały skonstruowane czujniki wygięcia w domowych warunkach. Rozwiązanie to jest często używane do osiągnięcia pomiaru stopnia wygięcia bez konieczności wydawania ponad 100 zł na jeden czujnik~\cite{flex-sensor}. Jest ono stosunkowo proste w założeniach i wymaga jedynie dwóch kluczowych elementów. Tkaniny przewodzącej o specjalnych właściwościach oraz dwóch przewodników po obu stronach materiału. Z jednej strony zostanie podłączone napięcie z drugiej natomiast uziemienie. Ważnym jest aby połączenia te się ze sobą nie stykały w żadnym punkcie a jedynie zostały nałożone na siebie, z tkaniną ściśniętą pomiędzy nimi - dzięki temu mamy pewność że odczyty które otrzymamy będą prawidłowe. Pozostaje odpowiedzieć na pytanie jakiego rodzaju materiał należy wykorzystać. Na rynku znajdziemy wiele rodzajów materiałów które zmieniają swój opór w zależności od spełnienia takich kryteriów jak nacisk, temperatura, rozciągnięcie czy też właśnie zgięcie materiału. Pomimo próby uzyskania materiału który zmienia swój opór w zależności od rozciągnięcia, co pozwoliłoby na skonstruowanie części na palce rękawiczki z tego materiału, zapewniając dokładniejszy i bardziej estetyczny efekt końcowy, w momencie projektowania rękawicy był on jedynie możliwy do sprowadzenia ze stanów, co nie było najtańszym rozwiązaniem. W związku z tym zdecydowano się na użycie foli Velostat która jest czuła na nacisk or zginanie~\cite{velostat}. W roli przewodnika wybrano nić przewodzącą, która zapewniła potrzebną elastyczność oraz możliwość przymocowania poszczególnych elementów przy jednoczesnym zapewnieniu funkcjonalności. Elementy te zostały sklejone na kawałku taśmy samoprzylepnej oraz dodatkowo sklejone przy brzegu aby nić nie wyśliznęła się w trakcie korzystania z czujnika. Efekt końcowy jest widoczny na zdjęciu~\ref{fig:sensor}. W celu otrzymania pomiarów wszystkich palców zostało wykonanych pięć takich sensorów, o szerokości 15 mm; dwa o długości 8 cm, dwa o długości 10 cm a także jeden 11 cm, w celu jak najlepszego dopasowania względem miejsca na palce na zakupionej rękawicy do której sensory zostaną przymocowane, co można zobaczyć na zdjęciu~\ref{fig:glove}.
@@ -49,15 +50,15 @@ Czujnik ten po podłączeniu do prądu zwiększa swój opór wraz ze zwiększony
 		
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.75]{oporniki}
-\caption{Oznaczenia rezystorów}
+\includegraphics[scale=0.65]{oporniki}
+\captionsource{Oznaczenia rezystorów}{\url{https://sites.google.com/site/informatykaunijna/home/poszczegolne-czesci/rezystor}}
 \label{fig:oporniki}
 \end{figure}
 	
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{l}{0.5\textwidth}
 \begin{center}
 \includegraphics[width=0.48\textwidth]{v-divider}
-\caption{Układ dzielnika napięcia}
+\captionsource{Układ dzielnika napięcia}{\url{https://www.wikiwand.com/en/Voltage_divider}}
 \label{fig:divider}
 \end{center}
 \end{wrapfigure}
@@ -77,7 +78,7 @@ W poniższej sekcji zaprezentowano sposób w jaki zostały złączone wszystkie 
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{circuit}
-\caption{Poglądowy układ kontrolera przedstawiający sposób podłączenia dzielnika napięcia}
+\captionsource{Poglądowy układ kontrolera przedstawiający sposób podłączenia dzielnika napięcia}{\url{https://www.circuito.io/app?components=514,8606,8606,8606,8606,11022}}
 \label{fig:circuit}
 \end{figure}
 
@@ -102,7 +103,7 @@ Sposób w jaki zostały dobrane wyjścia jest podyktowany zaleceniami o nie korz
 \begin{figure}[h]
 \centering
 %\includegraphics[width=\textwidth]{glove}
-\includegraphics[scale = 0.2]{glove}
+\includegraphics[scale = 0.35]{glove}
 \caption{Efekt końcowy rękawicy-kontrolera}
 \label{fig:glove}
 \end{figure}
@@ -111,5 +112,131 @@ Sposób w jaki zostały dobrane wyjścia jest podyktowany zaleceniami o nie korz
 \label{sec:oprogramowanie}
 
 
-\section{Dalszy rozwój projektu}
-\label{sec:rozwojPro}
+Do tej pory została opisana teoria omawianego kontrolera, elementy które zostały użyte w projekcie a także sposób ich połączenia. W niniejszej sekcji przedstawiony jest kod programu który został napisany w środowisku programistycznym oraz języku o tej samej nazwie - Arduino. Język ten poza drobnymi zmianami opiera się na języku C/C++, a jego pełny kod źródłowy jest dostępny na platformie Github~\cite{jArduino}. Aby rozpocząć pracę z wybranym produktem od Arduino należy wykonać pewne czynności przygotowywacze, takie jak instalacja sterowników płytki dla danego systemu czy sposób obsługi w samym środowisku Arduino. Czynności te zostały opisane na stronie producenta, w związku z czym nie zostaną one szczegółowo opisane~\cite{guideArduino}. Po spełnieniu wszystkich wymagań, został przygotowany program który został napisany oraz wgrany do mikrokontrolera, który można podzielić na trzy części:
+\begin{itemize}
+\item Deklaracje
+\item Ustawienie mikrokotrnolera
+\item Główna pętla programu
+\end{itemize}
+których cel oraz opis został przedstawiony poniżej.
+
+W pierwszej kolejności zostanie przedstawiona część deklaracji, w której to dołączono wymagane biblioteki dla poprawnej obsługi wszystkich sensorów. Pierwszą biblioteką która została dołączona do programu jest \textit{Arduino\textunderscore LSM9DS1.h}. Biblioteka ta jest odpowiedzialna za obsługę IMU która przekazuje dane poprzez I2C do mikroprocesora. Biblioteka ta zajmuję się obsługą połączenia jak i kalibracja całego modułu. Inicjalizacja wartości poprzez biblitoekę wygląda w następujący sposób~\cite{ArduinoIMU}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Sensor & Zakres & Częstotliwość \\ \hline
+Akcelerometr & $[-4,+4]g -/+0.122 mg$ & $104 Hz$\\ \hline
+Żyroskop & $[-2000, +2000] dps +/-70 mdps$ & $104 Hz$\\ \hline
+Magnetometr & $[-400, +400] uT +/-0.014 uT$ & $20 Hz$ \\ \hline
+\hline
+\end{tabular}
+\end{center}
+Tak jak wspomniano w sekcji~\ref{subsec:arduino} do połączenia bezprzewodowego Arduino Nano 33 BLE wykorzystuje moduł Bluetooth Low Energy, w związku z czym w części deklaracji dołączamy przeznaczoną do tego bibliotekę o nazwie \textit{ArduinoBLE.h}. Biblioteka ta pozwala na dostęp oraz sterowanie modułem BLE ( z ang. Bluetooth Low Energy), i na potrzeby projektu zostaną opisane używane elementy z poniższych klasy których znajomość jest wymagana w celu zrozumienia napisanego programu. Klasy te to
+\begin{itemize}
+\item BLEService
+\item BLECharacteristic
+\item BLEDescriptor
+\item BLE
+\item BLEDevice
+\end{itemize}
+Szczegóły na temat zasad działania BLE są podane w sekcji~\ref{sec:bvsble}, w tej sekcji jedynie zostanie opisana struktura tych klas. \textit{BLEService} umożliwia nawiązanie połączenia z innym urządzeniem obsługującym bluetooth i jako parametr przyjmuje UUID - jest to jedyny paramater jaki należy podać i w ten sposób zostaje stworzony nowy serwis BLE dostępny pod tym identyfikatorem. Klasa \textit{BLECharacteristic} tworzy nową cechę którą należy przypisać do danego serwisu. Cecha ta może zostać zadeklarowana jako cecha wybranego z pośród dostępnych typów w Arduino bądź jako uniwersalna poprzez podstawową klasę \textit{BLECharacteristic}. Klasa ta przyjmuje trzy wymagane parametry: UUID, właściwości cechy oraz wartość. Wartość może zostać zadeklarowana jako podany ciąg znaków, bądź też poprzez określenie rozmiaru danych i wartość początkową. Wartość początkowa nie musi być podana w trakcie deklaracji. Ważnym elementem tej klasy jest określenie jej właściwości. W zależności od przeznaczenia mamy do wybory następujące opcje, które mogą być ze sobą łączone: BLEBroadcast, BLERead, BLEWriteWithoutResponse, BLEWrite, BLENotify, BLEIndicate. W celu wysyłania danych podczas gdy dane te się zmienią cechy w prezentowanym programie przyjęły dwie wartości BLE: read ( z ang. czytać) oraz notify (z ang. powiadomić). Klasa \textit{BLEDescriptor} jest niejako klasą pomocniczną. Wartości tej klasy przypisuję się do danej cechy w celu lepszej obsługi serwisy oraz łatwiejszego rozpoznawania w przypadku pracy ze skomplikowanymi serwisami. Standardowo należy podać UUID danego deskryptora jako parametr, a także jego wartość jako ciąg znaków, bądź wartość w postaci tablicy bajtów oraz maksymalnego rozmiaru danych. Są to podstawowe klasy znajdujące się w części deklaracji których użycie zostały przedstawione na listingu~\ref{lst:declaration} prezentującym wycinek części deklaracji~\cite{ArduinoBLE}. Pozostałe dwie klasy zostaną opisane w części głównej pętli programu gdzie zostanie również pokazane ich zastosowanie. 
+
+\begin{lstlisting}[caption={Część deklaracji programu mikrokontrolera},captionpos=b,label={lst:declaration},language = C++ , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+#include <Arduino_LSM9DS1.h>
+#include <ArduinoBLE.h>
+BLEService imuService("1101");
+
+BLECharacteristic imuAccChar("2101", BLERead | BLENotify,12);
+BLECharacteristic imuGyroChar("2102", BLERead | BLENotify, 12);
+BLECharacteristic fingersChar("2103", BLERead | BLENotify, 20);
+
+BLEDescriptor     imuAccDescriptor("3101",(byte*)"Acc Descriptor",15);
+BLEDescriptor     imuGyroDescriptor("3102",(byte*)"Gyr Descriptor",15);
+BLEDescriptor     fingersDescriptor("3103",(byte*)"Fin Descriptor",15);
+\end{lstlisting}
+
+Następną częścią programu jest ustawienie mikrokontrolera oraz sprawdzenia poprawności działania sensorów. Gdy proces ten zakończy się powodzeniem zostanie uruchomiona główna część programu - funkcja \textit{loop()}, która wykonuję się nieprzerwania pozwalając kontrolować pracę naszego kontrolera. Za część związaną z inicjalizacją jest odpowiedzialna funkcja \textit{setup()}. Funkcja ta jest wywoływana tylko raz za każdym razem gdy płytka jest podłączona do prądu bądź zostanie zresetowana~\cite{ArduinoDoc}. W funkcji tej wywoływana jest statyczna metoda begin(z ang. rozpocząć) na klasie \textit{IMU} która należy do biblioteki \textit{Arduino\textunderscore LSM9DS1.h}, i to właśnie ta funkcja pozwala na incjalizacje wspominanych sensorów wchodzących w skład jednostki pomiarowej - program zapętli się w tym miejscu jeśli funkcja ta zwróci błąd, poprzez rozpoczęcie pętli z warunkiem zawsze prawdziwym, co przedstawia listing~\ref{lst:init}~\cite{ArduinoIMU}. 
+\begin{lstlisting}[caption={Inicjalizacja IMU oraz BLE},captionpos=b,label={lst:init},language = C++ , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+  if (!IMU.begin()) {
+    Serial.println("Failed to initialize IMU!");
+    while (1);
+  }
+
+  if (!BLE.begin()) {
+    Serial.println("Failed to start Bluetooth!");
+    while (1);
+  }
+\end{lstlisting}
+Jeżeli sensory działają poprawnie, sprawdzana jest możliwość połączenia poprzez moduł bezprzewodowy. W tym celu wykorzystywana jest statyczna klasa \textit{BLE}, która odpowiada za włączenie modułu Bluetooth oraz jego ustawienia. Tak jak w przypadku klasy \textit{IMU}, program zapętli się w tym miejscu zwracając błąd jeżeli połączenie nie będzie możliwe. W przypadku powodzenia program rozpoczyna łączenie zadeklarowanych elementów, takich jak serwis, cechy oraz deskryptory tych cech. Klasa \textit{BLE} posiada funkcje pozwalającą ustawić nazwę dla naszego połączenia, jej adres a przede wszystkim gdy wszystkie elementy są już gotowe wywołuję metodę \textit{advertise()}, która pozwala na połączenie się z naszym serwisem. Na listingu~\ref{lst:initBle} pokazane jest szczegółowa konfiguracja klasy BLE oraz serwisu a także odpowiednie użycie funkcji dla jednej z cech, które należy powtórzyć dla każdej dodawanej cechy z odpowiednimi wartościami.
+\begin{lstlisting}[caption={Obsługa serwisu przy użycia klasy BLE},captionpos=b,label={lst:initBle},language = C++ , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+  BLE.setLocalName("VrGlove");  
+  BLE.setAdvertisedService(imuService);
+
+  imuService.addCharacteristic(imuGyroChar);
+  imuGyroChar.addDescriptor(imuGyroDescriptor);
+  imuGyroChar.writeValue((byte)0x01);
+  
+  BLE.addService(imuService);     
+  BLE.advertise();
+\end{lstlisting}
+W ten oto sposób kończy się funkcja \textit{setup()} i zostaje wywołana kolejna funkcja która od tej pory będzie odpowiedzialna za pracę kontrolera - \textit{loop()}. W funkcji tej zostaje zadeklarowana ostatnia z wymienionych klas do obsługi Bluetooth. Klasa ta nazywa się \textit{BLEDevice} i jest bezpośrednio powiązana z urządzeniem które jest aktualnie podłączone. Dopóki nie ma podłączonego do kontrolera urządzenia, żadne czynności nie zostają podjęte. W momencie uzyskania danych z modułu łączności o nawiązanym połączeniu zostaje uruchomiona pętla, funkcjonująca tak długo jak połączenie to nie zostanie przerwane. Fragment kodu znajduję się na listingu~\ref{lst:central}~\cite{ArduinoBLE}. Niestety w trakcie pracy z urządzeniem odkryto błąd związany z rozłączeniem się centrali. Problem pojawia się gdy urządzenie zostaję rozłączone z mikrokontrolerem - w tym momencie klasa \textit{BLE} nie zawsze zgłasza informację o rozłączeniu, myśląc że urządzenia cały czas są podłączone. Problem został zauważony, jednak nie jest rozwiązany na stan z maja 2020 roku~\cite{ArduinoBug}. 
+\begin{lstlisting}[caption={Oczekiwanie na połączenie z urządzeniem przez mikrokontroler},captionpos=b,label={lst:central},language = C++ , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+  BLEDevice central = BLE.central();
+  if (central) {
+    Serial.print("Connected to central: ");
+    Serial.println(central.address());
+  }  
+   while( central.connected()){ 
+   		[...]
+   	}
+\end{lstlisting}
+Gdy wszystkie dotychczasowo opisane elementy programu nie zgłoszą problemów, następuje ostatnia faza którą jest zbieranie i przesyłanie danych. W pierwszej kolejności sprawdzany jest warunek czy jednostka pomiarowa ma dostęp do nowych danych. W przypadku tej aplikacji dane które zostały poddane analizie pochodzą z żyroskopu oraz z akcelerometru i są wyrażone jako zmienne x,y oraz z typu \textit{float}. Z powodu naturalnych drgań dłoni dane te ciągle się zmieniają w mikro skali która nie ma wpływu na efekty, niemniej jednak możemy założyć że gdy mikroprocesor nie jest przymocowany do stałego obiektu, dane te będą dostarczane z częstotliwością pracy sensorów. Za odczyt danych z żyroskopu i akcelerometru odpowiadają odpowiednio funkcje \textit{readGyroscope(x,y,z)} oraz \textit{readAcceleration(x,y,z)} z klasy \textit{IMU} które przypisuję odpowiednie wartości do podanych parametrów. Ważnym elementem podczas odczytu tych danych jest tak zwany szum który powstaje w trakcie przygotowania sensorów. W trakcie pierwszych odczytów szum ten został zmierzony oraz usunięty z pomiarów. Akcelerometr położony na płaskim obiekcie prawidłowo podawał odczyty, czyli zwracał wektor $[0,0,g]$ gdzie \textit{g} oznacza grawitacje ziemską. Żyroskop natomiast wskazywał błąd rzędu $[2.80,0.18,0.18]$ w związku  z czym od każdego odczytu właśnie taką wartość należy odjąć w celu uzyskania prawidłowych danych - czyli wektora zbliżonego do $[0,0,0]$ w pozycji w której został skalibrowany. Jak wspomniano w sekcji~\ref{subsec:gyro} dotyczącej żyroskopu, wartości zwracane są podane w $dps$ (z ang. Degrees per second) czyli w kątach na sekundę. W celu określenie kątów w jakim urządzenie się znajduję w danym momencie musimy te dane przemnożyć przez częstotliwość z jaką są one pobierane - czyli przemnożyć przez czas co zwróci nam miarę kątów. Osiągamy to poprzez zapisanie czasu w którym dane zostały pobrane a także poprzez zapisanie tej wartości przed następnym pobraniem danych jako czas ostatniego poboru. Różnica pomiędzy tymi wartościami daje czas jaki upłynął aby uzyskać nowe wartości. Zaczynając w pozycji kalibracyjnej, z idealnie usuniętym szumem, żyroskop zwróci wartość zero, a wraz ze zmianą wartości żyroskopu, suma tych zmian wskaże na orientację kontrolera względem pozycji wyjściowej. Więcej informacji na ten temat znajduję się w rozdziale~\ref{ch:aplikacja}~\cite[gimbal]. Ostatnią cechą którą chcemy przekazać są dane pobierane z sensorów wygięcia w celu określenia pozycji palców. Tak jak wspomniano w sekcji~\ref{sec:przeglad} dane te pobieramy przez mierzenie napięcia jakie znajduje się na poszczególny analogowych pinach wejściowych. Odczyty te uzyskujemy poprzez wywołanie metody \textit{analogRead(pin)}~\cite{ArduinoDoc}. Pobieranie danych oraz ich wstępna obróbka przedstawia listing~\ref{lst:read}.
+\begin{lstlisting}[caption={Wczytywanie danych z sensorów.},captionpos=b,label={lst:read},language = C++ , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+ if (IMU.accelerationAvailable() && IMU.gyroscopeAvailable()) {
+        previousTime = currentTime;
+        currentTime = millis();
+        elapsedTime = (currentTime - previousTime) / 1000;   
+
+        IMU.readAcceleration(acc[0],acc[1], acc[2]);  
+        IMU.readGyroscope(gyro[0],gyro[1], gyro[2]);
+        
+        gyro[0] -= 2.80;
+        gyro[1] -= 0.18;
+        gyro[2] -= 0.18;
+
+        fingers[0] = analogRead(A3);
+        [...]
+ }
+\end{lstlisting}
+Na tym etapie mamy już dostęp do danych z akcelerometru w {\Large $\frac{m}{s^2}$} oraz dane z żyroskopu wyrażone w stopniach. Informacje te mogłyby zostać przesłane w takiej formie, jednak z racji znajomości projektu, dane można dodatkowo skorygować poprzez zastosowanie dodatkowych filtrów. Podstawowym zabiegiem który został zastosowany jest eliminacja danych nieznaczących, czyli szumu który powstaje poprzez naturalne drgania ciała. Aby to osiągnąć, w programie przechowywane są poprzednie wartości z poszczególnych sensorów. Jak dane znaczące dla akcelerometru przyjęto różnice $\pm 0.1$, a dla danych z sensorów wygięcia $\pm 15$. Dla żyroskopu natomiast przyjęto wartości różniące się o przynajmniej $\pm 0.2$, a także dodatkowo sprawdzane jest czy dane z żyroskopu nie są w pozycji przy kalibracyjnej. Oznacza to że jeżeli wartości zwracane z żyroskopu wynoszą $0\pm 0.1$, zostaną one zamienione na wartość równą $0$. Filtrowanie wartości pokazane jest na listingu~\ref{lst:filtr}. W ten oto sposób otrzymano wartości z sensorów które były gotowe do wysłania na inne urządzenie. Wartości te jednak są wyrażone w postaci tablic typu \textit{float}, natomiast jako wartości cechy bluetooth przyjmują tablice bytów. W związku z tym przed przypisaniem danych są przekazywane adresy tablic do nowych zmiennych, a następnie zmienne te zapisane w poszczególnej cesze przy użyciu metody \textit{setValue(value,valueSize)}. Rozmiar jest ten określony jako $12$ ponieważ mamy do czynienia z tablicą 3 zmiennych typu \textit{float} z których każda zajmuje 4 bajty pamięci. Zapisywanie danych jest pokazana na listingu~\ref{lst:save} dla jednej cechy - proces ten należy powtórzyć dla wszystkich danych. Program następnie zapisuje obecne dane jako dane obecnej pętli, tak aby następne odczyty mogły zostać porównane z obecną iteracją, tym samym kończąc wykonywaną pętle. Warto zauważyć że program pomimo swojego głównego działa w funkcji \textit{loop()}, jest wykonywany w ramach jednej iteracji jak tylko dojdzie do połączenia kontrolera z odbiornikiem.
+\begin{lstlisting}[caption={Wstępne filtrowanie danych z sensorów.},captionpos=b,label={lst:filtr},language = C++ , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+for (int i = 0;i<3;i++){
+	if(!(gyro[i] < oldGyroData[i]-0.2 || gyro[i] > oldGyroData[i]+0.2)){
+		if( gyro[i] < -0.1 ||  gyro[i] > 0.1){              
+	      gyro[i] = oldGyroData[i];
+	    }else{
+	     gyro[i] = 0.0;
+	    }
+	}
+	            
+	if(!(acc[i] < oldAccData[i]-0.02 || acc[i] > oldAccData[i]+0.02)){
+	   acc[i] = oldAccData[i];
+	   }
+}
+
+for (int i = 0;i<5;i++){
+   if(!(fingers[i] < oldFingersData[i]-15.0 || fingers[i] > oldFingersData[i]+15.0)){
+              fingers[i] = oldFingersData[i];
+            }
+         }         
+ }
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Zapisywanie danych do cech w serwisie.},captionpos=b,label={lst:save},language = C++ , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+         byte *accChar = (byte*)&acc;
+         imuAccChar.setValue(accChar,12);
+\end{lstlisting}
+
+\section{Podsumowanie}
+\label{sec:summary}
+W tym rozdziale podano informacje na temat projektu rękawicy kontrolera a także elementów które są wymagane w celu jego funkcjonowania. Zostały podane specyfikacje podzespołów, sposoby pozyskiwania danych, metoda komunikacji z innymi urządzeniami a także rozwiązano problemy związane z kosztem projektu. Krok po kroku przedstawiono złożenie elementów w celu uzyskania końcowej wersji produktu i ostatecznie omówiono zasadę działania programu napisanego w Arduino wraz z bibliotekami które zostały użyte w ramach projektu, natomiast zasady ich praktycznego działania zostały pokazane na listingach. W ten oto sposób została zakończona główna część projektu, pozwalająca na wykorzystanie rękawicy kontrolera jako część większych przedsięwzięć. Aby jeszcze lepiej zobrazować sposób obsługi kontrolera, oraz metody wykorzystania danych, w rozdziale~\ref{ch:aplikacja} zostanie pokazana przykładowa aplikacja wykorzystująca dane w celu analizy oraz prezentacji. 

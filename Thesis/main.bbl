@@ -1,8 +1,8 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{v-divider}
 K.~Academy.
-\newblock Dzielnik napięcia (z ang. voltage divider).
+\newblock Dzielnik napięcia.
 \newblock
   \url{https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-resistor-circuits/a/ee-voltage-divider},
   2020.
@@ -11,6 +11,11 @@ K.~Academy.
 Adafruit.
 \newblock Velostat - folia czuła na nacisk i zginanie.
 \newblock \url{https://www.adafruit.com/product/1361}, 2020.
+
+\bibitem{ArduinoDoc}
+Arduino.
+\newblock Dokumentacja języka.
+\newblock \url{https://www.arduino.cc/reference/en/}, 2020.
 
 \bibitem{botland-arduino}
 Botland.com.
@@ -26,9 +31,38 @@ Botland.com.
   \url{https://botland.com.pl/pl/czujniki-nacisku/2406-czujnik-ugiecia-112-x-63-mm-sparkfun-sen-08606.html},
   2020.
 
+\bibitem{jArduino}
+P.~Bugalski.
+\newblock (arduino, co w środku… – część 3 – źródło wbudowanych
+  funkcji).
+\newblock
+  \url{https://forbot.pl/blog/arduino-co-w-srodku-3-zrodlo-wbudowanych-funkcji-id17291},
+  2020.
+
 \bibitem{rezystor}
 Forbot.
 \newblock Rezystor - co warto wiedzieć.
 \newblock \url{https://forbot.pl/blog/leksykon/rezystor}, 2020.
+
+\bibitem{ArduinoBug}
+Russell108.
+\newblock Ble nano 33 nie zgłasza rozłączenia z centralą.
+\newblock \url{https://github.com/arduino-libraries/ArduinoBLE/issues/33},
+  2020.
+
+\bibitem{ArduinoIMU}
+SM.
+\newblock Biblioteka arduino lsm9ds3.
+\newblock \url{https://www.arduino.cc/en/Reference/ArduinoLSM9DS1}, 2020.
+
+\bibitem{ArduinoBLE}
+SM.
+\newblock Biblioteka arduinoble.
+\newblock \url{https://www.arduino.cc/en/Reference/ArduinoBLE}, 2020.
+
+\bibitem{guideArduino}
+SM.
+\newblock Pierwsze kroki z arduino nano 33 ble.
+\newblock \url{https://www.arduino.cc/en/Guide/NANO33BLE}, 2020.
 
 \end{thebibliography}

@@ -1,14 +1,23 @@
 \documentclass[inf, h]{pjatkThesis}
 %
-\usepackage{url}
+\usepackage{xurl}
+\usepackage{float}
 %\usepackage{fancyhdr}
 %\pagestyle{fancy}
 \usepackage{times}
 \usepackage[polish,english]{babel}
 %
+\usepackage{sidecap}
 \usepackage{graphicx}
 \graphicspath{ {Images/} }
 \usepackage{wrapfig}
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{%
+    #1%
+    \\\hspace{\linewidth}%
+    {Źródło:} #2%
+  }%
+}
 %
 \usepackage{makeidx}
 \usepackage{xargs} 
@@ -19,8 +28,8 @@
 \setlength {\marginparwidth }{2cm}
 \usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes} % use \usepackage[disable]{todonotes} to switch off
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
-\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
 \newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
 \newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
 %
@@ -70,11 +79,6 @@ numberstyle = \tiny,
 \include{Chapters/Projekt_rekawicy}
 \include{Chapters/Dedykowana_aplikacja}
 \include{Chapters/Podsumowanie}
-
-
-%TODO : Remove
-\include{Chapters/_Rozdzial_I}
-
 %
 %
 %\addcontentsline{toc}{chapter}{Literatura}
