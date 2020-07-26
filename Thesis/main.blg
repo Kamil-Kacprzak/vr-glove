@@ -5,6 +5,7 @@ A level-1 auxiliary file: Chapters/Zagadnienia.aux
 A level-1 auxiliary file: Chapters/Komponenty.aux
 A level-1 auxiliary file: Chapters/Projekt_rekawicy.aux
 A level-1 auxiliary file: Chapters/Dedykowana_aplikacja.aux
+A level-1 auxiliary file: Chapters/Rozwoj.aux
 A level-1 auxiliary file: Chapters/Podsumowanie.aux
 The style file: abbrv.bst
 Database file #1: bibliografia.bib
@@ -30,5 +31,14 @@ Warning--string name "lipiec" is undefined
 --line 60 of file bibliografia.bib
 Warning--string name "maj" is undefined
 --line 66 of file bibliografia.bib
+Warning--string name "lipiec" is undefined
+--line 78 of file bibliografia.bib
+Warning--string name "pazdziernik" is undefined
+--line 84 of file bibliografia.bib
+Warning--string name "marzec" is undefined
+--line 90 of file bibliografia.bib
+Warning--string name "marzec" is undefined
+--line 96 of file bibliografia.bib
 Warning--I didn't find a database entry for "."
-(There were 12 warnings)
+Warning--I didn't find a database entry for "fig:ifceDane"
+(There were 17 warnings)

@@ -124,7 +124,7 @@ public class GloveData extends Fragment
     @Override
     public void onClick(View v) {
         Switch switchBT = v.findViewById(R.id.switchBT);
-        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();;
+        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         switch (v.getId()){
             case R.id.switchBT:
                 if (switchBT.isChecked()){
@@ -137,6 +137,7 @@ public class GloveData extends Fragment
                     }
                 }
                 break;
+
             case R.id.buttonConnect:
                 if(mBluetoothAdapter.isEnabled() && VrGlove.getGattState() != 2){
                     final BluetoothManager bluetoothManager =

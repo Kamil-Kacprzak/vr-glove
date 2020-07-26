@@ -71,7 +71,30 @@
   howpublished = {\url{ https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/}},
   month =    lipiec,
   year =     2020}
-  
+@Misc{AndroidDoc,
+  author =   {Android Developers},
+  title =    {Zbuduj wszystko na Androidzie},
+  howpublished = {\url{https://developer.android.com/}},
+  month =    lipiec,
+  year =     2020} 
+@Misc{UUID,
+  author =   {Argiris Mouratidis},
+  title =    {Zapisywanie właściwiości cechy zawsze zwraca fałsz w klasie BluetoothGatt },
+  howpublished = {\url{https://stackoverflow.com/questions/57474710/writing-characteristic-property-check-is-always-false-android-bluetoothgatt-clas}},
+  month =    pazdziernik,
+  year =     2019}
+@Misc{sceneform,
+  author =   {Google},
+  title =    {Przegląd Sceneform},
+  howpublished = {\url{https://developers.google.com/sceneform/develop}},
+  month =    marzec,
+  year =     2020}
+@Misc{hands,
+  author =   {3DHaupt},
+  title =    {Animowane dłonie},
+  howpublished = {\url{https://3dhaupt.com/3d-model-anatomy-rigged-hands-low-poly-vr-ar-game-ready-blender/}},
+  month =    marzec,
+  year =     2012}
   
   
 

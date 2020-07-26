@@ -11,6 +11,7 @@
 \usepackage{graphicx}
 \graphicspath{ {Images/} }
 \usepackage{wrapfig}
+\usepackage{subcaption}
 \newcommand*{\captionsource}[2]{%
   \caption[{#1}]{%
     #1%
@@ -78,6 +79,7 @@ numberstyle = \tiny,
 \include{Chapters/Komponenty}
 \include{Chapters/Projekt_rekawicy}
 \include{Chapters/Dedykowana_aplikacja}
+\include{Chapters/Rozwoj}
 \include{Chapters/Podsumowanie}
 %
 %

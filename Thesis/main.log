@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  25 JUL 2020 03:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  26 JUL 2020 20:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -166,6 +166,33 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 \WF@everypar=\toks19
 Package: wrapfig 2003/01/31  v 3.6
 )
+("E:\Program Files (x86)\Miktex\tex/latex/caption\subcaption.sty"
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
+("E:\Program Files (x86)\Miktex\tex/latex/caption\caption.sty"
+Package: caption 2020/05/30 v3.4k Customizing captions (AR)
+
+("E:\Program Files (x86)\Miktex\tex/latex/caption\caption3.sty"
+Package: caption3 2020/05/30 v1.12 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen117
+\captionmargin@=\dimen118
+\captionwidth=\dimen119
+\caption@tempdima=\dimen120
+\caption@indent=\dimen121
+\caption@parindent=\dimen122
+\caption@hangindent=\dimen123
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count96
+\c@continuedfloat=\count97
+Package caption Info: float package is loaded.
+Package caption Info: sidecap package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+\c@subfigure=\count98
+\c@subtable=\count99
+)
 ("E:\Program Files (x86)\Miktex\tex/latex/base\makeidx.sty"
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
@@ -180,10 +207,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks20
 \XKV@tempa@toks=\toks21
 )
-\XKV@depth=\count96
+\XKV@depth=\count100
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-\xargs@max=\count97
+\xargs@max=\count101
 \xargs@toksa=\toks22
 \xargs@toksb=\toks23
 )
@@ -193,26 +220,26 @@ Package: expl3 2020-01-22 L3 programming layer (loader)
 
 ("E:\Program Files (x86)\Miktex\tex/latex/l3kernel\expl3-code.tex"
 Package: expl3 2020-01-22 L3 programming layer (code)
-\c_max_int=\count98
-\l_tmpa_int=\count99
-\l_tmpb_int=\count100
-\g_tmpa_int=\count101
-\g_tmpb_int=\count102
-\l__seq_internal_a_int=\count103
-\l__seq_internal_b_int=\count104
-\g__kernel_prg_map_int=\count105
-\c__ior_term_noprompt_ior=\count106
-\c_log_iow=\count107
-\l_iow_line_count_int=\count108
-\l__iow_line_target_int=\count109
-\l__iow_one_indent_int=\count110
-\l__iow_indent_int=\count111
-\c_zero_dim=\dimen117
-\c_max_dim=\dimen118
-\l_tmpa_dim=\dimen119
-\l_tmpb_dim=\dimen120
-\g_tmpa_dim=\dimen121
-\g_tmpb_dim=\dimen122
+\c_max_int=\count102
+\l_tmpa_int=\count103
+\l_tmpb_int=\count104
+\g_tmpa_int=\count105
+\g_tmpb_int=\count106
+\l__seq_internal_a_int=\count107
+\l__seq_internal_b_int=\count108
+\g__kernel_prg_map_int=\count109
+\c__ior_term_noprompt_ior=\count110
+\c_log_iow=\count111
+\l_iow_line_count_int=\count112
+\l__iow_line_target_int=\count113
+\l__iow_one_indent_int=\count114
+\l__iow_indent_int=\count115
+\c_zero_dim=\dimen124
+\c_max_dim=\dimen125
+\l_tmpa_dim=\dimen126
+\l_tmpb_dim=\dimen127
+\g_tmpa_dim=\dimen128
+\g_tmpb_dim=\dimen129
 \c_zero_skip=\skip52
 \c_max_skip=\skip53
 \l_tmpa_skip=\skip54
@@ -225,102 +252,102 @@ Package: expl3 2020-01-22 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count112
-\l__intarray_loop_int=\count113
-\c__intarray_sp_dim=\dimen123
-\g__intarray_font_int=\count114
-\c__fp_leading_shift_int=\count115
-\c__fp_middle_shift_int=\count116
-\c__fp_trailing_shift_int=\count117
-\c__fp_big_leading_shift_int=\count118
-\c__fp_big_middle_shift_int=\count119
-\c__fp_big_trailing_shift_int=\count120
-\c__fp_Bigg_leading_shift_int=\count121
-\c__fp_Bigg_middle_shift_int=\count122
-\c__fp_Bigg_trailing_shift_int=\count123
-\c__kernel_randint_max_int=\count124
-\g__fp_array_int=\count125
-\l__fp_array_loop_int=\count126
-\l__sort_length_int=\count127
-\l__sort_min_int=\count128
-\l__sort_top_int=\count129
-\l__sort_max_int=\count130
-\l__sort_true_max_int=\count131
-\l__sort_block_int=\count132
-\l__sort_begin_int=\count133
-\l__sort_end_int=\count134
-\l__sort_A_int=\count135
-\l__sort_B_int=\count136
-\l__sort_C_int=\count137
-\l__str_internal_int=\count138
-\c__str_replacement_char_int=\count139
-\l__tl_analysis_normal_int=\count140
-\l__tl_analysis_index_int=\count141
-\l__tl_analysis_nesting_int=\count142
-\l__tl_analysis_type_int=\count143
-\l__regex_internal_a_int=\count144
-\l__regex_internal_b_int=\count145
-\l__regex_internal_c_int=\count146
-\l__regex_balance_int=\count147
-\l__regex_group_level_int=\count148
-\l__regex_mode_int=\count149
-\c__regex_cs_in_class_mode_int=\count150
-\c__regex_cs_mode_int=\count151
-\l__regex_catcodes_int=\count152
-\l__regex_default_catcodes_int=\count153
-\c__regex_catcode_D_int=\count154
-\c__regex_catcode_S_int=\count155
-\c__regex_catcode_L_int=\count156
-\c__regex_catcode_O_int=\count157
-\c__regex_catcode_A_int=\count158
-\c__regex_all_catcodes_int=\count159
-\l__regex_show_lines_int=\count160
-\l__regex_min_state_int=\count161
-\l__regex_max_state_int=\count162
-\l__regex_left_state_int=\count163
-\l__regex_right_state_int=\count164
-\l__regex_capturing_group_int=\count165
-\l__regex_min_pos_int=\count166
-\l__regex_max_pos_int=\count167
-\l__regex_curr_pos_int=\count168
-\l__regex_start_pos_int=\count169
-\l__regex_success_pos_int=\count170
-\l__regex_curr_char_int=\count171
-\l__regex_curr_catcode_int=\count172
-\l__regex_last_char_int=\count173
-\l__regex_case_changed_char_int=\count174
-\l__regex_curr_state_int=\count175
-\l__regex_step_int=\count176
-\l__regex_min_active_int=\count177
-\l__regex_max_active_int=\count178
-\l__regex_replacement_csnames_int=\count179
-\l__regex_match_count_int=\count180
-\l__regex_min_submatch_int=\count181
-\l__regex_submatch_int=\count182
-\l__regex_zeroth_submatch_int=\count183
-\g__regex_trace_regex_int=\count184
+\l_keys_choice_int=\count116
+\l__intarray_loop_int=\count117
+\c__intarray_sp_dim=\dimen130
+\g__intarray_font_int=\count118
+\c__fp_leading_shift_int=\count119
+\c__fp_middle_shift_int=\count120
+\c__fp_trailing_shift_int=\count121
+\c__fp_big_leading_shift_int=\count122
+\c__fp_big_middle_shift_int=\count123
+\c__fp_big_trailing_shift_int=\count124
+\c__fp_Bigg_leading_shift_int=\count125
+\c__fp_Bigg_middle_shift_int=\count126
+\c__fp_Bigg_trailing_shift_int=\count127
+\c__kernel_randint_max_int=\count128
+\g__fp_array_int=\count129
+\l__fp_array_loop_int=\count130
+\l__sort_length_int=\count131
+\l__sort_min_int=\count132
+\l__sort_top_int=\count133
+\l__sort_max_int=\count134
+\l__sort_true_max_int=\count135
+\l__sort_block_int=\count136
+\l__sort_begin_int=\count137
+\l__sort_end_int=\count138
+\l__sort_A_int=\count139
+\l__sort_B_int=\count140
+\l__sort_C_int=\count141
+\l__str_internal_int=\count142
+\c__str_replacement_char_int=\count143
+\l__tl_analysis_normal_int=\count144
+\l__tl_analysis_index_int=\count145
+\l__tl_analysis_nesting_int=\count146
+\l__tl_analysis_type_int=\count147
+\l__regex_internal_a_int=\count148
+\l__regex_internal_b_int=\count149
+\l__regex_internal_c_int=\count150
+\l__regex_balance_int=\count151
+\l__regex_group_level_int=\count152
+\l__regex_mode_int=\count153
+\c__regex_cs_in_class_mode_int=\count154
+\c__regex_cs_mode_int=\count155
+\l__regex_catcodes_int=\count156
+\l__regex_default_catcodes_int=\count157
+\c__regex_catcode_D_int=\count158
+\c__regex_catcode_S_int=\count159
+\c__regex_catcode_L_int=\count160
+\c__regex_catcode_O_int=\count161
+\c__regex_catcode_A_int=\count162
+\c__regex_all_catcodes_int=\count163
+\l__regex_show_lines_int=\count164
+\l__regex_min_state_int=\count165
+\l__regex_max_state_int=\count166
+\l__regex_left_state_int=\count167
+\l__regex_right_state_int=\count168
+\l__regex_capturing_group_int=\count169
+\l__regex_min_pos_int=\count170
+\l__regex_max_pos_int=\count171
+\l__regex_curr_pos_int=\count172
+\l__regex_start_pos_int=\count173
+\l__regex_success_pos_int=\count174
+\l__regex_curr_char_int=\count175
+\l__regex_curr_catcode_int=\count176
+\l__regex_last_char_int=\count177
+\l__regex_case_changed_char_int=\count178
+\l__regex_curr_state_int=\count179
+\l__regex_step_int=\count180
+\l__regex_min_active_int=\count181
+\l__regex_max_active_int=\count182
+\l__regex_replacement_csnames_int=\count183
+\l__regex_match_count_int=\count184
+\l__regex_min_submatch_int=\count185
+\l__regex_submatch_int=\count186
+\l__regex_zeroth_submatch_int=\count187
+\g__regex_trace_regex_int=\count188
 \c_empty_box=\box31
 \l_tmpa_box=\box32
 \l_tmpb_box=\box33
 \g_tmpa_box=\box34
 \g_tmpb_box=\box35
-\l__box_top_dim=\dimen124
-\l__box_bottom_dim=\dimen125
-\l__box_left_dim=\dimen126
-\l__box_right_dim=\dimen127
-\l__box_top_new_dim=\dimen128
-\l__box_bottom_new_dim=\dimen129
-\l__box_left_new_dim=\dimen130
-\l__box_right_new_dim=\dimen131
+\l__box_top_dim=\dimen131
+\l__box_bottom_dim=\dimen132
+\l__box_left_dim=\dimen133
+\l__box_right_dim=\dimen134
+\l__box_top_new_dim=\dimen135
+\l__box_bottom_new_dim=\dimen136
+\l__box_left_new_dim=\dimen137
+\l__box_right_new_dim=\dimen138
 \l__box_internal_box=\box36
 \l__coffin_internal_box=\box37
-\l__coffin_internal_dim=\dimen132
-\l__coffin_offset_x_dim=\dimen133
-\l__coffin_offset_y_dim=\dimen134
-\l__coffin_x_dim=\dimen135
-\l__coffin_y_dim=\dimen136
-\l__coffin_x_prime_dim=\dimen137
-\l__coffin_y_prime_dim=\dimen138
+\l__coffin_internal_dim=\dimen139
+\l__coffin_offset_x_dim=\dimen140
+\l__coffin_offset_y_dim=\dimen141
+\l__coffin_x_dim=\dimen142
+\l__coffin_y_dim=\dimen143
+\l__coffin_x_prime_dim=\dimen144
+\l__coffin_y_prime_dim=\dimen145
 \c_empty_coffin=\box38
 \l__coffin_aligned_coffin=\box39
 \l__coffin_aligned_internal_coffin=\box40
@@ -328,20 +355,20 @@ Package: expl3 2020-01-22 L3 programming layer (code)
 \l_tmpb_coffin=\box42
 \g_tmpa_coffin=\box43
 \g_tmpb_coffin=\box44
-\l__coffin_bounding_shift_dim=\dimen139
-\l__coffin_left_corner_dim=\dimen140
-\l__coffin_right_corner_dim=\dimen141
-\l__coffin_bottom_corner_dim=\dimen142
-\l__coffin_top_corner_dim=\dimen143
-\l__coffin_scaled_total_height_dim=\dimen144
-\l__coffin_scaled_width_dim=\dimen145
+\l__coffin_bounding_shift_dim=\dimen146
+\l__coffin_left_corner_dim=\dimen147
+\l__coffin_right_corner_dim=\dimen148
+\l__coffin_bottom_corner_dim=\dimen149
+\l__coffin_top_corner_dim=\dimen150
+\l__coffin_scaled_total_height_dim=\dimen151
+\l__coffin_scaled_width_dim=\dimen152
 \c__coffin_empty_coffin=\box45
 \l__coffin_display_coffin=\box46
 \l__coffin_display_coord_coffin=\box47
 \l__coffin_display_pole_coffin=\box48
-\l__coffin_display_offset_dim=\dimen146
-\l__coffin_display_x_dim=\dimen147
-\l__coffin_display_y_dim=\dimen148
+\l__coffin_display_offset_dim=\dimen153
+\l__coffin_display_x_dim=\dimen154
+\l__coffin_display_y_dim=\dimen155
 \g__char_data_ior=\read2
 
 ("E:\Program Files (x86)\Miktex\tex/latex/l3kernel\l3deprecation.def"
@@ -349,15 +376,15 @@ File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
 ))
 ("E:\Program Files (x86)\Miktex\tex/latex/l3backend\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2019-04-06 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count185
+\l__kernel_color_stack_int=\count189
 \l__pdf_internal_box=\box49
 ))
 ("E:\Program Files (x86)\Miktex\tex/latex/l3packages/xparse\xparse.sty"
 Package: xparse 2020-01-12 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count186
-\g__xparse_grabber_int=\count187
-\l__xparse_m_args_int=\count188
-\l__xparse_v_nesting_int=\count189
+\l__xparse_current_arg_int=\count190
+\g__xparse_grabber_int=\count191
+\l__xparse_m_args_int=\count192
+\l__xparse_v_nesting_int=\count193
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -394,8 +421,8 @@ Package: todonotes 2018/11/22
 ("E:\Program Files (x86)\Miktex\tex/latex/pgf/utilities\pgfrcs.sty"
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/utilities\pgfutil-common.tex"
 \pgfutil@everybye=\toks24
-\pgfutil@tempdima=\dimen149
-\pgfutil@tempdimb=\dimen150
+\pgfutil@tempdima=\dimen156
+\pgfutil@tempdimb=\dimen157
 
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/utilities\pgfutil-common-lists.
 tex"))
@@ -424,26 +451,26 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 tex"
 \pgfkeys@tmptoks=\toks27
 ))
-\pgf@x=\dimen151
-\pgf@y=\dimen152
-\pgf@xa=\dimen153
-\pgf@ya=\dimen154
-\pgf@xb=\dimen155
-\pgf@yb=\dimen156
-\pgf@xc=\dimen157
-\pgf@yc=\dimen158
-\pgf@xd=\dimen159
-\pgf@yd=\dimen160
+\pgf@x=\dimen158
+\pgf@y=\dimen159
+\pgf@xa=\dimen160
+\pgf@ya=\dimen161
+\pgf@xb=\dimen162
+\pgf@yb=\dimen163
+\pgf@xc=\dimen164
+\pgf@yc=\dimen165
+\pgf@xd=\dimen166
+\pgf@yd=\dimen167
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count190
-\c@pgf@countb=\count191
-\c@pgf@countc=\count192
-\c@pgf@countd=\count193
+\c@pgf@counta=\count194
+\c@pgf@countb=\count195
+\c@pgf@countc=\count196
+\c@pgf@countd=\count197
 \t@pgf@toka=\toks28
 \t@pgf@tokb=\toks29
 \t@pgf@tokc=\toks30
-\pgf@sys@id@count=\count194
+\pgf@sys@id@count=\count198
  ("E:\Program Files (x86)\Miktex\tex/generic/pgf/systemlayer\pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -459,8 +486,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/systemlayer\pgfsyssoftpath.code
 .tex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count195
-\pgfsyssoftpath@bigbuffer@items=\count196
+\pgfsyssoftpath@smallbuffer@items=\count199
+\pgfsyssoftpath@bigbuffer@items=\count266
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/systemlayer\pgfsysprotocol.code
 .tex"
@@ -473,8 +500,8 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/math\pgfmathcalc.code.tex"
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/math\pgfmathutil.code.tex")
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/math\pgfmathparser.code.tex"
-\pgfmath@dimen=\dimen161
-\pgfmath@count=\count197
+\pgfmath@dimen=\dimen168
+\pgfmath@count=\count267
 \pgfmath@box=\box51
 \pgfmath@toks=\toks31
 \pgfmath@stack@operand=\toks32
@@ -499,38 +526,38 @@ e.tex")
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/math\pgfmathfunctions.integerar
 ithmetics.code.tex")))
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/math\pgfmathfloat.code.tex"
-\c@pgfmathroundto@lastzeros=\count198
+\c@pgfmathroundto@lastzeros=\count268
 ))
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/math\pgfint.code.tex")
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcorepoints.code.t
 ex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen162
-\pgf@picmaxx=\dimen163
-\pgf@picminy=\dimen164
-\pgf@picmaxy=\dimen165
-\pgf@pathminx=\dimen166
-\pgf@pathmaxx=\dimen167
-\pgf@pathminy=\dimen168
-\pgf@pathmaxy=\dimen169
-\pgf@xx=\dimen170
-\pgf@xy=\dimen171
-\pgf@yx=\dimen172
-\pgf@yy=\dimen173
-\pgf@zx=\dimen174
-\pgf@zy=\dimen175
+\pgf@picminx=\dimen169
+\pgf@picmaxx=\dimen170
+\pgf@picminy=\dimen171
+\pgf@picmaxy=\dimen172
+\pgf@pathminx=\dimen173
+\pgf@pathmaxx=\dimen174
+\pgf@pathminy=\dimen175
+\pgf@pathmaxy=\dimen176
+\pgf@xx=\dimen177
+\pgf@xy=\dimen178
+\pgf@yx=\dimen179
+\pgf@yy=\dimen180
+\pgf@zx=\dimen181
+\pgf@zy=\dimen182
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcorepathconstruct
 .code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen176
-\pgf@path@lasty=\dimen177
+\pgf@path@lastx=\dimen183
+\pgf@path@lasty=\dimen184
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcorepathusage.cod
 e.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen178
-\pgf@shorten@start@additional=\dimen179
+\pgf@shorten@end@additional=\dimen185
+\pgf@shorten@start@additional=\dimen186
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcorescopes.code.t
 ex"
@@ -538,19 +565,19 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box52
 \pgf@hbox=\box53
 \pgf@layerbox@main=\box54
-\pgf@picture@serial@count=\count199
+\pgf@picture@serial@count=\count269
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcoregraphicstate.
 code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen180
+\pgflinewidth=\dimen187
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcoretransformatio
 ns.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen181
-\pgf@pt@y=\dimen182
-\pgf@pt@temp=\dimen183
+\pgf@pt@x=\dimen188
+\pgf@pt@y=\dimen189
+\pgf@pt@temp=\dimen190
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcorequick.code.te
 x"
@@ -567,14 +594,14 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcorearrows.code.t
 ex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen184
+\pgfarrowsep=\dimen191
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcoreshade.code.te
 x"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen185
-\pgf@sys@shading@range@num=\count266
-\pgf@shadingcount=\count267
+\pgf@max=\dimen192
+\pgf@sys@shading@range@num=\count270
+\pgf@shadingcount=\count271
 )
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/basiclayer\pgfcoreimage.code.te
 x"
@@ -611,8 +638,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ("E:\Program Files (x86)\Miktex\tex/latex/pgf/compatibility\pgfcomp-version-0-6
 5.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen186
-\pgf@nodesepend=\dimen187
+\pgf@nodesepstart=\dimen193
+\pgf@nodesepend=\dimen194
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/pgf/compatibility\pgfcomp-version-1-1
 8.sty"
@@ -626,8 +653,8 @@ Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/math\pgfmath.code.tex")
-\pgffor@iter=\dimen188
-\pgffor@skip=\dimen189
+\pgffor@iter=\dimen195
+\pgffor@skip=\dimen196
 \pgffor@stack=\toks34
 \pgffor@toks=\toks35
 ))
@@ -638,34 +665,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/libraries\pgflibraryplothandler
 s.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count268
-\pgfplotmarksize=\dimen190
+\pgf@plot@mark@count=\count272
+\pgfplotmarksize=\dimen197
 )
-\tikz@lastx=\dimen191
-\tikz@lasty=\dimen192
-\tikz@lastxsaved=\dimen193
-\tikz@lastysaved=\dimen194
-\tikz@lastmovetox=\dimen195
-\tikz@lastmovetoy=\dimen196
-\tikzleveldistance=\dimen197
-\tikzsiblingdistance=\dimen198
+\tikz@lastx=\dimen198
+\tikz@lasty=\dimen199
+\tikz@lastxsaved=\dimen256
+\tikz@lastysaved=\dimen257
+\tikz@lastmovetox=\dimen258
+\tikz@lastmovetoy=\dimen259
+\tikzleveldistance=\dimen260
+\tikzsiblingdistance=\dimen261
 \tikz@figbox=\box57
 \tikz@figbox@bg=\box58
 \tikz@tempbox=\box59
 \tikz@tempbox@bg=\box60
-\tikztreelevel=\count269
-\tikznumberofchildren=\count270
-\tikznumberofcurrentchild=\count271
-\tikz@fig@count=\count272
+\tikztreelevel=\count273
+\tikznumberofchildren=\count274
+\tikznumberofcurrentchild=\count275
+\tikz@fig@count=\count276
 
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/modules\pgfmodulematrix.code.te
 x"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count273
-\pgfmatrixcurrentcolumn=\count274
-\pgf@matrix@numberofcolumns=\count275
+\pgfmatrixcurrentrow=\count277
+\pgfmatrixcurrentcolumn=\count278
+\pgf@matrix@numberofcolumns=\count279
 )
-\tikz@expandcount=\count276
+\tikz@expandcount=\count280
 
 ("E:\Program Files (x86)\Miktex\tex/generic/pgf/frontendlayer/tikz/libraries\ti
 kzlibrarytopaths.code.tex"
@@ -688,37 +715,37 @@ e.tex"
 File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))) ("E:\Program Files (x86)\Miktex\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count277
-\calc@Bcount=\count278
-\calc@Adimen=\dimen199
-\calc@Bdimen=\dimen256
+\calc@Acount=\count281
+\calc@Bcount=\count282
+\calc@Adimen=\dimen262
+\calc@Bdimen=\dimen263
 \calc@Askip=\skip58
 \calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count279
+\calc@Ccount=\count283
 \calc@Cskip=\skip60
 )
-\c@@todonotes@numberoftodonotes=\count280
+\c@@todonotes@numberoftodonotes=\count284
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\listings.sty"
-\lst@mode=\count281
+\lst@mode=\count285
 \lst@gtempboxa=\box61
 \lst@token=\toks36
-\lst@length=\count282
-\lst@currlwidth=\dimen257
-\lst@column=\count283
-\lst@pos=\count284
-\lst@lostspace=\dimen258
-\lst@width=\dimen259
-\lst@newlines=\count285
-\lst@lineno=\count286
-\lst@maxwidth=\dimen260
+\lst@length=\count286
+\lst@currlwidth=\dimen264
+\lst@column=\count287
+\lst@pos=\count288
+\lst@lostspace=\dimen265
+\lst@width=\dimen266
+\lst@newlines=\count289
+\lst@lineno=\count290
+\lst@maxwidth=\dimen267
 
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count287
-\lst@skipnumbers=\count288
+\c@lstnumber=\count291
+\lst@skipnumbers=\count292
 \lst@framebox=\box62
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\listings.cfg"
@@ -728,22 +755,23 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
  (main.aux
 (Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
 (Chapters/Komponenty.aux) (Chapters/Projekt_rekawicy.aux)
-(Chapters/Dedykowana_aplikacja.aux) (Chapters/Podsumowanie.aux))
+(Chapters/Dedykowana_aplikacja.aux) (Chapters/Rozwoj.aux)
+(Chapters/Podsumowanie.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 65
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 66
 .
 
 ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1ptm.fd"
@@ -751,16 +779,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 ("E:\Program Files (x86)\Miktex\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen261
+\scratchcounter=\count293
+\scratchdimen=\dimen268
 \scratchbox=\box63
-\nofMPsegments=\count290
-\nofMParguments=\count291
+\nofMPsegments=\count294
+\nofMParguments=\count295
 \everyMPshowfont=\toks37
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen262
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
+\MPscratchCnt=\count296
+\MPscratchDim=\dimen269
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
 \everyMPtoPDFconversion=\toks38
 ) ("E:\Program Files (x86)\Miktex\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -770,28 +798,28 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 <head.jpg, id=28, 417.7206pt x 62.1522pt>
 File: head.jpg Graphic file (type jpg)
 <use head.jpg>
-Package pdftex.def Info: head.jpg  used on input line 65.
+Package pdftex.def Info: head.jpg  used on input line 66.
 (pdftex.def)             Requested size: 334.17693pt x 49.72182pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 65.
+(Font)              <12> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 65.
+(Font)              <8> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 65.
+(Font)              <6> on input line 66.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 66.
 
 [1
 
@@ -823,10 +851,14 @@ LaTeX Info: Redefining \selectfont on input line 126.
 \RaggedLeftParindent=\skip72
 \RaggedRightParindent=\skip73
 \JustifyingParindent=\skip74
-) ABD: EveryShipout initializing macros
-\c@lstlisting=\count295
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+ ABD: EveryShipout initializing macros
+\c@lstlisting=\count299
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
  (main.toc [1
 
 
@@ -857,7 +889,7 @@ Rozdzia\l  1.
 
 
 ])
-Underfull \hbox (badness 10000) in paragraph at lines 7--76
+Underfull \hbox (badness 10000) in paragraph at lines 7--77
 
  []
 
@@ -945,7 +977,7 @@ Package pdftex.def Info: Images/circuit.png  used on input line 80.
 File: Images/glove.png Graphic file (type png)
 <use Images/glove.png>
 Package pdftex.def Info: Images/glove.png  used on input line 106.
-(pdftex.def)             Requested size: 268.8442pt x 354.48409pt.
+(pdftex.def)             Requested size: 261.3804pt x 344.64273pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -956,7 +988,7 @@ Overfull \hbox (10.02864pt too wide) in paragraph at lines 123--124
 yst-kich sen-so-rów. Pierw-
  []
 
-[17] [18] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+[17] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
@@ -964,7 +996,8 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [19] [20]
+) [18] [19]
+[20]
 
 LaTeX Warning: Citation `.' on page 21 undefined on input line 193.
 
@@ -976,10 +1009,82 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  (Chapters/Dedykowana_aplikacja.tex
 Rozdzia\l  5.
-
-LaTeX Warning: Marginpar on page 26 moved.
-
+("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) [26
+
+
+
+] [27]
+<Images/UI1.png, id=159, 785.93625pt x 1659.19875pt>
+File: Images/UI1.png Graphic file (type png)
+<use Images/UI1.png>
+Package pdftex.def Info: Images/UI1.png  used on input line 28.
+(pdftex.def)             Requested size: 175.49881pt x 370.4934pt.
+<Images/UI2.png, id=160, 785.93625pt x 1659.19875pt>
+File: Images/UI2.png Graphic file (type png)
+<use Images/UI2.png>
+Package pdftex.def Info: Images/UI2.png  used on input line 34.
+(pdftex.def)             Requested size: 175.49881pt x 370.4934pt.
+
+
+LaTeX Warning: Citation `fig:ifceDane' on page 28 undefined on input line 42.
+
+[28 <./Images/UI1.png> <./Images/UI2.png>] [29]
+
+LaTeX Warning: Reference `subsec:mikrokontroler' on page 30 undefined on input 
+line 58.
+
+[30] [31] [32]
+Overfull \hbox (18.94536pt too wide) in paragraph at lines 113--114
+\T1/ptm/m/n/12 szym przy-padku jako pa-ra-metr typu \T1/ptm/m/it/12 String\T1/p
+tm/m/n/12 , zo-staje po-dany ad-res \T1/ptm/m/it/12 D0:6B:F2:A7:95:03\T1/ptm/m/
+n/12 ,
+ []
+
+[33] [34]
+
+LaTeX Warning: Reference `lst:deklaracje' on page 35 undefined on input line 13
+2.
+
+[35]
+Overfull \hbox (56.95897pt too wide) in paragraph at lines 141--142
+\T1/ptm/m/n/12 Dla ka»-dej ce-chy zo-staje wy-wo-ªana me-toda \T1/ptm/m/it/12 r
+e-ad-Cha-rac-te-ri-stic(BluetoothGattCharacteristic)\T1/ptm/m/n/12 ,
+ []
+
+[36] [37] [38] [39]
+<Images/OK.png, id=201, 225.84375pt x 346.29375pt>
+File: Images/OK.png Graphic file (type png)
+<use Images/OK.png>
+Package pdftex.def Info: Images/OK.png  used on input line 223.
+(pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
+<Images/PEACE.png, id=202, 225.84375pt x 346.29375pt>
+File: Images/PEACE.png Graphic file (type png)
+<use Images/PEACE.png>
+Package pdftex.def Info: Images/PEACE.png  used on input line 229.
+(pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
+<Images/MAHALO.png, id=203, 225.84375pt x 346.29375pt>
+File: Images/MAHALO.png Graphic file (type png)
+<use Images/MAHALO.png>
+Package pdftex.def Info: Images/MAHALO.png  used on input line 235.
+(pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
+<Images/FIST.png, id=204, 225.84375pt x 346.29375pt>
+File: Images/FIST.png Graphic file (type png)
+<use Images/FIST.png>
+Package pdftex.def Info: Images/FIST.png  used on input line 241.
+(pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [40] [41 <./Images/OK.png> <./Images/PEACE.png> <./Images/MAHALO.png> <./Imag
+es/FIST.png>]
+\openout2 = `Chapters/Rozwoj.aux'.
+
+ (Chapters/Rozwoj.tex
+Rozdzia\l  6.
+) [42
 
 
 
@@ -987,36 +1092,36 @@ LaTeX Warning: Marginpar on page 26 moved.
 \openout2 = `Chapters/Podsumowanie.aux'.
 
  (Chapters/Podsumowanie.tex
-Rozdzia\l  6.
-) [27
+Rozdzia\l  7.
+) [43
 
 
 
-] (main.bbl [28
+] (main.bbl [44
 
 
-]) [29] (main.tdo)
+]) [45] (main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [30
+ [46
 
 ] (main.aux (Chapters/Abstrakt.aux)
 (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux) (Chapters/Komponenty.aux)
 (Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
-(Chapters/Podsumowanie.aux))
+(Chapters/Rozwoj.aux) (Chapters/Podsumowanie.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26502 strings out of 492482
- 513560 string characters out of 3130125
- 912022 words of memory out of 3000000
- 30410 multiletter control sequences out of 15000+200000
- 583741 words of font info for 70 fonts, out of 3000000 for 9000
+ 28077 strings out of 492482
+ 541516 string characters out of 3130125
+ 941536 words of memory out of 3000000
+ 31966 multiletter control sequences out of 15000+200000
+ 584819 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,103p,3134b,1830s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,12n,103p,3134b,1841s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files (x86)/Miktex/fonts/enc/dvips/base/8r.enc}<E:/Program Files 
 (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/
 Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Program Files (x86)/Miktex
@@ -1028,9 +1133,9 @@ cm/cmsy10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb
 ><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Fi
 les (x86)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Mikte
 x/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (37 pages, 3562290 bytes).
+Output written on main.pdf (53 pages, 4709960 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
+ 265 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

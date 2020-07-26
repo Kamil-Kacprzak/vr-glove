@@ -1,7 +1,6 @@
 \chapter{Projekt rękawicy}
 \label{ch:rekawica}
-Istotą poniższego rozdziału jest pokazanie użytych w projekcie podzespołów i technologii oraz lepsze zrozumienie powodów dla których to właśnie te produkty zostały wybrane. Po zapoznaniu się z motywem, zostanie szczegółowo opisana specyfikacja tych produktów a także sposób ich poskładania w spójną całość, co sprawiło pewne problemy względem oryginalnego szkicu - próby oraz efekty rozwiązywania tych problemów również zostaną opisane w tym rozdziale. Po nakreśleniu podstawowych założeń projektu zostanie zaprezentowana finałowa wersja, a także szczegółowo zostanie omówiony kod rękawicy-kontrolera, który jest obsługiwany przez mikrokontroler i stanowi najważniejszą część tego projektu.\improvement{Następny rozdział?}  Po zaznajomieniu się z kodem aplikacji, będą zaprezentowane wady oraz możliwe ulepszenia projektu, jakie ukazały się w trakcie prac nad aplikacją obsługującą i wykorzystującą dane z rękawicy, w celu ich prezentacji o czym będzie więcej mowa w rozdziale~\ref{ch:aplikacja} dotyczącym tejże właśnie aplikacji.
- - Dodaj tekst mówiącym o wybraniu arduino ide oraz nie wybraniu istniejacych sdk aby napisac wlasne polaczenie BLE w javie bez unity}
+Istotą poniższego rozdziału jest pokazanie użytych w projekcie podzespołów i technologii oraz lepsze zrozumienie powodów dla których to właśnie te produkty zostały wybrane. Po zapoznaniu się z motywem, zostanie szczegółowo opisana specyfikacja tych produktów a także sposób ich poskładania w spójną całość, co sprawiło pewne problemy względem oryginalnego szkicu - próby oraz efekty rozwiązywania tych problemów również zostaną opisane w tym rozdziale. Po nakreśleniu podstawowych założeń projektu zostanie zaprezentowana finałowa wersja, a także szczegółowo zostanie omówiony kod rękawicy-kontrolera, który jest obsługiwany przez mikrokontroler i stanowi najważniejszą część tego projektu.\improvement{Następny rozdział?} Po zaznajomieniu się z kodem aplikacji, będą zaprezentowane wady oraz możliwe ulepszenia projektu, jakie ukazały się w trakcie prac nad aplikacją obsługującą i wykorzystującą dane z rękawicy, w celu ich prezentacji o czym będzie więcej mowa w rozdziale~\ref{ch:aplikacja} dotyczącym tejże właśnie aplikacji.
 
 \section{Przegląd podzespołów użytych w projekcie}
 \label{sec:przeglad}
@@ -104,7 +103,7 @@ Sposób w jaki zostały dobrane wyjścia jest podyktowany zaleceniami o nie korz
 \begin{figure}[h]
 \centering
 %\includegraphics[width=\textwidth]{glove}
-\includegraphics[scale = 0.2]{glove}
+\includegraphics[scale = 0.35]{glove}
 \caption{Efekt końcowy rękawicy-kontrolera}
 \label{fig:glove}
 \end{figure}

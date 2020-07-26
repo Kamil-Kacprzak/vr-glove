@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{hands}
+3DHaupt.
+\newblock Animowane dłonie.
+\newblock
+  \url{https://3dhaupt.com/3d-model-anatomy-rigged-hands-low-poly-vr-ar-game-ready-blender/},
+  2012.
+
 \bibitem{v-divider}
 K.~Academy.
 \newblock Dzielnik napięcia.
@@ -39,10 +46,28 @@ P.~Bugalski.
   \url{https://forbot.pl/blog/arduino-co-w-srodku-3-zrodlo-wbudowanych-funkcji-id17291},
   2020.
 
+\bibitem{AndroidDoc}
+A.~Developers.
+\newblock Zbuduj wszystko na androidzie.
+\newblock \url{https://developer.android.com/}, 2020.
+
 \bibitem{rezystor}
 Forbot.
 \newblock Rezystor - co warto wiedzieć.
 \newblock \url{https://forbot.pl/blog/leksykon/rezystor}, 2020.
+
+\bibitem{sceneform}
+Google.
+\newblock Przegląd sceneform.
+\newblock \url{https://developers.google.com/sceneform/develop}, 2020.
+
+\bibitem{UUID}
+A.~Mouratidis.
+\newblock Zapisywanie właściwiości cechy zawsze zwraca fałsz w klasie
+  bluetoothgatt.
+\newblock
+  \url{https://stackoverflow.com/questions/57474710/writing-characteristic-property-check-is-always-false-android-bluetoothgatt-clas},
+  2019.
 
 \bibitem{ArduinoBug}
 Russell108.
