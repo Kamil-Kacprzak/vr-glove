@@ -32,6 +32,8 @@ Warning--string name "lipiec" is undefined
 Warning--string name "maj" is undefined
 --line 66 of file bibliografia.bib
 Warning--string name "lipiec" is undefined
+--line 72 of file bibliografia.bib
+Warning--string name "lipiec" is undefined
 --line 78 of file bibliografia.bib
 Warning--string name "pazdziernik" is undefined
 --line 84 of file bibliografia.bib
@@ -39,6 +41,11 @@ Warning--string name "marzec" is undefined
 --line 90 of file bibliografia.bib
 Warning--string name "marzec" is undefined
 --line 96 of file bibliografia.bib
+Warning--string name "marzec" is undefined
+--line 102 of file bibliografia.bib
+Warning--string name "wrzesien" is undefined
+--line 108 of file bibliografia.bib
 Warning--I didn't find a database entry for "."
-Warning--I didn't find a database entry for "fig:ifceDane"
-(There were 17 warnings)
+Warning--to sort, need author, editor, or key in displacement3
+Warning--empty author and editor in displacement3
+(There were 21 warnings)

@@ -32,10 +32,9 @@
 \contentsline {subsection}{\numberline {5.2.2}Pobieranie danych}{35}%
 \contentsline {section}{\numberline {5.3}Google Sceneform SDK}{39}%
 \contentsline {subsection}{\numberline {5.3.1}Model ręki}{40}%
-\contentsline {subsection}{\numberline {5.3.2}Dodawanie nowego modelu}{41}%
-\contentsline {subsection}{\numberline {5.3.3}Rozpoznanie i animacja modelu}{41}%
-\contentsline {subsection}{\numberline {5.3.4}Rotacja}{41}%
-\contentsline {subsection}{\numberline {5.3.5}Przesunięcie}{41}%
-\contentsline {subsection}{\numberline {5.3.6}Kalibracja}{41}%
-\contentsline {chapter}{\numberline {6}Dalszy rozwój projektu}{42}%
-\contentsline {chapter}{\numberline {7}Podsumowanie}{43}%
+\contentsline {subsection}{\numberline {5.3.2}Rozpoznanie i animacja modelu}{44}%
+\contentsline {subsection}{\numberline {5.3.3}Rotacja}{47}%
+\contentsline {subsection}{\numberline {5.3.4}Przesunięcie}{50}%
+\contentsline {subsection}{\numberline {5.3.5}Kalibracja}{51}%
+\contentsline {chapter}{\numberline {6}Dalszy rozwój projektu}{53}%
+\contentsline {chapter}{\numberline {7}Podsumowanie}{54}%

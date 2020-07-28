@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{displacement3}
+{\em Dynamics: Theory and Application of Kane's Method (1st ed.)}.
+\newblock Cambridge University Press, 2016.
+
 \bibitem{hands}
 3DHaupt.
 \newblock Animowane dłonie.
@@ -46,6 +50,13 @@ P.~Bugalski.
   \url{https://forbot.pl/blog/arduino-co-w-srodku-3-zrodlo-wbudowanych-funkcji-id17291},
   2020.
 
+\bibitem{gimbal}
+Dejan.
+\newblock Arduino i mpu6050 akcelerometr i żyroskop - samouczek.
+\newblock \url{
+  https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/},
+  2020.
+
 \bibitem{AndroidDoc}
 A.~Developers.
 \newblock Zbuduj wszystko na androidzie.
@@ -68,6 +79,20 @@ A.~Mouratidis.
 \newblock
   \url{https://stackoverflow.com/questions/57474710/writing-characteristic-property-check-is-always-false-android-bluetoothgatt-clas},
   2019.
+
+\bibitem{displacement2}
+M.~OpenCourseWare.
+\newblock Mnożenie i odwrotność macierzy.
+\newblock
+  \url{https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf},
+  2011.
+
+\bibitem{displacement}
+ResearchGate.
+\newblock Jak obliczyć przemieszczenie z danych akcelerometru?
+\newblock
+  \url{https://www.researchgate.net/post/How_can_I_calculate_displacement_from_accelerometer_data},
+  2012.
 
 \bibitem{ArduinoBug}
 Russell108.
