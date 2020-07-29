@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  29 JUL 2020 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  29 JUL 2020 02:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -1078,27 +1078,27 @@ od spraw-dze-nia czy prze-ka-zany mo-
 
  (Chapters/Rozwoj.tex
 Rozdzia\l  6.
-) [53
+[53
 
 
 
-]
+] [54] [55] [56]) [57]
 \openout2 = `Chapters/Podsumowanie.aux'.
 
  (Chapters/Podsumowanie.tex
 Rozdzia\l  7.
-) [54
+) [58
 
 
 
-] (main.bbl [55
+] (main.bbl [59
 
 
-] [56]) [57] (main.tdo)
+] [60]) [61] (main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [58
+ [62
 
 ] (main.aux
 (Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
@@ -1110,13 +1110,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 28251 strings out of 492482
- 544191 string characters out of 3130125
- 940626 words of memory out of 3000000
- 32140 multiletter control sequences out of 15000+200000
+ 28256 strings out of 492482
+ 544277 string characters out of 3130125
+ 940682 words of memory out of 3000000
+ 32145 multiletter control sequences out of 15000+200000
  584819 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,103p,3134b,1841s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,12n,103p,3458b,1841s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files (x86)/Miktex/fonts/enc/dvips/base/8r.enc}<E:/Program Files 
 (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/
 Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Program Files (x86)/Miktex
@@ -1128,9 +1128,9 @@ cm/cmsy10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb
 ><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Fi
 les (x86)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Mikte
 x/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (65 pages, 4750504 bytes).
+Output written on main.pdf (69 pages, 4762337 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
+ 316 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

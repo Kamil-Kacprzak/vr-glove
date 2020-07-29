@@ -37,4 +37,9 @@
 \contentsline {subsection}{\numberline {5.3.4}Przesunięcie}{50}%
 \contentsline {subsection}{\numberline {5.3.5}Kalibracja}{51}%
 \contentsline {chapter}{\numberline {6}Dalszy rozwój projektu}{53}%
-\contentsline {chapter}{\numberline {7}Podsumowanie}{54}%
+\contentsline {section}{\numberline {6.1}Problemy mikroprocesora}{53}%
+\contentsline {section}{\numberline {6.2}Problemy budowy i czujników wygięcia}{54}%
+\contentsline {section}{\numberline {6.3}Animacja modelu}{56}%
+\contentsline {section}{\numberline {6.4}Błąd rotacji}{56}%
+\contentsline {section}{\numberline {6.5}Problem obliczania przesunięcia}{57}%
+\contentsline {chapter}{\numberline {7}Podsumowanie}{58}%
