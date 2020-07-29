@@ -96,13 +96,13 @@
   month =    marzec,
   year =     2012}
 @Misc{displacement,
-  author =   {ResearchGate},
-  title =    {Jak obliczyć przemieszczenie z danych akcelerometru?},
-  howpublished = {\url{https://www.researchgate.net/post/How_can_I_calculate_displacement_from_accelerometer_data}},
-  month =    marzec,
-  year =     2012}  
+  author =   {ChRobotics},
+  title =    {Uzycie akcelerometru w celu oszacowania pozycji i przyspieszenia.},
+  howpublished = {\url{http://www.chrobotics.com/library/accel-position-velocity}},
+  month =    lpiec,
+  year =     2020}  
 @Misc{displacement2,
-  author =   {MIT OpenCourseWare },
+  author =   {MIT OpenCourseWare},
   title =    {Mnożenie i odwrotność macierzy},
   howpublished = {\url{https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf}},
   month =    wrzesien,
@@ -113,7 +113,55 @@
    publisher = {Cambridge University Press},
    year = {2016},
    }
-      
+@Misc{ledsensor,
+  author =   {Allan D. Murray},
+  title =    {Optyczne sensory wygięcia},
+  howpublished = {\url{https://www.instructables.com/id/Optical-Flex-Sensor/}},
+  month =    lipiec,
+  year =     2017} 
+@Misc{sensorslab,
+  author =   {Redshifts Labs},
+  title =    {Zawartość biblioteki UM7},
+  howpublished = {\url{https://redshiftlabs.com.au/support-services/um7-content-library/}},
+  month =    lipiec,
+  year =     2020}  
+@Misc{vrHistory,
+  author =   {Systel},
+  title =    {Virtual reality, czyli czym jest wirtualna rzeczywistość?},
+  howpublished = {\url{https://systel.pl/virtual-reality/}},
+  month =    lipiec,
+  year =     2020}  
+@Misc{sledzenie,
+  author =   {David Heaney},
+  title =    {Virtual reality, czyli czym jest wirtualna rzeczywistość?},
+  howpublished = {\url{https://uploadvr.com/how-vr-tracking-works/}},
+  month =    kwiecien,
+  year =     2019}    
+@Misc{kontroleryDZB,
+  author =   {John Velasco},
+  title =    {Kontorlery VR: dobre, złe i brzydkie},
+  howpublished = {\url{https://vrsource.com/vr-controllers-6794/}},
+  month =    listopad,
+  year =     20160}           
+@Misc{sayreGlove,
+  author =   {Electronic visualization laboratory},
+  title =    {Rękawica Sayre},
+  howpublished = {\url{https://www.evl.uic.edu/entry.php?id=2162}},
+  month =    lpiec,
+  year =     2020}      
+@Misc{plexus,
+  author =   {Plexus},
+  title =    {Plexus},
+  howpublished = {\url{https://www.plexus.com/en-us/}},
+  month =    lpiec,
+  year =     2020} 
+@Misc{manus,
+  author =   {Manus},
+  title =    {Rękawice manus},
+  howpublished = {\url{https://www.manus-vr.com/}},
+  month =    lpiec,
+  year =     2020}    
+       
   
   
 

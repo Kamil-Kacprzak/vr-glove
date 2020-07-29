@@ -50,6 +50,12 @@ P.~Bugalski.
   \url{https://forbot.pl/blog/arduino-co-w-srodku-3-zrodlo-wbudowanych-funkcji-id17291},
   2020.
 
+\bibitem{displacement}
+ChRobotics.
+\newblock Uzycie akcelerometru w celu oszacowania pozycji i przyspieszenia.
+\newblock \url{http://www.chrobotics.com/library/accel-position-velocity},
+  2020.
+
 \bibitem{gimbal}
 Dejan.
 \newblock Arduino i mpu6050 akcelerometr i żyroskop - samouczek.
@@ -72,6 +78,23 @@ Google.
 \newblock Przegląd sceneform.
 \newblock \url{https://developers.google.com/sceneform/develop}, 2020.
 
+\bibitem{sledzenie}
+D.~Heaney.
+\newblock Virtual reality, czyli czym jest wirtualna rzeczywistość?
+\newblock \url{https://uploadvr.com/how-vr-tracking-works/}, 2019.
+
+\bibitem{sensorslab}
+R.~Labs.
+\newblock Zawartość biblioteki um7.
+\newblock
+  \url{https://redshiftlabs.com.au/support-services/um7-content-library/},
+  2020.
+
+\bibitem{manus}
+Manus.
+\newblock Rękawice manus.
+\newblock \url{https://www.manus-vr.com/}, 2020.
+
 \bibitem{UUID}
 A.~Mouratidis.
 \newblock Zapisywanie właściwiości cechy zawsze zwraca fałsz w klasie
@@ -80,6 +103,11 @@ A.~Mouratidis.
   \url{https://stackoverflow.com/questions/57474710/writing-characteristic-property-check-is-always-false-android-bluetoothgatt-clas},
   2019.
 
+\bibitem{ledsensor}
+A.~D. Murray.
+\newblock Optyczne sensory wygięcia.
+\newblock \url{https://www.instructables.com/id/Optical-Flex-Sensor/}, 2017.
+
 \bibitem{displacement2}
 M.~OpenCourseWare.
 \newblock Mnożenie i odwrotność macierzy.
@@ -87,12 +115,10 @@ M.~OpenCourseWare.
   \url{https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf},
   2011.
 
-\bibitem{displacement}
-ResearchGate.
-\newblock Jak obliczyć przemieszczenie z danych akcelerometru?
-\newblock
-  \url{https://www.researchgate.net/post/How_can_I_calculate_displacement_from_accelerometer_data},
-  2012.
+\bibitem{plexus}
+Plexus.
+\newblock Plexus.
+\newblock \url{https://www.plexus.com/en-us/}, 2020.
 
 \bibitem{ArduinoBug}
 Russell108.
@@ -114,5 +140,20 @@ SM.
 SM.
 \newblock Pierwsze kroki z arduino nano 33 ble.
 \newblock \url{https://www.arduino.cc/en/Guide/NANO33BLE}, 2020.
+
+\bibitem{vrHistory}
+Systel.
+\newblock Virtual reality, czyli czym jest wirtualna rzeczywistość?
+\newblock \url{https://systel.pl/virtual-reality/}, 2020.
+
+\bibitem{kontroleryDZB}
+J.~Velasco.
+\newblock Kontorlery vr: dobre, złe i brzydkie.
+\newblock \url{https://vrsource.com/vr-controllers-6794/}, 20160.
+
+\bibitem{sayreGlove}
+E.~visualization laboratory.
+\newblock Rękawica sayre.
+\newblock \url{https://www.evl.uic.edu/entry.php?id=2162}, 2020.
 
 \end{thebibliography}

@@ -5,41 +5,40 @@
 \babel@toc {polish}{}
 \contentsline {chapter}{\numberline {2}Zagadnienia}{3}%
 \contentsline {section}{\numberline {2.1}Czym jest wirtualna rzeczywistość?}{3}%
-\contentsline {section}{\numberline {2.2}Porównanie dostępnych środowisk do tworzenia aplikacji VR}{3}%
-\contentsline {section}{\numberline {2.3}Porównanie dostępnych SDK}{3}%
-\contentsline {section}{\numberline {2.4}Działanie kontrolerów w VR}{3}%
-\contentsline {chapter}{\numberline {3}Komponenty rękawicy-kontrolera}{4}%
-\contentsline {section}{\numberline {3.1}Nawigacja inercyjna}{4}%
-\contentsline {section}{\numberline {3.2}IMU - Inercyjna jednostka pomiarowa}{4}%
-\contentsline {subsection}{\numberline {3.2.1}Żyroskop}{4}%
-\contentsline {subsection}{\numberline {3.2.2}Akcelerometr}{4}%
-\contentsline {subsection}{\numberline {3.2.3}Magnetometr}{4}%
-\contentsline {section}{\numberline {3.3}Stopnie swobody}{4}%
-\contentsline {section}{\numberline {3.4}Porównanie Bluetooth z BLE(z ang. Bluetooth Low Energy)}{4}%
-\contentsline {section}{\numberline {3.5}Monitorowanie położenia palców}{4}%
-\contentsline {chapter}{\numberline {4}Projekt rękawicy}{5}%
-\contentsline {section}{\numberline {4.1}Przegląd podzespołów użytych w projekcie}{5}%
-\contentsline {subsection}{\numberline {4.1.1}Mikrokontroler}{6}%
-\contentsline {subsection}{\numberline {4.1.2}Czujnik wygięcia}{8}%
-\contentsline {subsection}{\numberline {4.1.3}Rezystor}{10}%
-\contentsline {section}{\numberline {4.2}Budowa rękawicy}{12}%
-\contentsline {section}{\numberline {4.3}Oprogramowanie mikrokontrolera}{15}%
-\contentsline {section}{\numberline {4.4}Podsumowanie}{25}%
-\contentsline {chapter}{\numberline {5}Dedykowana aplikacja w systemie Android}{26}%
-\contentsline {section}{\numberline {5.1}Interfejs}{27}%
-\contentsline {section}{\numberline {5.2}Komunikacja}{30}%
-\contentsline {subsection}{\numberline {5.2.1}Obsługa połączenia Bluetooth Low Energy}{33}%
-\contentsline {subsection}{\numberline {5.2.2}Pobieranie danych}{35}%
-\contentsline {section}{\numberline {5.3}Google Sceneform SDK}{39}%
-\contentsline {subsection}{\numberline {5.3.1}Model ręki}{40}%
-\contentsline {subsection}{\numberline {5.3.2}Rozpoznanie i animacja modelu}{44}%
-\contentsline {subsection}{\numberline {5.3.3}Rotacja}{47}%
-\contentsline {subsection}{\numberline {5.3.4}Przesunięcie}{50}%
-\contentsline {subsection}{\numberline {5.3.5}Kalibracja}{51}%
-\contentsline {chapter}{\numberline {6}Dalszy rozwój projektu}{53}%
-\contentsline {section}{\numberline {6.1}Problemy mikroprocesora}{53}%
-\contentsline {section}{\numberline {6.2}Problemy budowy i czujników wygięcia}{54}%
-\contentsline {section}{\numberline {6.3}Animacja modelu}{56}%
-\contentsline {section}{\numberline {6.4}Błąd rotacji}{56}%
-\contentsline {section}{\numberline {6.5}Problem obliczania przesunięcia}{57}%
-\contentsline {chapter}{\numberline {7}Podsumowanie}{58}%
+\contentsline {section}{\numberline {2.2}Działanie kontrolerów w VR}{5}%
+\contentsline {section}{\numberline {2.3}Wykorzystanie dłoni jako kontrolera}{7}%
+\contentsline {chapter}{\numberline {3}Komponenty rękawicy-kontrolera}{9}%
+\contentsline {section}{\numberline {3.1}Nawigacja inercyjna}{9}%
+\contentsline {section}{\numberline {3.2}IMU - Inercyjna jednostka pomiarowa}{9}%
+\contentsline {subsection}{\numberline {3.2.1}Żyroskop}{9}%
+\contentsline {subsection}{\numberline {3.2.2}Akcelerometr}{9}%
+\contentsline {subsection}{\numberline {3.2.3}Magnetometr}{9}%
+\contentsline {section}{\numberline {3.3}Stopnie swobody}{9}%
+\contentsline {section}{\numberline {3.4}Łączność przy użyciu BLE (z ang. Bluetooth Low Energy)}{9}%
+\contentsline {section}{\numberline {3.5}Śledzenie położenia palców}{9}%
+\contentsline {chapter}{\numberline {4}Projekt rękawicy}{10}%
+\contentsline {section}{\numberline {4.1}Przegląd podzespołów użytych w projekcie}{10}%
+\contentsline {subsection}{\numberline {4.1.1}Mikrokontroler}{11}%
+\contentsline {subsection}{\numberline {4.1.2}Czujnik wygięcia}{13}%
+\contentsline {subsection}{\numberline {4.1.3}Rezystor}{15}%
+\contentsline {section}{\numberline {4.2}Budowa rękawicy}{17}%
+\contentsline {section}{\numberline {4.3}Oprogramowanie mikrokontrolera}{20}%
+\contentsline {section}{\numberline {4.4}Podsumowanie}{30}%
+\contentsline {chapter}{\numberline {5}Dedykowana aplikacja w systemie Android}{31}%
+\contentsline {section}{\numberline {5.1}Interfejs}{32}%
+\contentsline {section}{\numberline {5.2}Komunikacja}{35}%
+\contentsline {subsection}{\numberline {5.2.1}Obsługa połączenia Bluetooth Low Energy}{38}%
+\contentsline {subsection}{\numberline {5.2.2}Pobieranie danych}{40}%
+\contentsline {section}{\numberline {5.3}Google Sceneform SDK}{44}%
+\contentsline {subsection}{\numberline {5.3.1}Model ręki}{45}%
+\contentsline {subsection}{\numberline {5.3.2}Rozpoznanie i animacja modelu}{49}%
+\contentsline {subsection}{\numberline {5.3.3}Rotacja}{52}%
+\contentsline {subsection}{\numberline {5.3.4}Przesunięcie}{55}%
+\contentsline {subsection}{\numberline {5.3.5}Kalibracja}{56}%
+\contentsline {chapter}{\numberline {6}Dalszy rozwój projektu}{58}%
+\contentsline {section}{\numberline {6.1}Problemy mikroprocesora}{58}%
+\contentsline {section}{\numberline {6.2}Problemy budowy i czujników wygięcia}{59}%
+\contentsline {section}{\numberline {6.3}Animacja modelu}{61}%
+\contentsline {section}{\numberline {6.4}Błąd rotacji}{61}%
+\contentsline {section}{\numberline {6.5}Problem obliczania przesunięcia}{62}%
+\contentsline {chapter}{\numberline {7}Podsumowanie}{63}%
