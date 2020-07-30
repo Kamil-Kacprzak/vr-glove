@@ -276,7 +276,6 @@ public class ModelRenderer extends Fragment
                 if(VrGlove.ismIsStateChanged()){
                    if(renderRotation){
                         Quaternion[] quat = new Quaternion[3];
-
                         calculateRotation();
                         quat[0] = Quaternion.axisAngle(new Vector3(0.0f,0.0f,-1.0f),modelAngles[0]); // up/down
                         quat[1] = Quaternion.axisAngle(new Vector3(1.0f,0.0f,0.0f),modelAngles[1]);
@@ -388,13 +387,12 @@ public class ModelRenderer extends Fragment
             final float dT = (currentTime - lastTimestamp) * dtNanoToSec;
             float[] tmpAngles = modelAngles;
             float[] rotationM = getRotationMatrixFromAngles(tmpAngles);
-
-            float[] accDataPostRotation = removeRotation(accSet != null ? accSet : new Float[3], rotationM);
+            accSet = accSet != null ? accSet : new Float[3];
+            float[] accDataPostRotation = removeRotation(accSet, rotationM);
 
             for (int i = 0; i<accDataPostRotation.length; i++ ){
                 accDataPostRotation[i] -= gravityV[i];
             }
-
 
             float[] invMatrix = invertMatrix(rotationM);
             float[] accDataWithoutG;
