@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  29 JUL 2020 21:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  30 JUL 2020 18:26
 entering extended mode
 **./main.tex
 (main.tex
@@ -856,10 +856,16 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will 
+most likely cause issues with the appearance of inserted todonotes. The issue c
+an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
+loading the todonotes package. on input line 66.
+
 \c@lstlisting=\count299
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
- (main.toc [1
+(main.toc [1
 
 
 ])
@@ -870,8 +876,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
-
-[4
+ [4
 
 
 ]
@@ -948,80 +953,96 @@ Package pdftex.def Info: Images/vive.png  used on input line 20.
 
 (Chapters/Komponenty.tex
 Rozdzia\l  3.
-
-LaTeX Warning: Marginpar on page 9 moved.
-
-) [9
+[9
 
 
 
 ]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 10.
+ [10]
+<Images/RPY.png, id=99, 682.04813pt x 477.28313pt>
+File: Images/RPY.png Graphic file (type png)
+<use Images/RPY.png>
+Package pdftex.def Info: Images/RPY.png  used on input line 16.
+(pdftex.def)             Requested size: 272.99881pt x 191.04095pt.
+<Images/gimbal.png, id=100, 639.89063pt x 304.88907pt>
+File: Images/gimbal.png Graphic file (type png)
+<use Images/gimbal.png>
+Package pdftex.def Info: Images/gimbal.png  used on input line 23.
+(pdftex.def)             Requested size: 390.0pt x 185.82388pt.
+ [11] [12 <./Images/RPY.png>] [13 <./Images/gimbal.png>]
+Overfull \hbox (1.31921pt too wide) in paragraph at lines 32--32
+[]\T1/ptm/b/n/17.28 Š¡czno±¢ przy u»y-ciu Blu-eto-oth ni-skiego po-boru
+ []
+
+[14]
+Overfull \hbox (7.28537pt too wide) in paragraph at lines 36--37
+[]\T1/ptm/m/n/12 Gdy mowa o po-ª¡-cze-niu BLE warto zna¢ kilka pod-sta-wo-wych 
+ter-mi-nów. Przede
+ []
+
+) [15]
 \openout2 = `Chapters/Projekt_rekawicy.aux'.
 
  (Chapters/Projekt_rekawicy.tex
 Rozdzia\l  4.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 9
-.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
+0.
 ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
- [10
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+ [16
 
 
 
-] [11]
-<Images/arduino.png, id=102, 619.5948pt x 545.3976pt>
+]
+<Images/arduino.png, id=122, 619.5948pt x 545.3976pt>
 File: Images/arduino.png Graphic file (type png)
 <use Images/arduino.png>
-Package pdftex.def Info: Images/arduino.png  used on input line 24.
+Package pdftex.def Info: Images/arduino.png  used on input line 22.
 (pdftex.def)             Requested size: 309.79665pt x 272.69812pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12] [13 <./Images/arduino.png>] [14]
-<Images/flex-sensor.png, id=113, 743.77875pt x 361.35pt>
+ [17] [18 <./Images/arduino.png>] [19] [20]
+<Images/flex-sensor.png, id=137, 743.77875pt x 361.35pt>
 File: Images/flex-sensor.png Graphic file (type png)
 <use Images/flex-sensor.png>
-Package pdftex.def Info: Images/flex-sensor.png  used on input line 40.
+Package pdftex.def Info: Images/flex-sensor.png  used on input line 38.
 (pdftex.def)             Requested size: 483.45045pt x 234.87471pt.
- [15 <./Images/flex-sensor.png>]
-<Images/oporniki.png, id=117, 387.69844pt x 347.79938pt>
+ [21 <./Images/flex-sensor.png>]
+<Images/oporniki.png, id=141, 387.69844pt x 347.79938pt>
 File: Images/oporniki.png Graphic file (type png)
 <use Images/oporniki.png>
-Package pdftex.def Info: Images/oporniki.png  used on input line 53.
+Package pdftex.def Info: Images/oporniki.png  used on input line 51.
 (pdftex.def)             Requested size: 252.00099pt x 226.06691pt.
-<Images/v-divider.png, id=118, 220.825pt x 284.06125pt>
+<Images/v-divider.png, id=142, 220.825pt x 284.06125pt>
 File: Images/v-divider.png Graphic file (type png)
 <use Images/v-divider.png>
-Package pdftex.def Info: Images/v-divider.png  used on input line 60.
+Package pdftex.def Info: Images/v-divider.png  used on input line 61.
 (pdftex.def)             Requested size: 187.19833pt x 240.81602pt.
- [16 <./Images/oporniki.png>] [17 <./Images/v-divider.png>]
-<Images/circuit.png, id=131, 569.12625pt x 373.395pt>
+ [22 <./Images/oporniki.png>] [23 <./Images/v-divider.png>]
+<Images/circuit.png, id=154, 569.12625pt x 373.395pt>
 File: Images/circuit.png Graphic file (type png)
 <use Images/circuit.png>
 Package pdftex.def Info: Images/circuit.png  used on input line 80.
 (pdftex.def)             Requested size: 390.0pt x 255.88228pt.
- [18 <./Images/circuit.png>]
-[19]
-<Images/glove.png, id=138, 746.79pt x 984.67876pt>
+<Images/glove.png, id=155, 746.79pt x 984.67876pt>
 File: Images/glove.png Graphic file (type png)
 <use Images/glove.png>
-Package pdftex.def Info: Images/glove.png  used on input line 106.
+Package pdftex.def Info: Images/glove.png  used on input line 88.
 (pdftex.def)             Requested size: 261.3804pt x 344.64273pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20] [21 <./Images/glove.png>]
-Overfull \hbox (10.02864pt too wide) in paragraph at lines 123--124
+[24 <./Images/circuit.png>] [25 <./Images/glove.png>] [26] [27]
+Overfull \hbox (10.02864pt too wide) in paragraph at lines 122--123
 \T1/ptm/m/n/12 do-ª¡-czono wy-ma-gane bi-blio-teki dla po-praw-nej ob-sªugi wsz
 yst-kich sen-so-rów. Pierw-
  []
 
-[22] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+[28] [29] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
@@ -1029,84 +1050,66 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [23] [24]
-[25]
-
-LaTeX Warning: Citation `.' on page 26 undefined on input line 193.
-
-[26] [27]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 211.
- [28] [29]) [30]
+) [30] [31]
+[32] [33] [34] [35]) [36]
 \openout2 = `Chapters/Dedykowana_aplikacja.aux'.
 
  (Chapters/Dedykowana_aplikacja.tex
 Rozdzia\l  5.
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [31
+) [37
 
 
 
-] [32]
-<Images/UI1.png, id=182, 785.93625pt x 1659.19875pt>
+] [38]
+<Images/UI1.png, id=204, 785.93625pt x 1659.19875pt>
 File: Images/UI1.png Graphic file (type png)
 <use Images/UI1.png>
 Package pdftex.def Info: Images/UI1.png  used on input line 28.
 (pdftex.def)             Requested size: 175.49881pt x 370.4934pt.
-<Images/UI2.png, id=183, 785.93625pt x 1659.19875pt>
+<Images/UI2.png, id=205, 785.93625pt x 1659.19875pt>
 File: Images/UI2.png Graphic file (type png)
 <use Images/UI2.png>
 Package pdftex.def Info: Images/UI2.png  used on input line 34.
 (pdftex.def)             Requested size: 175.49881pt x 370.4934pt.
 
-[33 <./Images/UI1.png> <./Images/UI2.png>] [34] [35] [36] [37]
-Overfull \hbox (18.94536pt too wide) in paragraph at lines 113--114
+[39 <./Images/UI1.png> <./Images/UI2.png>] [40] [41] [42] [43]
+Overfull \hbox (18.94536pt too wide) in paragraph at lines 110--110
 \T1/ptm/m/n/12 szym przy-padku jako pa-ra-metr typu \T1/ptm/m/it/12 String\T1/p
 tm/m/n/12 , zo-staje po-dany ad-res \T1/ptm/m/it/12 D0:6B:F2:A7:95:03\T1/ptm/m/
 n/12 ,
  []
 
-[38] [39]
-
-LaTeX Warning: Reference `lst:deklaracje' on page 40 undefined on input line 13
-2.
-
-[40]
-Overfull \hbox (56.95897pt too wide) in paragraph at lines 141--142
-\T1/ptm/m/n/12 Dla ka»-dej ce-chy zo-staje wy-wo-ªana me-toda \T1/ptm/m/it/12 r
-e-ad-Cha-rac-te-ri-stic(BluetoothGattCharacteristic)\T1/ptm/m/n/12 ,
- []
-
-[41] [42] [43] [44]
-<Images/OK.png, id=224, 225.84375pt x 346.29375pt>
+[44] [45] [46] [47] [48] [49] [50]
+<Images/OK.png, id=246, 225.84375pt x 346.29375pt>
 File: Images/OK.png Graphic file (type png)
 <use Images/OK.png>
-Package pdftex.def Info: Images/OK.png  used on input line 221.
+Package pdftex.def Info: Images/OK.png  used on input line 216.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
-<Images/PEACE.png, id=225, 225.84375pt x 346.29375pt>
+<Images/PEACE.png, id=247, 225.84375pt x 346.29375pt>
 File: Images/PEACE.png Graphic file (type png)
 <use Images/PEACE.png>
-Package pdftex.def Info: Images/PEACE.png  used on input line 227.
+Package pdftex.def Info: Images/PEACE.png  used on input line 222.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
-<Images/MAHALO.png, id=226, 225.84375pt x 346.29375pt>
+<Images/MAHALO.png, id=248, 225.84375pt x 346.29375pt>
 File: Images/MAHALO.png Graphic file (type png)
 <use Images/MAHALO.png>
-Package pdftex.def Info: Images/MAHALO.png  used on input line 233.
+Package pdftex.def Info: Images/MAHALO.png  used on input line 228.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
-<Images/FIST.png, id=227, 225.84375pt x 346.29375pt>
+<Images/FIST.png, id=249, 225.84375pt x 346.29375pt>
 File: Images/FIST.png Graphic file (type png)
 <use Images/FIST.png>
-Package pdftex.def Info: Images/FIST.png  used on input line 239.
+Package pdftex.def Info: Images/FIST.png  used on input line 234.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
- [45] [46 <./Images/OK.png> <./Images/PEACE.png> <./Images/MAHALO.png> <./Image
-s/FIST.png>] [47] [48] [49] [50]
-Overfull \hbox (3.71739pt too wide) in paragraph at lines 347--348
+ [51] [52 <./Images/OK.png> <./Images/PEACE.png> <./Images/MAHALO.png> <./Image
+s/FIST.png>] [53] [54] [55] [56]
+Overfull \hbox (3.71739pt too wide) in paragraph at lines 337--337
 \T1/ptm/m/it/12 del-To-Node(ModelRenderable)\T1/ptm/m/n/12 , roz-po-czy-na-j¡c 
 od spraw-dze-nia czy prze-ka-zany mo-
  []
 
-[51] [52] [53] [54] [55] [56]) [57]
+[57] [58] [59] [60] [61] [62]) [63]
 \openout2 = `Chapters/Rozwoj.aux'.
 
  (Chapters/Rozwoj.tex
@@ -1117,59 +1120,49 @@ Overfull \hbox (18.4533pt too wide) in paragraph at lines 3--4
 nk-cji r¦kawicy-kontrolera.
  []
 
-[58
+[64
 
 
 
-] [59] [60] [61]) [62]
+] [65] [66] [67]) [68]
 \openout2 = `Chapters/Podsumowanie.aux'.
 
  (Chapters/Podsumowanie.tex
 Rozdzia\l  7.
-[63
+[69
 
 
 
-]) [64] (main.bbl [65
+]) [70] (main.bbl [71
 
 
-] [66] [67]) [68] (main.tdo)
-\tf@tdo=\write7
-\openout7 = `main.tdo'.
-
- [69
-
-] (main.aux
-(Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
-(Chapters/Komponenty.aux) (Chapters/Projekt_rekawicy.aux)
-(Chapters/Dedykowana_aplikacja.aux) (Chapters/Rozwoj.aux)
-(Chapters/Podsumowanie.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+] [72] [73]) [74] (main.aux (Chapters/Abstrakt.aux)
+(Chapters/Wstep.aux) (Chapters/Zagadnienia.aux) (Chapters/Komponenty.aux)
+(Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
+(Chapters/Rozwoj.aux) (Chapters/Podsumowanie.aux)) ) 
 Here is how much of TeX's memory you used:
- 28257 strings out of 492482
- 544007 string characters out of 3130125
- 935669 words of memory out of 3000000
- 32146 multiletter control sequences out of 15000+200000
+ 28117 strings out of 492482
+ 540676 string characters out of 3130125
+ 933789 words of memory out of 3000000
+ 32009 multiletter control sequences out of 15000+200000
  585735 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,103p,3596b,1841s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/Program Files (x86)/Miktex/fonts/enc/dvips/base/8r.enc}<E:/Program Files 
-(x86)/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/
-Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Program Files (x86)/Miktex
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Program Files (x86)/Miktex/fonts/
-type1/public/amsfonts/cm/cmr10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb
-><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Fi
-les (x86)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Mikte
-x/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (77 pages, 5075330 bytes).
+{E:/Program Files (x86)/Mik
+tex/fonts/enc/dvips/base/8r.enc}<E:/Program Files (x86)/Miktex/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/Progr
+am Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Program Fil
+es (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/Program Files (x86)/Mikt
+ex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/
+urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmri
+8a.pfb>
+Output written on main.pdf (82 pages, 5195112 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
+ 365 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
