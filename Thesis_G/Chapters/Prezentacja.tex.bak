@@ -1,0 +1,21 @@
+\chapter{Technologia prezentowania kreowanej rzeczywistości}
+\label{ch:prezentacja}
+
+\section{Okulary VR}
+\label{sec:okulary}
+
+\section{Smart-fon jako urządzenie do prezentacji}
+\label{sec:smartphone}
+
+\section{Kontrolery i IoT}
+\label{sec:iot}
+
+	\subsection{Problemy kontrolerów}
+	\label{subsec:problemy}
+	
+	\subsection{Działanie czujników}
+	\label{subsec:dzialanie}
+	\change {IMU}
+\section{Dłoń jako kontroler}
+\label{sec:dlon}
+\change{historia, pierwsze firmy, popularne rozwiazania}

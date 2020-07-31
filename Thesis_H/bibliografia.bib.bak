@@ -1,0 +1,195 @@
+@Misc{botland-arduino,
+  author =   {Botland.com},
+  title =    {Arduino Nano 33 BLE - ABX00030},
+  howpublished = {\url{https://botland.com.pl/pl/arduino-seria-nano-oryginalne-plytki/14758-arduino-nano-33-ble-abx00030-7630049201491.html}},
+  month =    7,
+  year =     2020}
+@Misc{flex-sensor,
+  author =   {Botland.com},
+  title =    {Czujnik ugięcia 112 x 6,3 mm - SparkFun SEN-08606},
+  howpublished = {\url{https://botland.com.pl/pl/czujniki-nacisku/2406-czujnik-ugiecia-112-x-63-mm-sparkfun-sen-08606.html}},
+  month =    7,
+  year =     2020}
+@Misc{velostat,
+  author =   {Adafruit},
+  title =    {Pressure-Sensitive Conductive Sheet},
+  howpublished = {\url{https://www.adafruit.com/product/1361}},
+  month =    7,
+  year =     2020}
+@Misc{rezystor,
+  author =   {Forbot},
+  title =    {Rezystor - co warto wiedzieć},
+  howpublished = {\url{https://forbot.pl/blog/leksykon/rezystor}},
+  month =    7,
+  year =     2020}
+@Misc{v-divider,
+  author =   {Khan Academy},
+  title =    {Voltage divider},
+  howpublished = {\url{https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-resistor-circuits/a/ee-voltage-divider}},
+  month =    7,
+  year =     2020}
+@Misc{jArduino,
+  author =   {Piotr Bugalski},
+  title =    {(Arduino, co w środku… – część 3 – źródło wbudowanych funkcji)},
+  howpublished = {\url{https://forbot.pl/blog/arduino-co-w-srodku-3-zrodlo-wbudowanych-funkcji-id17291}},
+  month =    7,
+  year =     2020} 
+  
+@Misc{guideArduino,
+  author =   {SM},
+  title =    {Getting started with the Arduino NANO 33 BLE},
+  howpublished = {\url{https://www.arduino.cc/en/Guide/NANO33BLE}},
+  month =    7,
+  year =     2020} 
+@Misc{ArduinoBLE,
+  author =   {SM},
+  title =    {ArduinoBLE Library},
+  howpublished = {\url{https://www.arduino.cc/en/Reference/ArduinoBLE}},
+  month =    7,
+  year =     2020} 
+@Misc{ArduinoIMU,
+  author =   {SM},
+  title =    {Arduino LSM9DS3 library},
+  howpublished = {\url{https://www.arduino.cc/en/Reference/ArduinoLSM9DS1}},
+  month =    7,
+  year =     2020} 
+@Misc{ArduinoDoc,
+  author =   {Arduino},
+  title =    {Language Reference},
+  howpublished = {\url{https://www.arduino.cc/reference/en/}},
+  month =    7,
+  year =     2020} 
+@Misc{ArduinoBug,
+  author =   {Russell108},
+  title =    {BLE nano 33 does not report or disconnect from central},
+  howpublished = {\url{https://github.com/arduino-libraries/ArduinoBLE/issues/33}},
+  month =    5,
+  year =     2020} 
+@Misc{gimbal,
+  author =   {Dejan},
+  title =    {Arduino and MPU6050 Accelerometer and Gyroscope Tutorial},
+  howpublished = {\url{ https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/}},
+  month =    7,
+  year =     2020}
+@Misc{AndroidDoc,
+  author =   {Android Developers},
+  title =    {Build anything on Android},
+  howpublished = {\url{https://developer.android.com/}},
+  month =    7,
+  year =     2020} 
+@Misc{UUID,
+  author =   {Argiris Mouratidis},
+  title =    {Writing characteristic property check is always false Android BluetoothGatt class},
+  howpublished = {\url{https://stackoverflow.com/questions/57474710/writing-characteristic-property-check-is-always-false-android-bluetoothgatt-clas}},
+  month =    10,
+  year =     2019}
+@Misc{sceneform,
+  author =   {Google},
+  title =    {Sceneform overview},
+  howpublished = {\url{https://developers.google.com/sceneform/develop}},
+  month =    3,
+  year =     2020}
+@Misc{hands,
+  author =   {3DHaupt},
+  title =    {My Rigged and Animated 3d Hands},
+  howpublished = {\url{https://3dhaupt.com/3d-model-anatomy-rigged-hands-low-poly-vr-ar-game-ready-blender/}},
+  month =    3,
+  year =     2012}
+@Misc{displacement,
+  author =   {ChRobotics},
+  title =    {Using Accelerometers to Estimate Position and Velocity},
+  howpublished = {\url{http://www.chrobotics.com/library/accel-position-velocity}},
+  month =    7,
+  year =     2020}  
+@Misc{displacement2,
+  author =   {MIT OpenCourseWare},
+  title =    {Multiplication and inverse matrices},
+  howpublished = {\url{https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/ax-b-and-the-four-subspaces/multiplication-and-inverse-matrices/MIT18_06SCF11_Ses1.3sum.pdf}},
+  month =    9,
+  year =     2011} 
+@Book{displacement3,
+   ALTauthor = {Roithmayr, Carlos M.; Hodges, Dewey H.},
+   title = {Dynamics: Theory and Application of Kane's Method (Appendix 1)},
+   publisher = {Cambridge University Press},
+   year = {2016},
+   }
+@Misc{ledsensor,
+  author =   {Allan D. Murray},
+  title =    {Oprical flex sensors},
+  howpublished = {\url{https://www.instructables.com/id/Optical-Flex-Sensor/}},
+  month =    7,
+  year =     2017} 
+@Misc{sensorslab,
+  author =   {Redshifts Labs},
+  title =    {UM7 content library},
+  howpublished = {\url{https://redshiftlabs.com.au/support-services/um7-content-library/}},
+  month =    7,
+  year =     2020}  
+@Misc{vrHistory,
+  author =   {Systel},
+  title =    {Virtual reality, czyli czym jest wirtualna rzeczywistość?},
+  howpublished = {\url{https://systel.pl/virtual-reality/}},
+  month =    7,
+  year =     2020}  
+@Misc{sledzenie,
+  author =   {David Heaney},
+  title =    {How VR Positional Tracking Systems Work},
+  howpublished = {\url{https://uploadvr.com/how-vr-tracking-works/}},
+  month =    4,
+  year =     2019}    
+@Misc{kontroleryDZB,
+  author =   {John Velasco},
+  title =    {VR controllers: the good, the bad, and the ugly},
+  howpublished = {\url{https://vrsource.com/vr-controllers-6794/}},
+  month =    11,
+  year =     20160}           
+@Misc{sayreGlove,
+  author =   {Electronic visualization laboratory},
+  title =    {Sayre glove},
+  howpublished = {\url{https://www.evl.uic.edu/entry.php?id=2162}},
+  month =    7,
+  year =     2020}      
+@Misc{plexus,
+  author =   {Plexus},
+  title =    {Plexus},
+  howpublished = {\url{https://www.plexus.com/en-us/}},
+  month =    7,
+  year =     2020} 
+@Misc{manus,
+  author =   {Manus},
+  title =    {Manus glove},
+  howpublished = {\url{https://www.manus-vr.com/}},
+  month =    7,
+  year =     2020}    
+@Misc{podstawy,
+  author =   {IRM Szczecin},
+  title =    {Podstawy nawigacji inercyjnej},
+  howpublished = {\url{http://irm.am.szczecin.pl/images/instrukcje/PUN/wyklady/nawigacja_inercyjna.pdf}},
+  month =    7,
+  year =     2020} 
+@Book{bSensory,
+   ALTauthor = {Greg Milette, Adam Stroud},
+   title = {Professional Android Sensor Programming(Chapter 5 and 6)},
+   publisher = {wrox},
+   year = {2012},
+   }   
+@Misc{bleSpec,
+  author =   {Bluetooth},
+  title =    {Specyfikacja},
+  howpublished = {\url{https://www.bluetooth.com/specifications/}},
+  month =    7,
+  year =     2020}  
+  
+@Misc{rotations,
+  author =   {D. Rose},
+  title =    {Rotations in Three-Dimensions: Euler Angles and Rotation Matrices},
+  howpublished = {\url{http://danceswithcode.net/engineeringnotes/rotations_in_3d/rotations_in_3d_part1.html}},
+  month =    2,
+  year =     2015}    
+      
+      
+    
+       
+  
+  
+

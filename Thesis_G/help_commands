@@ -1,0 +1,39 @@
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{arduino}
+\captionsource{Opis wejść oraz wyjść Arduino Nano 33 BLE}{\url{https://content.arduino.cc/assets/Pinout-NANOble_latest.pdf}}
+\label{fig:arduino}
+\end{figure}
+
+\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=0.48\textwidth]{v-divider}
+\captionsource{Układ dzielnika napięcia}{\url{https://www.wikiwand.com/en/Voltage_divider}}
+\label{fig:divider}
+\end{center}
+\end{wrapfigure}
+
+
+\begin{lstlisting}[caption={Wczytywanie danych z sensorów.},captionpos=b,label={lst:read},language = C++ , frame = trBL , firstnumber = last , escapeinside={(*@}{@*)}]
+[..]
+\end{lstlisting}
+
+
+\begin{itemize}
+\item Włącz Bluetooth (ang. Turn On Bluetooth)
+\end{itemize}
+\label{itm:stany}
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Palec & Minimalna wartość & Maksymalna wartość \\ \hline
+Kciuk & 520 & 680\\ \hline
+Wskazujący & 400 & 580\\ \hline
+Środkowy & 520 & 670\\ \hline
+Serdeczny & 500 & 750 \\ \hline
+Mały & 480 & 620 \\ \hline
+\hline
+\end{tabular}
+\end{center}
