@@ -31,6 +31,11 @@ Botland.com.
   \url{https://botland.com.pl/pl/czujniki-nacisku/2406-czujnik-ugiecia-112-x-63-mm-sparkfun-sen-08606.html},
   7 2020.
 
+\bibitem{exo}
+BreqLabs.
+\newblock Exoglobe.
+\newblock \url{ http://www.breqlabs.com/website/index.html }, 1 2019.
+
 \bibitem{jArduino}
 P.~Bugalski.
 \newblock (arduino, co w środku… – część 3 – źródło wbudowanych
@@ -39,6 +44,11 @@ P.~Bugalski.
   \url{https://forbot.pl/blog/arduino-co-w-srodku-3-zrodlo-wbudowanych-funkcji-id17291},
   7 2020.
 
+\bibitem{capto}
+CaptoGlove.
+\newblock Captoglove.
+\newblock \url{ https://www.captoglove.com/ }, 1 2019.
+
 \bibitem{gimbal}
 Dejan.
 \newblock Arduino and mpu6050 accelerometer and gyroscope tutorial.
@@ -46,15 +56,55 @@ Dejan.
   https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/},
   7 2020.
 
+\bibitem{p1}
+J.~D'Onfro.
+\newblock Facebook daje tę książkę wszystkim pracownikom działu wirtualnej
+  rzeczywistości.
+\newblock
+  \url{https://businessinsider.com.pl/technologie/nowe-technologie/ready-player-one-inspiracja-dla-oculusa/rh7ml9x},
+  8 2016.
+
+\bibitem{sen2}
+Dreams.
+\newblock What happens in your brain while you dream?
+\newblock
+  \url{https://www.dreams.co.uk/sleep-matters-club/what-happens-in-your-brain-while-you-dream/},
+  7 2020.
+
 \bibitem{rezystor}
 Forbot.
 \newblock Rezystor - co warto wiedzieć.
 \newblock \url{https://forbot.pl/blog/leksykon/rezystor}, 7 2020.
 
+\bibitem{wynalazki}
+A.~Gibbs.
+\newblock Movie-inspired inventions come to life.
+\newblock
+  \url{https://www.cnbc.com/2015/01/14/back-to-the-future-inventions-how-movies-inspired-todays-technology.html},
+  1 2015.
+
 \bibitem{sceneform}
 Google.
 \newblock Sceneform overview.
 \newblock \url{https://developers.google.com/sceneform/develop}, 3 2020.
+
+\bibitem{touchVr}
+GoTouchVr.
+\newblock Vrtouch.
+\newblock \url{ https://www.gotouchvr.com/copy-of-technology-devices-1 }, 1
+  2019.
+
+\bibitem{ewolucja}
+A.~Jan.
+\newblock The evolution of gloves as input devices.
+\newblock
+  \url{https://medium.com/@b00062378/the-evolution-of-gloves-as-input-devices-84efe6ff72bb},
+  6 2019.
+
+\bibitem{review}
+E.~B. V.~P. Jérôme~Perret.
+\newblock Touching virtual reality: a review of haptic gloves.
+\newblock {\em ResearchGate}, 2018.
 
 \bibitem{sensorslab}
 R.~Labs.
@@ -68,10 +118,38 @@ A.~D. Murray.
 \newblock Oprical flex sensors.
 \newblock \url{https://www.instructables.com/id/Optical-Flex-Sensor/}, 7 2017.
 
+\bibitem{terms}
+P.~J.~K. Nancy~Gupton.
+\newblock What’s the difference between ar, vr, and mr?
+\newblock \url{https://www.fi.edu/difference-between-ar-vr-and-mr}, 6 2020.
+
+\bibitem{avatar}
+NeuroDigital.
+\newblock Avatarvr.
+\newblock \url{ https://avatarvr.es/ }, 1 2019.
+
+\bibitem{hi5}
+Noitom.
+\newblock Hi5.
+\newblock \url{https://hi5vrglove.com/}, 1 2019.
+
+\bibitem{sjp1}
+S.~Pwn.
+\newblock rzeczywistość.
+\newblock \url{https://sjp.pwn.pl/slowniki/rzeczywisto%C5%9B%C4%87.html}, 7
+  2020.
+
 \bibitem{ArduinoBug}
 Russell108.
 \newblock Ble nano 33 does not report or disconnect from central.
 \newblock \url{https://github.com/arduino-libraries/ArduinoBLE/issues/33}, 5
+  2020.
+
+\bibitem{XR}
+P.~Sarmini.
+\newblock Xr - rzeczywistość skrzyżowana, czy ukrzyżowana?
+\newblock
+  \url{https://mu.pl/blog/xr--rzeczywistosc-skrzyzowana-czy-ukrzyzowana-13}, 7
   2020.
 
 \bibitem{ArduinoIMU}
@@ -88,5 +166,38 @@ SM.
 SM.
 \newblock Getting started with the arduino nano 33 ble.
 \newblock \url{https://www.arduino.cc/en/Guide/NANO33BLE}, 7 2020.
+
+\bibitem{sen1}
+L.~D. Society.
+\newblock Lucid dream guides.
+\newblock \url{https://www.luciddreamsociety.com/how-to/}, 7 2020.
+
+\bibitem{chorobaVR}
+Systel.
+\newblock Virtual reality, czyli czym jest wirtualna rzeczywistość?
+\newblock \url{https://systel.pl/virtual-reality/}, 7 2020.
+
+\bibitem{tactai}
+Tactai.
+\newblock Tactai haptic module.
+\newblock \url{ https://www.tactai.com/ }, 1 2019.
+
+\bibitem{historia}
+Łukasz Michalik.
+\newblock Historia wirtualnej rzeczywistości. skąd wzięły się gogle vr?
+\newblock \url{https://gadzetomania.pl/57627,historia-vr}, 7 2020.
+
+\bibitem{filmy}
+Łukasz Michalik.
+\newblock Najlepsze filmy o wirtualnej rzeczywistości. jak wyobrażali ją
+  sobie twórcy matriksa i 13. piętra?
+\newblock
+  \url{https://gadzetomania.pl/57950,filmy-o-vr-wirtualna-rzeczywistosc}, 7
+  2020.
+
+\bibitem{manus}
+M.~VR.
+\newblock Manus prime.
+\newblock \url{https://manus-vr.com/}, 1 2019.
 
 \end{thebibliography}

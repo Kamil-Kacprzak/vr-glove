@@ -89,3 +89,86 @@
   howpublished = {\url{https://developers.google.com/sceneform/develop}},
   month =    3,
   year =     2020}
+  
+  
+  
+  @Misc{sjp1,
+  author =   {SJP Pwn},
+  title =    {rzeczywistość},
+  howpublished = {\url{https://sjp.pwn.pl/slowniki/rzeczywisto%C5%9B%C4%87.html}},
+  month =    7,
+  year =     2020}   
+  @Misc{XR,
+  author =   {Piotr Sarmini},
+  title =    {XR - rzeczywistość skrzyżowana, czy ukrzyżowana?},
+  howpublished = {\url{https://mu.pl/blog/xr--rzeczywistosc-skrzyzowana-czy-ukrzyzowana-13}},
+  month =    7,
+  year =     2020} 
+  @Misc{historia,
+  author =   {Łukasz Michalik},
+  title =    {Historia wirtualnej rzeczywistości. Skąd wzięły się gogle VR?},
+  howpublished = {\url{https://gadzetomania.pl/57627,historia-vr}},
+  month =    7,
+  year =     2020}   
+  @Misc{wynalazki,
+  author =   {Alexandra Gibbs},
+  title =    {Movie-inspired inventions come to life},
+  howpublished = {\url{https://www.cnbc.com/2015/01/14/back-to-the-future-inventions-how-movies-inspired-todays-technology.html}},
+  month =    1,
+  year =     2015}
+  @Misc{filmy,
+  author =   {Łukasz Michalik},
+  title =    {Najlepsze filmy o wirtualnej rzeczywistości. Jak wyobrażali ją sobie twórcy Matriksa i 13. piętra?},
+  howpublished = {\url{https://gadzetomania.pl/57950,filmy-o-vr-wirtualna-rzeczywistosc}},
+  month =    7,
+  year =     2020}  
+  @Misc{p1,
+  author =   {Jillian D'Onfro},
+  title =    {Facebook daje tę książkę wszystkim pracownikom działu wirtualnej rzeczywistości},
+  howpublished = {\url{https://businessinsider.com.pl/technologie/nowe-technologie/ready-player-one-inspiracja-dla-oculusa/rh7ml9x}},
+  month =    8,
+  year =     2016}   
+  @Misc{sen1,
+  author =   {Lucid Dream Society},
+  title =    {Lucid Dream Guides},
+  howpublished = {\url{https://www.luciddreamsociety.com/how-to/}},
+  month =    7,
+  year =     2020}  
+  @Misc{sen2,
+  author =   {Dreams},
+  title =    {What Happens In Your Brain While You Dream?},
+  howpublished = {\url{https://www.dreams.co.uk/sleep-matters-club/what-happens-in-your-brain-while-you-dream/}},
+  month =    7,
+  year =     2020}   
+  @Misc{terms,
+  author =   {Nancy Gupton, Patrick J. Kiger},
+  title =    {WHAT’S THE DIFFERENCE BETWEEN AR, VR, AND MR?},
+  howpublished = {\url{https://www.fi.edu/difference-between-ar-vr-and-mr}},
+  month =    6,
+  year =     2020}     
+  @Misc{chorobaVR,
+  author =   {Systel},
+  title =    {Virtual reality, czyli czym jest wirtualna rzeczywistość?},
+  howpublished = {\url{https://systel.pl/virtual-reality/}},
+  month =    7,
+  year =     2020}  
+  @Misc{ewolucja,
+  author =   {Abdulrahman Jan},
+  title =    {The Evolution of Gloves as Input Devices},
+  howpublished = {\url{https://medium.com/@b00062378/the-evolution-of-gloves-as-input-devices-84efe6ff72bb}},
+  month =    6,
+  year =     2019}    
+@Article{review,
+author = {Jérôme Perret ,Emmanuel Benjamin Vander Poorten},
+title = {Touching Virtual Reality: a Review of Haptic Gloves},
+journal = {ResearchGate},
+year = {2018}
+}
+
+
+
+
+
+
+
+  

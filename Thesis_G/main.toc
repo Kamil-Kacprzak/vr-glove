@@ -3,46 +3,47 @@
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Wstęp}{1}%
 \babel@toc {polish}{}
-\contentsline {chapter}{\numberline {2}Zagadnienia}{2}%
-\contentsline {section}{\numberline {2.1}Wpływ kultury na rozwój technologii}{2}%
-\contentsline {subsection}{\numberline {2.1.1}Kinematografia}{2}%
-\contentsline {subsection}{\numberline {2.1.2}Świadome sny}{2}%
-\contentsline {section}{\numberline {2.2}Rodzaje rzeczywistości}{2}%
-\contentsline {subsection}{\numberline {2.2.1}XR}{2}%
-\contentsline {subsection}{\numberline {2.2.2}VR}{2}%
-\contentsline {subsection}{\numberline {2.2.3}AR}{2}%
-\contentsline {subsection}{\numberline {2.2.4}MR}{2}%
-\contentsline {section}{\numberline {2.3}Potencjał technologii}{2}%
-\contentsline {chapter}{\numberline {3}Technologia prezentowania kreowanej rzeczywistości}{3}%
-\contentsline {section}{\numberline {3.1}Okulary VR}{3}%
-\contentsline {section}{\numberline {3.2}Smart-fon jako urządzenie do prezentacji}{3}%
-\contentsline {section}{\numberline {3.3}Kontrolery i IoT}{3}%
-\contentsline {subsection}{\numberline {3.3.1}Problemy kontrolerów}{3}%
-\contentsline {subsection}{\numberline {3.3.2}Działanie czujników}{3}%
-\contentsline {section}{\numberline {3.4}Dłoń jako kontroler}{3}%
-\contentsline {chapter}{\numberline {4}Rękawice jako kontrolery}{4}%
-\contentsline {section}{\numberline {4.1}Rozwój rękawicy jako kontrolera}{4}%
-\contentsline {section}{\numberline {4.2}Podział rękawic-kontrolerów}{4}%
-\contentsline {subsection}{\numberline {4.2.1}Klasyczne}{4}%
-\contentsline {subsection}{\numberline {4.2.2}Nasadowe}{4}%
-\contentsline {subsection}{\numberline {4.2.3}Egzoszkielety}{4}%
-\contentsline {chapter}{\numberline {5}Zastosowania w biznesie}{5}%
-\contentsline {section}{\numberline {5.1}Lotnictwo i symulatory}{5}%
-\contentsline {section}{\numberline {5.2}Medycyna}{5}%
-\contentsline {section}{\numberline {5.3}Architektura}{5}%
-\contentsline {section}{\numberline {5.4}Rozrywka}{5}%
-\contentsline {chapter}{\numberline {6}Projekt rękawicy}{6}%
-\contentsline {section}{\numberline {6.1}Przegląd podzespołów użytych w projekcie}{6}%
-\contentsline {subsection}{\numberline {6.1.1}Mikrokontroler}{7}%
-\contentsline {subsection}{\numberline {6.1.2}Czujnik wygięcia}{9}%
-\contentsline {subsection}{\numberline {6.1.3}Rezystor}{11}%
-\contentsline {section}{\numberline {6.2}Budowa rękawicy}{13}%
-\contentsline {section}{\numberline {6.3}Oprogramowanie mikrokontrolera}{17}%
-\contentsline {section}{\numberline {6.4}Dalszy rozwój}{26}%
-\contentsline {subsection}{\numberline {6.4.1}Problemy mikroprocesora}{26}%
-\contentsline {subsection}{\numberline {6.4.2}Problemy budowy i czujników wygięcia}{27}%
-\contentsline {subsection}{\numberline {6.4.3}Animacja modelu}{28}%
-\contentsline {subsection}{\numberline {6.4.4}Błąd rotacji}{29}%
-\contentsline {subsection}{\numberline {6.4.5}Problem obliczania przesunięcia}{30}%
-\contentsline {section}{\numberline {6.5}Podsumowanie projektu}{30}%
-\contentsline {chapter}{\numberline {7}Podsumowanie}{32}%
+\contentsline {chapter}{\numberline {2}Zagadnienia}{3}%
+\contentsline {section}{\numberline {2.1}Historia kreowania rzeczywistości}{3}%
+\contentsline {section}{\numberline {2.2}Wpływ kultury na rozwój technologii}{5}%
+\contentsline {subsection}{\numberline {2.2.1}Kinematografia}{5}%
+\contentsline {subsection}{\numberline {2.2.2}Marzenia senne}{7}%
+\contentsline {section}{\numberline {2.3}Rodzaje rzeczywistości}{10}%
+\contentsline {subsection}{\numberline {2.3.1}XR}{10}%
+\contentsline {subsection}{\numberline {2.3.2}VR}{11}%
+\contentsline {subsection}{\numberline {2.3.3}AR}{12}%
+\contentsline {subsection}{\numberline {2.3.4}MR}{13}%
+\contentsline {section}{\numberline {2.4}Potencjał technologii}{14}%
+\contentsline {chapter}{\numberline {3}Prezentacja kreowanej rzeczywistości}{15}%
+\contentsline {section}{\numberline {3.1}Okulary VR}{15}%
+\contentsline {section}{\numberline {3.2}Smart-fon jako urządzenie do prezentacji}{15}%
+\contentsline {section}{\numberline {3.3}Kontrolery i IoT}{15}%
+\contentsline {subsection}{\numberline {3.3.1}Problemy kontrolerów}{15}%
+\contentsline {subsection}{\numberline {3.3.2}Działanie czujników}{15}%
+\contentsline {section}{\numberline {3.4}Dłoń jako kontroler}{15}%
+\contentsline {chapter}{\numberline {4}Rękawice jako kontrolery}{16}%
+\contentsline {section}{\numberline {4.1}Rozwój rękawicy jako kontrolera}{16}%
+\contentsline {section}{\numberline {4.2}Podział rękawic-kontrolerów}{18}%
+\contentsline {subsection}{\numberline {4.2.1}Klasyczne}{18}%
+\contentsline {subsection}{\numberline {4.2.2}Nasadowe}{22}%
+\contentsline {subsection}{\numberline {4.2.3}Egzoszkielety}{24}%
+\contentsline {chapter}{\numberline {5}Zastosowania w biznesie}{25}%
+\contentsline {section}{\numberline {5.1}Lotnictwo i symulatory}{25}%
+\contentsline {section}{\numberline {5.2}Medycyna}{25}%
+\contentsline {section}{\numberline {5.3}Architektura}{25}%
+\contentsline {section}{\numberline {5.4}Rozrywka}{25}%
+\contentsline {chapter}{\numberline {6}Projekt rękawicy}{26}%
+\contentsline {section}{\numberline {6.1}Przegląd podzespołów użytych w projekcie}{26}%
+\contentsline {subsection}{\numberline {6.1.1}Mikrokontroler}{27}%
+\contentsline {subsection}{\numberline {6.1.2}Czujnik wygięcia}{29}%
+\contentsline {subsection}{\numberline {6.1.3}Rezystor}{31}%
+\contentsline {section}{\numberline {6.2}Budowa rękawicy}{33}%
+\contentsline {section}{\numberline {6.3}Oprogramowanie mikrokontrolera}{37}%
+\contentsline {section}{\numberline {6.4}Dalszy rozwój}{46}%
+\contentsline {subsection}{\numberline {6.4.1}Problemy mikroprocesora}{46}%
+\contentsline {subsection}{\numberline {6.4.2}Problemy budowy i czujników wygięcia}{47}%
+\contentsline {subsection}{\numberline {6.4.3}Animacja modelu}{48}%
+\contentsline {subsection}{\numberline {6.4.4}Błąd rotacji}{49}%
+\contentsline {subsection}{\numberline {6.4.5}Problem obliczania przesunięcia}{50}%
+\contentsline {section}{\numberline {6.5}Podsumowanie projektu}{50}%
+\contentsline {chapter}{\numberline {7}Podsumowanie}{52}%

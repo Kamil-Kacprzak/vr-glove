@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  1 AUG 2020 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  6 AUG 2020 02:08
 entering extended mode
 **./main.tex
 (main.tex
@@ -887,21 +887,42 @@ Rozdzia\l  1.
 
 
 
-]
+] [2]
 \openout2 = `Chapters/Zagadnienia.aux'.
 
  (Chapters/Zagadnienia.tex
 Rozdzia\l  2.
-) [2
+[3
 
 
 
-]
+] [4]
+Overfull \hbox (1.74771pt too wide) in paragraph at lines 15--16
+\T1/ptm/m/n/12 tu-al-nej rze-czy-wi-sto-±ci znaj-duj¦ si¦ kilka kla-sy-ków. Prz
+ede wszyst-kim warto wspo-
+ []
+
+[5] [6] [7] [8] [9] [10] [11]
+<Images/pokemon.png, id=89, 523.9575pt x 295.1025pt>
+File: Images/pokemon.png Graphic file (type png)
+<use Images/pokemon.png>
+Package pdftex.def Info: Images/pokemon.png  used on input line 38.
+(pdftex.def)             Requested size: 314.37692pt x 177.06285pt.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 39
+.
+
+("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] [13 <./Images/pokemon.png>]) [14]
 \openout2 = `Chapters/Prezentacja.aux'.
 
  (Chapters/Prezentacja.tex
 Rozdzia\l  3.
-) [3
+) [15
 
 
 
@@ -910,16 +931,53 @@ Rozdzia\l  3.
 
  (Chapters/Kontrolery.tex
 Rozdzia\l  4.
-) [4
+<Images/sayra.png, id=106, 1013.7875pt x 722.7pt>
+File: Images/sayra.png Graphic file (type png)
+<use Images/sayra.png>
+Package pdftex.def Info: Images/sayra.png  used on input line 9.
+(pdftex.def)             Requested size: 272.99881pt x 194.61331pt.
+[16
 
 
 
-]
+] [17 <./Images/sayra.png (PNG copy)>]
+<Images/manus.png, id=113, 249.93375pt x 353.06906pt>
+File: Images/manus.png Graphic file (type png)
+<use Images/manus.png>
+Package pdftex.def Info: Images/manus.png  used on input line 24.
+(pdftex.def)             Requested size: 155.99762pt x 220.3767pt.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 25.
+<Images/hi5.png, id=114, 249.93375pt x 353.06906pt>
+File: Images/hi5.png Graphic file (type png)
+<use Images/hi5.png>
+Package pdftex.def Info: Images/hi5.png  used on input line 30.
+(pdftex.def)             Requested size: 132.59857pt x 187.31966pt.
+ [18] [19]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20] [21 <./Images/manus.png> <./Images/hi5.png>] [22]
+<Images/tactai.png, id=136, 97.86563pt x 89.58469pt>
+File: Images/tactai.png Graphic file (type png)
+<use Images/tactai.png>
+Package pdftex.def Info: Images/tactai.png  used on input line 46.
+(pdftex.def)             Requested size: 155.99762pt x 142.8053pt.
+<Images/touchVr.png, id=137, 97.86563pt x 89.58469pt>
+File: Images/touchVr.png Graphic file (type png)
+<use Images/touchVr.png>
+Package pdftex.def Info: Images/touchVr.png  used on input line 52.
+(pdftex.def)             Requested size: 155.99762pt x 142.8053pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23]) [24 <./Images/tactai.png> <./Images/touchVr.png>]
 \openout2 = `Chapters/Biznes.aux'.
 
  (Chapters/Biznes.tex
 Rozdzia\l  5.
-) [5
+) [25
 
 
 
@@ -929,10 +987,11 @@ Rozdzia\l  5.
  (Chapters/Projekt.tex
 Rozdzia\l  6.
 
-LaTeX Warning: Marginpar on page 6 moved.
+LaTeX Warning: Marginpar on page 26 moved.
 
 
-LaTeX Warning: Reference `ch:komponenty' on page 6 undefined on input line 10.
+LaTeX Warning: Reference `ch:komponenty' on page 26 undefined on input line 10.
+
 
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
 2.
@@ -943,51 +1002,48 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
 
 
-LaTeX Warning: Reference `subsec:sensory' on page 6 undefined on input line 16.
+LaTeX Warning: Reference `subsec:sensory' on page 26 undefined on input line 16
+.
 
-
-[6
+[26
 
 
 
 ]
-<Images/arduino.png, id=74, 619.5948pt x 545.3976pt>
+<Images/arduino.png, id=151, 619.5948pt x 545.3976pt>
 File: Images/arduino.png Graphic file (type png)
 <use Images/arduino.png>
 Package pdftex.def Info: Images/arduino.png  used on input line 24.
 (pdftex.def)             Requested size: 309.79665pt x 272.69812pt.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 25
-.
- ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [7] [8 <./Images/arduino.png>]
+ [27] [28 <./Images/arduino.png>]
 
-LaTeX Warning: Reference `ch:komponenty' on page 9 undefined on input line 33.
+LaTeX Warning: Reference `ch:komponenty' on page 29 undefined on input line 33.
 
-[9] [10]
-<Images/flex-sensor.png, id=90, 743.77875pt x 361.35pt>
+
+[29] [30]
+<Images/flex-sensor.png, id=166, 743.77875pt x 361.35pt>
 File: Images/flex-sensor.png Graphic file (type png)
 <use Images/flex-sensor.png>
 Package pdftex.def Info: Images/flex-sensor.png  used on input line 40.
 (pdftex.def)             Requested size: 483.45045pt x 234.87471pt.
- [11 <./Images/flex-sensor.png>]
-<Images/oporniki.png, id=94, 387.69844pt x 347.79938pt>
+ [31 <./Images/flex-sensor.png>]
+<Images/oporniki.png, id=170, 387.69844pt x 347.79938pt>
 File: Images/oporniki.png Graphic file (type png)
 <use Images/oporniki.png>
 Package pdftex.def Info: Images/oporniki.png  used on input line 53.
 (pdftex.def)             Requested size: 252.00099pt x 226.06691pt.
-<Images/v-divider.png, id=95, 220.825pt x 284.06125pt>
+<Images/v-divider.png, id=171, 220.825pt x 284.06125pt>
 File: Images/v-divider.png Graphic file (type png)
 <use Images/v-divider.png>
 Package pdftex.def Info: Images/v-divider.png  used on input line 63.
 (pdftex.def)             Requested size: 187.19833pt x 240.81602pt.
- [12 <./Images/oporniki.png>] [13 <./Images/v-divider.png>]
-<Images/circuit.png, id=110, 569.12625pt x 373.395pt>
+ [32 <./Images/oporniki.png>] [33 <./Images/v-divider.png>]
+<Images/circuit.png, id=183, 569.12625pt x 373.395pt>
 File: Images/circuit.png Graphic file (type png)
 <use Images/circuit.png>
 Package pdftex.def Info: Images/circuit.png  used on input line 82.
 (pdftex.def)             Requested size: 390.0pt x 255.88228pt.
-<Images/glove.png, id=111, 746.79pt x 984.67876pt>
+<Images/glove.png, id=184, 746.79pt x 984.67876pt>
 File: Images/glove.png Graphic file (type png)
 <use Images/glove.png>
 Package pdftex.def Info: Images/glove.png  used on input line 90.
@@ -996,16 +1052,16 @@ Package pdftex.def Info: Images/glove.png  used on input line 90.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./Images/circuit.png>] [15 <./Images/glove.png>] [16] [17]
+[34 <./Images/circuit.png>] [35 <./Images/glove.png>] [36] [37]
 Overfull \hbox (10.02864pt too wide) in paragraph at lines 124--125
 \T1/ptm/m/n/12 do-ª¡-czono wy-ma-gane bi-blio-teki dla po-praw-nej ob-sªugi wsz
 yst-kich sen-so-rów. Pierw-
  []
 
 
-LaTeX Warning: Reference `sec:bvsble' on page 18 undefined on input line 143.
+LaTeX Warning: Reference `sec:bvsble' on page 38 undefined on input line 143.
 
-[18] [19] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+[38] [39] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
@@ -1013,73 +1069,73 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [20] [21]
+) [40] [41]
 
-LaTeX Warning: Reference `subsec:sensory' on page 22 undefined on input line 19
+LaTeX Warning: Reference `subsec:sensory' on page 42 undefined on input line 19
 4.
 
 
-LaTeX Warning: Reference `ch:aplikacja' on page 22 undefined on input line 194.
+LaTeX Warning: Reference `ch:aplikacja' on page 42 undefined on input line 194.
 
 
-[22] [23]
+[42] [43]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 212.
- [24] [25]
+ [44] [45]
 
-LaTeX Warning: Marginpar on page 26 moved.
-
-
-LaTeX Warning: Reference `ch:rekawica' on page 26 undefined on input line 245.
+LaTeX Warning: Marginpar on page 46 moved.
 
 
-LaTeX Warning: Reference `ch:aplikacja' on page 26 undefined on input line 245.
+LaTeX Warning: Reference `ch:rekawica' on page 46 undefined on input line 245.
 
 
-[26] [27]
+LaTeX Warning: Reference `ch:aplikacja' on page 46 undefined on input line 245.
 
-LaTeX Warning: Reference `fig:ifceAnimacja' on page 28 undefined on input line 
+
+[46] [47]
+
+LaTeX Warning: Reference `fig:ifceAnimacja' on page 48 undefined on input line 
 258.
 
-[28] [29]
+[48] [49]
 
-LaTeX Warning: Reference `ch:aplikacja' on page 30 undefined on input line 271.
+LaTeX Warning: Reference `ch:aplikacja' on page 50 undefined on input line 271.
 
 
-) [30] [31]
+) [50] [51]
 \openout2 = `Chapters/Podsumowanie.aux'.
 
  (Chapters/Podsumowanie.tex
 Rozdzia\l  7.
-) [32
+) [52
 
 
 
-] (main.bbl [33
+] (main.bbl [53
 
 
-]) [34] (main.tdo)
+] [54] [55]) [56] (main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [35
+ [57
 
-] (main.aux (Chapters/Abstrakt.aux)
-(Chapters/Wstep.aux) (Chapters/Zagadnienia.aux) (Chapters/Prezentacja.aux)
-(Chapters/Kontrolery.aux) (Chapters/Biznes.aux) (Chapters/Projekt.aux)
-(Chapters/Podsumowanie.aux))
+] (main.aux
+(Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
+(Chapters/Prezentacja.aux) (Chapters/Kontrolery.aux) (Chapters/Biznes.aux)
+(Chapters/Projekt.aux) (Chapters/Podsumowanie.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27702 strings out of 492482
- 535855 string characters out of 3130125
- 928904 words of memory out of 3000000
- 31594 multiletter control sequences out of 15000+200000
- 583741 words of font info for 70 fonts, out of 3000000 for 9000
+ 27745 strings out of 492482
+ 536068 string characters out of 3130125
+ 919274 words of memory out of 3000000
+ 31636 multiletter control sequences out of 15000+200000
+ 585735 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,103p,3597b,1830s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,12n,103p,4194b,1830s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files (x86)/Miktex/fonts/enc/dvips/base/8r.enc}<E:/Program Files 
 (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/
 Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Program Files (x86)/Miktex
@@ -1091,9 +1147,9 @@ cm/cmsy10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb
 ><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Fi
 les (x86)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Mikte
 x/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (42 pages, 3573722 bytes).
+Output written on main.pdf (64 pages, 5771536 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
+ 301 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
