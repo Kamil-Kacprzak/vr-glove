@@ -56,8 +56,9 @@ numberstyle = \tiny,
 \author{Kamil Kacprzak}
 \album{s14004}
 % na przykładzie - gdyby było za dużo 
+%Zastosowanie technologii rzeczywistości
 %A+B
-\title{Zastosowanie technologii rzeczywistości rozszerzonej w biznesie, ze szczególnym uwzględnieniem rękawicy-kontrolera}
+\title{Analiza technologii rzeczywistości rozszerzonej w biznesie, ze szczególnym uwzględnieniem rękawicy-kontrolera}
 \type{Praca inżynierska}
 \supervisor{dr Krzysztof Barteczko}
 \location{Warszawa}

@@ -27,23 +27,22 @@
 \contentsline {subsection}{\numberline {4.2.1}Klasyczne}{18}%
 \contentsline {subsection}{\numberline {4.2.2}Nasadowe}{22}%
 \contentsline {subsection}{\numberline {4.2.3}Egzoszkielety}{24}%
-\contentsline {chapter}{\numberline {5}Zastosowania w biznesie}{25}%
-\contentsline {section}{\numberline {5.1}Lotnictwo i symulatory}{25}%
-\contentsline {section}{\numberline {5.2}Medycyna}{25}%
-\contentsline {section}{\numberline {5.3}Architektura}{25}%
-\contentsline {section}{\numberline {5.4}Rozrywka}{25}%
-\contentsline {chapter}{\numberline {6}Projekt rękawicy}{26}%
-\contentsline {section}{\numberline {6.1}Przegląd podzespołów użytych w projekcie}{26}%
-\contentsline {subsection}{\numberline {6.1.1}Mikrokontroler}{27}%
-\contentsline {subsection}{\numberline {6.1.2}Czujnik wygięcia}{29}%
-\contentsline {subsection}{\numberline {6.1.3}Rezystor}{31}%
-\contentsline {section}{\numberline {6.2}Budowa rękawicy}{33}%
-\contentsline {section}{\numberline {6.3}Oprogramowanie mikrokontrolera}{37}%
-\contentsline {section}{\numberline {6.4}Dalszy rozwój}{46}%
-\contentsline {subsection}{\numberline {6.4.1}Problemy mikroprocesora}{46}%
-\contentsline {subsection}{\numberline {6.4.2}Problemy budowy i czujników wygięcia}{47}%
-\contentsline {subsection}{\numberline {6.4.3}Animacja modelu}{48}%
-\contentsline {subsection}{\numberline {6.4.4}Błąd rotacji}{49}%
-\contentsline {subsection}{\numberline {6.4.5}Problem obliczania przesunięcia}{50}%
-\contentsline {section}{\numberline {6.5}Podsumowanie projektu}{50}%
-\contentsline {chapter}{\numberline {7}Podsumowanie}{52}%
+\contentsline {chapter}{\numberline {5}Zastosowania w biznesie}{29}%
+\contentsline {section}{\numberline {5.1}Lotnictwo i przemysł}{30}%
+\contentsline {section}{\numberline {5.2}Architektura i wizualizacje}{33}%
+\contentsline {section}{\numberline {5.3}Medycyna}{36}%
+\contentsline {section}{\numberline {5.4}Rozrywka}{37}%
+\contentsline {chapter}{\numberline {6}Projekt rękawicy}{40}%
+\contentsline {section}{\numberline {6.1}Mikrokontroler}{41}%
+\contentsline {section}{\numberline {6.2}Czujnik wygięcia}{43}%
+\contentsline {section}{\numberline {6.3}Rezystor}{44}%
+\contentsline {section}{\numberline {6.4}Budowa rękawicy}{46}%
+\contentsline {section}{\numberline {6.5}Oprogramowanie mikrokontrolera}{49}%
+\contentsline {section}{\numberline {6.6}Dalszy rozwój}{55}%
+\contentsline {subsection}{\numberline {6.6.1}Problemy mikroprocesora}{56}%
+\contentsline {subsection}{\numberline {6.6.2}Problemy budowy i czujników wygięcia}{56}%
+\contentsline {subsection}{\numberline {6.6.3}Animacja modelu}{58}%
+\contentsline {subsection}{\numberline {6.6.4}Błąd rotacji}{59}%
+\contentsline {subsection}{\numberline {6.6.5}Problem obliczania przesunięcia}{59}%
+\contentsline {section}{\numberline {6.7}Podsumowanie projektu}{60}%
+\contentsline {chapter}{\numberline {7}Podsumowanie}{61}%

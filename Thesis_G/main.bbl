@@ -17,6 +17,11 @@ Arduino.
 \newblock Language reference.
 \newblock \url{https://www.arduino.cc/reference/en/}, 7 2020.
 
+\bibitem{bleSpec}
+Bluetooth.
+\newblock Specyfikacja.
+\newblock \url{https://www.bluetooth.com/specifications/}, 7 2020.
+
 \bibitem{botland-arduino}
 Botland.com.
 \newblock Arduino nano 33 ble - abx00030.
@@ -30,6 +35,13 @@ Botland.com.
 \newblock
   \url{https://botland.com.pl/pl/czujniki-nacisku/2406-czujnik-ugiecia-112-x-63-mm-sparkfun-sen-08606.html},
   7 2020.
+
+\bibitem{wiz1}
+S.~Brand.
+\newblock How virtual reality is changing the manufacturing game.
+\newblock \url{
+  https://www.cmtc.com/blog/how-virtual-reality-is-changing-the-manufacturing-game
+  }, 7 2020.
 
 \bibitem{exo}
 BreqLabs.
@@ -49,12 +61,37 @@ CaptoGlove.
 \newblock Captoglove.
 \newblock \url{ https://www.captoglove.com/ }, 1 2019.
 
-\bibitem{gimbal}
-Dejan.
-\newblock Arduino and mpu6050 accelerometer and gyroscope tutorial.
+\bibitem{arch}
+S.~Chapman.
+\newblock Digitalvr develops virtual reality platform for architects.
 \newblock \url{
-  https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/},
-  7 2020.
+  https://www.prolificnorth.co.uk/digital/featured/2015/10/digitalvr-develops-virtual-reality-platform-architects
+  }, 10 2015.
+
+\bibitem{displacement}
+ChRobotics.
+\newblock Using accelerometers to estimate position and velocity.
+\newblock \url{http://www.chrobotics.com/library/accel-position-velocity}, 7
+  2020.
+
+\bibitem{act}
+CynterAct.
+\newblock Cynteract glove.
+\newblock \url{ https://cynteract.com/ }, 1 2019.
+
+\bibitem{gry2}
+J.~Damiani.
+\newblock The top 25 vr games of 2018.
+\newblock \url{
+  https://www.forbes.com/sites/jessedamiani/2018/12/30/the-top-25-vr-games-of-2018/#563eda7d6597
+  }, 12 2018.
+
+\bibitem{del}
+Deloitte.
+\newblock Virtual reality: a billion dollar niche.
+\newblock \url{
+  https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-tmt-prediction-virtual-reality-hardware-sales.pdf
+  }, 2016.
 
 \bibitem{p1}
 J.~D'Onfro.
@@ -71,10 +108,25 @@ Dreams.
   \url{https://www.dreams.co.uk/sleep-matters-club/what-happens-in-your-brain-while-you-dream/},
   7 2020.
 
+\bibitem{epicvr}
+EpicVR.
+\newblock Lotnicza akademia wojskowa w dĘblinie - szkolenie vr.
+\newblock \url{
+  https://epicvr.pl/pl/case-study-najciekawsze-innowacyjne-projekty-vr-ar/ }, 7
+  2020.
+
 \bibitem{rezystor}
 Forbot.
 \newblock Rezystor - co warto wiedzieć.
 \newblock \url{https://forbot.pl/blog/leksykon/rezystor}, 7 2020.
+
+\bibitem{ford1}
+Ford.
+\newblock Ford reduces production line injury rate by 70 percent for its more
+  than 50,000 'industrial athletes'.
+\newblock \url{
+  https://media.ford.com/content/fordmedia/fna/us/en/news/2015/07/16/ford-reduces-production-line-injury-rate-by-70-percent.html
+  }, 7 2015.
 
 \bibitem{wynalazki}
 A.~Gibbs.
@@ -94,6 +146,11 @@ GoTouchVr.
 \newblock \url{ https://www.gotouchvr.com/copy-of-technology-devices-1 }, 1
   2019.
 
+\bibitem{haptx}
+HaptX.
+\newblock Haptx glove.
+\newblock \url{ https://haptx.com/ }, 1 2019.
+
 \bibitem{ewolucja}
 A.~Jan.
 \newblock The evolution of gloves as input devices.
@@ -106,11 +163,28 @@ E.~B. V.~P. Jérôme~Perret.
 \newblock Touching virtual reality: a review of haptic gloves.
 \newblock {\em ResearchGate}, 2018.
 
+\bibitem{gry1}
+N.~Kovach.
+\newblock Virtual reality in gaming.
+\newblock \url{ https://thinkmobiles.com/blog/virtual-reality-gaming/ }, 7
+  2020.
+
 \bibitem{sensorslab}
 R.~Labs.
 \newblock Um7 content library.
 \newblock
   \url{https://redshiftlabs.com.au/support-services/um7-content-library/}, 7
+  2020.
+
+\bibitem{hotel2}
+A.~Mandelbaum.
+\newblock How virtual reality can help hotels compete with airbnb.
+\newblock \url{ https://www.hospitalitynet.org/opinion/4072363.html }, 10 2015.
+
+\bibitem{firmy}
+V.~Mangur.
+\newblock Virtual reality companies in 2020.
+\newblock \url{ https://thinkmobiles.com/blog/virtual-reality-companies/ }, 7
   2020.
 
 \bibitem{ledsensor}
@@ -123,15 +197,39 @@ P.~J.~K. Nancy~Gupton.
 \newblock What’s the difference between ar, vr, and mr?
 \newblock \url{https://www.fi.edu/difference-between-ar-vr-and-mr}, 6 2020.
 
+\bibitem{raportVR}
+NaSluhcawkach.
+\newblock Czym jest vr?
+\newblock \url{ https://nasluchawkach.pl/technologia/czym-jest-vr/ }, 7 2020.
+
 \bibitem{avatar}
 NeuroDigital.
 \newblock Avatarvr.
 \newblock \url{ https://avatarvr.es/ }, 1 2019.
 
+\bibitem{gry3}
+A.~nieznany.
+\newblock 7 top educational virtual reality apps.
+\newblock \url{
+  https://www.gettingsmart.com/2017/05/7-best-educational-virtual-reality-apps/
+  }, 6 2017.
+
 \bibitem{hi5}
 Noitom.
 \newblock Hi5.
 \newblock \url{https://hi5vrglove.com/}, 1 2019.
+
+\bibitem{snow}
+U.~of~Washington~Seattle and U.~H.~B. Center.
+\newblock Virtual reality pain reduction.
+\newblock \url{ http://www.hitl.washington.edu/projects/vrpain/ }, 2003.
+
+\bibitem{pana}
+W.~Pawłowicz.
+\newblock Wirtualna rzeczywistość pomaga serwisantom sprzętu.
+\newblock \url{
+  https://www.computerworld.pl/news/Wirtualna-rzeczywistosc-pomaga-serwisantom-sprzetu,422109.html?utm_source=news&utm_campaign=polecane&utm_medium=tags
+  }, 7 2020.
 
 \bibitem{sjp1}
 S.~Pwn.
@@ -139,11 +237,15 @@ S.~Pwn.
 \newblock \url{https://sjp.pwn.pl/slowniki/rzeczywisto%C5%9B%C4%87.html}, 7
   2020.
 
-\bibitem{ArduinoBug}
-Russell108.
-\newblock Ble nano 33 does not report or disconnect from central.
-\newblock \url{https://github.com/arduino-libraries/ArduinoBLE/issues/33}, 5
-  2020.
+\bibitem{hotel1}
+Revfine.
+\newblock Vr hotel tour; 10 amazing examples of virtual reality hotel tours.
+\newblock \url{ https://www.revfine.com/vr-hotel-tour/ }, 10 2015.
+
+\bibitem{dexta}
+D.~Robotics.
+\newblock Dexmo glove.
+\newblock \url{ https://www.dextarobotics.com/en-us }, 1 2019.
 
 \bibitem{XR}
 P.~Sarmini.
@@ -152,10 +254,12 @@ P.~Sarmini.
   \url{https://mu.pl/blog/xr--rzeczywistosc-skrzyzowana-czy-ukrzyzowana-13}, 7
   2020.
 
-\bibitem{ArduinoIMU}
-SM.
-\newblock Arduino lsm9ds3 library.
-\newblock \url{https://www.arduino.cc/en/Reference/ArduinoLSM9DS1}, 7 2020.
+\bibitem{medycyna}
+A.~Senson.
+\newblock Virtual reality in healthcare: Where’s the innovation?
+\newblock \url{
+  https://techcrunch.com/2015/09/16/virtual-reality-in-healthcare-wheres-the-innovation/
+  }, 9 2015.
 
 \bibitem{ArduinoBLE}
 SM.
@@ -177,10 +281,22 @@ Systel.
 \newblock Virtual reality, czyli czym jest wirtualna rzeczywistość?
 \newblock \url{https://systel.pl/virtual-reality/}, 7 2020.
 
+\bibitem{cyber}
+C.~Systems.
+\newblock Cyberglove.
+\newblock \url{ http://www.cyberglovesystems.com/cybergrasp/ }, 1 2019.
+
 \bibitem{tactai}
 Tactai.
 \newblock Tactai haptic module.
 \newblock \url{ https://www.tactai.com/ }, 1 2019.
+
+\bibitem{nasa2}
+techcrunch.
+\newblock Nasa finds real uses for vr and ar in astronomy and engineering.
+\newblock \url{
+  https://techcrunch.com/2020/01/29/nasa-finds-real-uses-for-vr-and-ar-in-astronomy-and-engineering/?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAGQyfFH7JO5BnyBPnrVuHxG00hXTrQHjMpcXXT3DQ94JfEzVsa4Wjd0cIhdf7wQzvH0o6b6vlu-jBQzGX8yBUpQF1YFoZLJanVb3eyJfHttSmqF3UD0pnkA0Dlvt4VayLG0zig9RLoixTRZQEy1VXeRlHiuTlUjpb7X60WaRQHaA&guccounter=2
+  }, 1 2020.
 
 \bibitem{historia}
 Łukasz Michalik.
@@ -199,5 +315,12 @@ Tactai.
 M.~VR.
 \newblock Manus prime.
 \newblock \url{https://manus-vr.com/}, 1 2019.
+
+\bibitem{nasa1}
+vrHunter.
+\newblock Nasa wykorzystuje gogle htc vive do szkolenia astronautów.
+\newblock \url{
+  https://www.vrhunters.pl/nasa-wykorzystuje-gogle-htc-vive-do-szkolenia-astronautow/
+  }, 4 2016.
 
 \end{thebibliography}

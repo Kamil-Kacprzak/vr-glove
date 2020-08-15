@@ -25,7 +25,7 @@ Rozwój rękawic-kontrolerów wprowadził wiele zmian począwszy od technologii 
 	\captionsource{Rękawica firmy Manus Vr}{\url{https://manus-vr.com/mocapgloves}\\}
 	\label{fig:manus}
 	\end{subfigure}
-	~
+	\hspace{0.5cm}
 	\begin{subfigure}[b]{0.34\textwidth}
 	\includegraphics[width=\textwidth]{hi5}
 	\captionsource{Rękawica firmy Noitom}{\url{https://hi5vrglove.com/store/hi5glove}}
@@ -47,7 +47,7 @@ Kolejnym produktem jest \textit{Exoglobe}, który wyróżnia się na tle konkure
 	\captionsource{Urządzenie Tactai}{\url{https://www.tactai.com/company}\\}
 	\label{fig:tactai}
 	\end{subfigure}
-	~
+	\hspace{0.5cm}
 	\begin{subfigure}[b]{0.4\textwidth}
 	\includegraphics[width=\textwidth]{touchVr}
 	\captionsource{Urządzenie TouchVr}{\url{https://www.gotouchvr.com/copy-of-technology-devices-1}}
@@ -59,27 +59,20 @@ Kolejnym produktem jest \textit{Exoglobe}, który wyróżnia się na tle konkure
 
 	\subsection{Egzoszkielety}
 	\label{subsec:egzo}	
-	Ostatnim rodzajem kontrolerów dłoni i zarazem tych które podejmują niejako największe wyzwanie są egzoszkielety. Rękawica typu egzoszkielet jak nazwa wskazuje, jest to rodzaj rękawicy posiadający swojego rodzaju szkielet zewnętrzny. Szkielet ten przymocowany na zewnątrz ciała służy jako dodatkowa blokada naszych dłoni, dzięki czemu użytkownik świata wirtualnego otrzymuje te same impulsy jak w świecie rzeczywistym. Gdy w świecie wirtualnym użytkownik takiego szkieletu ściska kamień, jego dłoń jest blokowana w odpowiednich miejscach, w zależności od danych uzyskanych ze świata wirtualnego który definiuje to jaką pozycję ręka użytkownika może przyjąć. Jest to rodzaj kontrolera nasadowego który pozwala poczuć świat wirtualny jednak nie w dosłownym tego znaczeniu. Uzyskane w ten sposób uczucia nie imitują dotyku przedmiotu a jedynie symulują opór jaki te przedmioty wytwarzają. Ludzki mózg jednak nie lubi rzeczy niewyjaśnionych, w związku z tym samoistnie łączy bodźce wzrokowe z blokadą motoryczną ręki. Istnieje wiele firm zajmujących się tego typu projektami jednak w tym rozdziale zostanie opisane tylko kilka których w sposób szczególny wyróżniają się na tle konkurencji. Projekt taki stworzyła chińska firma Dexta Robotics, która wystartowała z kampanią finansowania społecznego w 2014 roku, jednak zbiórka pieniędzy zakończyła się niepowodzeniem. Była to jedna z pierwszych  spopularyzowanych rękawic egzoszkieletów, która pomimo porażki w zbiórce pieniędzy przetrwała i firma dokończyła projekt na własną rękę w 2016 roku. Egzoszkielet ten pozwala zatrzymać rękę gdy trafi na odpowiedni obiekt a także stopniowo aplikować opór gdy jest ściskany obiekt w zależności od poziomu twardości. Minusem tego rodzaju rozwiązania jest opór który zostaje nakładany jedynie na czubek palca. Sam wygląd rękawicy jest bardzo futurystyczny - rękawica przedstawiona jest na rysunku~\ref{fig:dexmo}
-	
-\begin{figure}[h]
-\centering
-	\begin{subfigure}[b]{0.4\textwidth}
-	\includegraphics[width=\textwidth]{dexmo}
-	\captionsource{Egzoszkielet firmy Dexta Robotics}{\url{https://www.dextarobotics.com/en-us/stories}\\}
+	Ostatnim rodzajem kontrolerów które bazują na ruchu dłoni i zarazem tych które podejmują niejako największe wyzwanie są egzoszkielety. Rękawica typu egzoszkielet, jak sama nazwa wskazuje, jest to rodzaj rękawicy posiadający swojego rodzaju szkielet zewnętrzny. Szkielet ten przymocowany wokół rąk użytkownika służy jako dodatkowa blokada dłoni, dzięki czemu użytkownik świata wirtualnego otrzymuje te same odczucia oporu wynikające z przedmiotów jak w świecie rzeczywistym. Gdy w świecie wirtualnym użytkownik takiego szkieletu ściska kamień, jego dłoń jest blokowana w odpowiednich miejscach, w zależności od danych uzyskanych ze świata wirtualnego który definiuje to jaką pozycję ręka użytkownika może maksymalnie przyjąć. Jest to rodzaj kontrolera nasadowego który pozwala poczuć świat wirtualny jednak nie w dosłownym tego znaczeniu. Uzyskane w ten sposób uczucia nie imitują dotyku przedmiotu a jedynie symulują opór jaki te przedmioty wytwarzają. Ludzki mózg jednak zawsze stara znaleźć się wyjaśnienie dla danego zjawiska, w związku z tym samoistnie łączy bodźce wzrokowe z blokadą motoryczną ręki, nadając tym samym generowanym komputerowo przedmiotom wyższy realizm. Istnieje wiele firm zajmujących się tego typu projektami jednak w tym rozdziale zostanie opisane tylko kilka których w sposób szczególny wyróżniają się na tle konkurencji.
+	 Projekt taki stworzyła chińska firma Dexta Robotics, która wystartowała z kampanią finansowania społecznego w 2014 roku, jednak zbiórka pieniędzy zakończyła się niepowodzeniem. Była to jedna z pierwszych  spopularyzowanych rękawic egzoszkieletów, która pomimo porażki w zbiórce pieniędzy przetrwała i firma dokończyła projekt na własną rękę w 2016 roku. Egzoszkielet ten pozwala zatrzymać rękę gdy trafi na odpowiedni obiekt a także stopniowo aplikować opór gdy jest ściskany obiekt który ten opór zmienia w zależności od poziomu nacisku. Minusem tego rozwiązania jest opór który zostaje nakładany jedynie na czubki palców, co sprawia że traci się w pewnym stopniu realizm interakcji. Sam wygląd rękawicy jest natomiast bardzo futurystyczny - rękawica przedstawiona jest na rysunku~\ref{fig:dexmo}~\cite{dexta}.
+	 \begin{figure}[h]
+	 \centering
+	\includegraphics[width=0.7\textwidth]{dexmo}
+	\captionsource{Egzoszkielet firmy Dexta Robotics}{\url{https://www.dextarobotics.com/en-us/stories}}
 	\label{fig:dexmo}
-	\end{subfigure}
-	~
-	\begin{subfigure}[b]{0.4\textwidth}
-	\includegraphics[width=\textwidth]{haptx}
-	\captionsource{Egzoszkielet firmy HaptX}{\url{https://www.purepc.pl/haptx-glove-pozwoli-na-rejestrowanie-bodzcow-czuciowych-w-vr}}
-	\label{fig:haptx}
-	\end{subfigure}
-\caption{Urządzenia typu egzoszkielet.}
-\label{fig:egzo}
-\end{figure}	
-	
-	
-	vrgluv
-	Cyber Grasp
-	Haptx
-	Cynteract
+	\end{figure}	
+		\begin{wrapfigure}{l}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=0.46\textwidth]{haptx}
+\captionsource{Egzoszkielet firmy HaptX}{\url{https://www.purepc.pl/haptx-glove-pozwoli-na-rejestrowanie-bodzcow-czuciowych-w-vr}}
+\label{fig:haptx}
+\end{center}
+\end{wrapfigure}
+	 Kolejnym projektem godnym uwagi jest rękawica HaptX, która pomimo dość dużych rozmiarów, niezbyt zgrabnego wyglądu oraz wagi około 2,5 kg dostarcza wyjątkowe funkcjonalności. Po pierwsze rękawica ta posiada 120 płytek wokół całej dłoni które imitują nacisk przedmiotów w świecie wirtualnym. Płytki te to małe kółka (około 2-3 mm) zgrupowane na płytce po kilka, kilkanaście sztuk w zależności od umiejscowienia na dłoni, w celu lepszej dystrybucji oraz możliwości zarządzania nimi. Rękawica jest na tyle dokładna że można poczuć pojedyncze odnóża chodzącego po dłoni pająka. Firma pracuje również na dodaniem właściwości termicznych do tych płytek co oprócz dotyku pozwoliłoby poczuć temperaturę przedmiotów. W drugiej generacji rękawicy można było poczuć ciepło oraz zimno dzięki zastosowaniu ciepłego i zimnego płynu którymi wyżej wymienione płytki się napełniają. Informację o położeniu naszej dłoni są wyliczane na podstawie dwóch źródeł. Jednym jest śledzenie optyczne naszej dłoni, drugim natomiast położenie naszych palców względem siebie wyliczane dzięki czujnikom magnetycznym które znajdują się na czubkach palców. Rękawica pokazana jest na rysunku~\ref{fig:haptx}~\cite{haptx}.
+	 Cyber grasp to rozwiązanie które powstało w 2013 roku, gdy popularność VR znowu zaczęła wzrastać. Jest to egzoszkielet który w pełni kontroluje ruchy naszych palców u dłoni. Jest on nakładany na rękawice które zbiera dane o dłoni. Egzoszkielet jest dość duży i mało przyjazny dla oka, nadrabia to jednak funkcjonalnością oraz solidnym wykonaniem. Zapewnia on pełną swobodę ruchu, do 12 N nacisku oraz możliwość zaprogramowania osobno każdego siłownika oddziałującego na poszczególny palec. Sama rękawica zapewnia osiemnaście sensorów - dwa sensory zgięcia na każdym palcu, cztery sensory odwodzenia pomiędzy palcami, sensor mierzący ruch kciuka, kąt dłoni, a także wygięcie oraz odwodzenie nadgarstka. Istnieje również wersja z czterema dodatkowymi sensorami która zapewnia po jednym dodatkowym sensorze na wszystkie palce poza kciukiem. Oprogramowanie rękawicy wspiera imitację takich odczuć jak pulsowania oraz wibracji dla lepszych doznań ze świata wirtualnego~\cite{cyber}. Ostatnim urządzeniem opisanym w tej sekcji jest rękawica firmy Cynteract. Jest to niemiecka grupa studentów produkująca kontroler w postaci przypominającej egzoszkielet. Nie jest to szkielet w dosłownym tego słowa znaczeniu, a raczej rękawica z zaimplementowanym mechanizmem na wierzchu dłoni, który oddziałuję z małą siłą na palce dłoni. Małe silniki kontrolują napięcie sznurków które wędrują wzdłuż palców aż do samych czubków zapewniając odpowiedni opór. Nie jest to mechanizm który ma na celu powstrzymanie zgięcia dłoni a jedynie stawianie regulowanego oporu. Głównym celem tego produktu jest dotarcie do osób które mają problemy z kontrolowaniem dłoni, dzięki czemu przy użyciu tej techniki mogą dokonywać rehabilitacji w bardziej przyjemny sposób poprzez granie w specjalnie zaprogramowane gry które jednocześnie zbierają dane na temat progresu pacjenta.Rękawica jest uniwersalna dzięki czemu technologia użyta na wierzchniej części może być wymieniania pomiędzy różnymi wersjami tego produktu - oprogramowanie stojąca za działaniem tego mechanizmu jak i rękawicy samej w sobie kryje się w pojemniku umocowanym na nadgarstku. Jest to produkt który nastawiony jest konkretnie na branżę medyczną a jego rozwój wspiera wiele placówek medycznych na terenie Niemiec które już z tego rozwiązania korzystają~\cite{act}. Oprócz wspomnianych projektów istnieje wiele innych rozwiązań implementujących własne rozwiązania problemów kontroli ciała użytkownika. Coraz więcej firm stara się aby ich produktu oprócz wysyłania informacji ze świata rzeczywistego do świata wirtualnego, w celu jak najlepszego odwzorowania użytkownika w tym uniwersum, zapewniało również połączenie w drugą stronę, tak aby ich produkty reagowały na interakcję świata wirtualnego w świecie rzeczywistym, pogłębiając tym samym imersje użytkownika. W tej pracy poruszono jedynie tematykę egzoszkieletów bazujących na kontroli palców, istnieją jednak inne rozwiązania które wykorzystują bardziej skomplikowane systemy pozwalające wpływać na poruszanie się ciała użytkownika. W skład tych systemów zazwyczaj wchodzą również rękawice, jednak celem tych produktów nie jest imitacja dotyku poprzez ograniczenie ruchu na której się skupiono w tej sekcji. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  6 AUG 2020 02:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  15 AUG 2020 03:17
 entering extended mode
 **./main.tex
 (main.tex
@@ -758,19 +758,19 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 (Chapters/Projekt.aux) (Chapters/Podsumowanie.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 68
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 69
 .
 
 ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1ptm.fd"
@@ -797,28 +797,28 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 <head.jpg, id=28, 417.7206pt x 62.1522pt>
 File: head.jpg Graphic file (type jpg)
 <use head.jpg>
-Package pdftex.def Info: head.jpg  used on input line 68.
+Package pdftex.def Info: head.jpg  used on input line 69.
 (pdftex.def)             Requested size: 334.17693pt x 49.72182pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 68.
+(Font)              <12> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 68.
+(Font)              <8> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 68.
+(Font)              <6> on input line 69.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 69.
 
 [1
 
@@ -857,7 +857,7 @@ Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count299
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 71.
  (main.toc [1
 
 
@@ -972,96 +972,89 @@ Package pdftex.def Info: Images/touchVr.png  used on input line 52.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23]) [24 <./Images/tactai.png> <./Images/touchVr.png>]
+<Images/dexmo.png, id=138, 803.0pt x 552.0625pt>
+File: Images/dexmo.png Graphic file (type png)
+<use Images/dexmo.png>
+Package pdftex.def Info: Images/dexmo.png  used on input line 66.
+(pdftex.def)             Requested size: 272.99881pt x 187.69034pt.
+<Images/haptx.png, id=139, 39.7485pt x 39.7485pt>
+File: Images/haptx.png Graphic file (type png)
+<use Images/haptx.png>
+Package pdftex.def Info: Images/haptx.png  used on input line 72.
+(pdftex.def)             Requested size: 179.40262pt x 179.4658pt.
+[23] [24 <./Images/tactai.png> <./Images/touchVr.png>] [25 <./Images/dexmo.png 
+(PNG copy)>])
+Overfull \hbox (1.09473pt too wide) in paragraph at lines 76--83
+\T1/ptm/m/n/12 do±¢ du-»ych roz-mia-rów, nie-zbyt zgrab-
+ []
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 76--83
+\T1/ptm/m/n/12 tuj¡ na-cisk przed-mio-tów w ±wie-cie
+ []
+
+[26 <./Images/haptx.png>] [27] [28]
 \openout2 = `Chapters/Biznes.aux'.
 
  (Chapters/Biznes.tex
 Rozdzia\l  5.
-) [25
+[29
 
 
 
-]
+] [30] [31] [32] [33] [34]
+Overfull \hbox (42.89566pt too wide) in paragraph at lines 15--16
+\T1/ptm/m/n/12 ci¡-gni¦-cia no-wych klien-tów. Jak wi-da¢ w za-le»-no-±ci od se
+k-tora a na-wet dziaªu,wizualizacje
+ []
+
+[35] [36]) [37] [38] [39]
 \openout2 = `Chapters/Projekt.aux'.
 
  (Chapters/Projekt.tex
 Rozdzia\l  6.
-
-LaTeX Warning: Marginpar on page 26 moved.
-
-
-LaTeX Warning: Reference `ch:komponenty' on page 26 undefined on input line 10.
-
-
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-2.
-("E:\Program Files (x86)\Miktex\tex/latex/psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
-
-
-LaTeX Warning: Reference `subsec:sensory' on page 26 undefined on input line 16
-.
-
-[26
-
-
-
-]
-<Images/arduino.png, id=151, 619.5948pt x 545.3976pt>
+<Images/arduino.png, id=195, 619.5948pt x 545.3976pt>
 File: Images/arduino.png Graphic file (type png)
 <use Images/arduino.png>
-Package pdftex.def Info: Images/arduino.png  used on input line 24.
+Package pdftex.def Info: Images/arduino.png  used on input line 11.
 (pdftex.def)             Requested size: 309.79665pt x 272.69812pt.
- [27] [28 <./Images/arduino.png>]
-
-LaTeX Warning: Reference `ch:komponenty' on page 29 undefined on input line 33.
+[40
 
 
-[29] [30]
-<Images/flex-sensor.png, id=166, 743.77875pt x 361.35pt>
+
+] [41] [42 <./Images/arduino.png>] [43]
+<Images/flex-sensor.png, id=210, 743.77875pt x 361.35pt>
 File: Images/flex-sensor.png Graphic file (type png)
 <use Images/flex-sensor.png>
-Package pdftex.def Info: Images/flex-sensor.png  used on input line 40.
+Package pdftex.def Info: Images/flex-sensor.png  used on input line 26.
 (pdftex.def)             Requested size: 483.45045pt x 234.87471pt.
- [31 <./Images/flex-sensor.png>]
-<Images/oporniki.png, id=170, 387.69844pt x 347.79938pt>
-File: Images/oporniki.png Graphic file (type png)
-<use Images/oporniki.png>
-Package pdftex.def Info: Images/oporniki.png  used on input line 53.
-(pdftex.def)             Requested size: 252.00099pt x 226.06691pt.
-<Images/v-divider.png, id=171, 220.825pt x 284.06125pt>
-File: Images/v-divider.png Graphic file (type png)
-<use Images/v-divider.png>
-Package pdftex.def Info: Images/v-divider.png  used on input line 63.
-(pdftex.def)             Requested size: 187.19833pt x 240.81602pt.
- [32 <./Images/oporniki.png>] [33 <./Images/v-divider.png>]
-<Images/circuit.png, id=183, 569.12625pt x 373.395pt>
-File: Images/circuit.png Graphic file (type png)
-<use Images/circuit.png>
-Package pdftex.def Info: Images/circuit.png  used on input line 82.
-(pdftex.def)             Requested size: 390.0pt x 255.88228pt.
-<Images/glove.png, id=184, 746.79pt x 984.67876pt>
-File: Images/glove.png Graphic file (type png)
-<use Images/glove.png>
-Package pdftex.def Info: Images/glove.png  used on input line 90.
-(pdftex.def)             Requested size: 261.3804pt x 344.64273pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34 <./Images/circuit.png>] [35 <./Images/glove.png>] [36] [37]
-Overfull \hbox (10.02864pt too wide) in paragraph at lines 124--125
+[44]
+<Images/oporniki.png, id=214, 387.69844pt x 347.79938pt>
+File: Images/oporniki.png Graphic file (type png)
+<use Images/oporniki.png>
+Package pdftex.def Info: Images/oporniki.png  used on input line 39.
+(pdftex.def)             Requested size: 252.00099pt x 226.06691pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[45 <./Images/flex-sensor.png>] [46 <./Images/oporniki.png>]
+<Images/glove.png, id=226, 746.79pt x 984.67876pt>
+File: Images/glove.png Graphic file (type png)
+<use Images/glove.png>
+Package pdftex.def Info: Images/glove.png  used on input line 59.
+(pdftex.def)             Requested size: 261.3804pt x 344.64273pt.
+ [47 <./Images/glove.png>] [48]
+Overfull \hbox (10.02864pt too wide) in paragraph at lines 86--88
 \T1/ptm/m/n/12 do-ª¡-czono wy-ma-gane bi-blio-teki dla po-praw-nej ob-sªugi wsz
 yst-kich sen-so-rów. Pierw-
  []
 
-
-LaTeX Warning: Reference `sec:bvsble' on page 38 undefined on input line 143.
-
-[38] [39] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+[49] [50] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
@@ -1069,56 +1062,51 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [40] [41]
+) [51]
 
-LaTeX Warning: Reference `subsec:sensory' on page 42 undefined on input line 19
-4.
+LaTeX Warning: Reference `subsec:sensory' on page 52 undefined on input line 11
+7.
 
-
-LaTeX Warning: Reference `ch:aplikacja' on page 42 undefined on input line 194.
-
-
-[42] [43]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 212.
- [44] [45]
+(Font)              <17.28> on input line 117.
+[52] [53] [54]
 
-LaTeX Warning: Marginpar on page 46 moved.
-
-
-LaTeX Warning: Reference `ch:rekawica' on page 46 undefined on input line 245.
+LaTeX Warning: Marginpar on page 55 moved.
 
 
-LaTeX Warning: Reference `ch:aplikacja' on page 46 undefined on input line 245.
+LaTeX Warning: Reference `ch:rekawica' on page 55 undefined on input line 149.
 
 
-[46] [47]
-
-LaTeX Warning: Reference `fig:ifceAnimacja' on page 48 undefined on input line 
-258.
-
-[48] [49]
-
-LaTeX Warning: Reference `ch:aplikacja' on page 50 undefined on input line 271.
+LaTeX Warning: Reference `ch:aplikacja' on page 55 undefined on input line 149.
 
 
-) [50] [51]
+[55] [56] [57]
+
+LaTeX Warning: Reference `fig:ifceAnimacja' on page 58 undefined on input line 
+162.
+
+[58] [59]
+
+LaTeX Warning: Reference `ch:aplikacja' on page 60 undefined on input line 175.
+
+
+) [60]
 \openout2 = `Chapters/Podsumowanie.aux'.
 
  (Chapters/Podsumowanie.tex
 Rozdzia\l  7.
-) [52
+) [61
 
 
 
-] (main.bbl [53
+] (main.bbl [62
 
 
-] [54] [55]) [56] (main.tdo)
+] [63] [64] [65] [66] [67]) [68] (main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [57
+ [69
 
 ] (main.aux
 (Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
@@ -1129,27 +1117,28 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 27745 strings out of 492482
- 536068 string characters out of 3130125
- 919274 words of memory out of 3000000
- 31636 multiletter control sequences out of 15000+200000
+ 27692 strings out of 492482
+ 534925 string characters out of 3130125
+ 922635 words of memory out of 3000000
+ 31586 multiletter control sequences out of 15000+200000
  585735 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,103p,4194b,1830s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,12n,103p,5288b,1330s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files (x86)/Miktex/fonts/enc/dvips/base/8r.enc}<E:/Program Files 
 (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/
 Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Program Files (x86)/Miktex
 /fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Program Files (x86)/Miktex/fonts/
 type1/public/amsfonts/cm/cmr10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/p
 ublic/amsfonts/cm/cmr12.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb
-><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Fi
-les (x86)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Mikte
-x/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (64 pages, 5771536 bytes).
+msfonts/cm/cmr6.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/Pro
+gram Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (x86
+)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fonts/
+type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (76 pages, 5961562 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
+ 344 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  174 words of extra memory for PDF output out of 10000 (max. 10000000)
 
