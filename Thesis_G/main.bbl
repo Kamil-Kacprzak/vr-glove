@@ -135,11 +135,6 @@ A.~Gibbs.
   \url{https://www.cnbc.com/2015/01/14/back-to-the-future-inventions-how-movies-inspired-todays-technology.html},
   1 2015.
 
-\bibitem{sceneform}
-Google.
-\newblock Sceneform overview.
-\newblock \url{https://developers.google.com/sceneform/develop}, 3 2020.
-
 \bibitem{touchVr}
 GoTouchVr.
 \newblock Vrtouch.
@@ -163,17 +158,16 @@ E.~B. V.~P. Jérôme~Perret.
 \newblock Touching virtual reality: a review of haptic gloves.
 \newblock {\em ResearchGate}, 2018.
 
+\bibitem{H}
+K.~Kacprzak.
+\newblock Rozwój technologii wirtualnej rzeczywistości na przykładzie
+  rękawicy-kontrolera.
+\newblock Polsko-Japońska Akademia Technik Komputerowych, 2020.
+
 \bibitem{gry1}
 N.~Kovach.
 \newblock Virtual reality in gaming.
 \newblock \url{ https://thinkmobiles.com/blog/virtual-reality-gaming/ }, 7
-  2020.
-
-\bibitem{sensorslab}
-R.~Labs.
-\newblock Um7 content library.
-\newblock
-  \url{https://redshiftlabs.com.au/support-services/um7-content-library/}, 7
   2020.
 
 \bibitem{hotel2}
@@ -186,11 +180,6 @@ V.~Mangur.
 \newblock Virtual reality companies in 2020.
 \newblock \url{ https://thinkmobiles.com/blog/virtual-reality-companies/ }, 7
   2020.
-
-\bibitem{ledsensor}
-A.~D. Murray.
-\newblock Oprical flex sensors.
-\newblock \url{https://www.instructables.com/id/Optical-Flex-Sensor/}, 7 2017.
 
 \bibitem{terms}
 P.~J.~K. Nancy~Gupton.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  15 AUG 2020 03:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  15 AUG 2020 14:04
 entering extended mode
 **./main.tex
 (main.tex
@@ -881,34 +881,33 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 ]
 \openout2 = `Chapters/Wstep.aux'.
 
- (Chapters/Wstep.tex
+ (Chapters/Wstep.tex) [6
+
+
+
+] [7]
+\openout2 = `Chapters/Zagadnienia.aux'.
+
+
+(Chapters/Zagadnienia.tex
 Rozdzia\l  1.
-) [1
+[1
 
 
 
 ] [2]
-\openout2 = `Chapters/Zagadnienia.aux'.
-
- (Chapters/Zagadnienia.tex
-Rozdzia\l  2.
-[3
-
-
-
-] [4]
 Overfull \hbox (1.74771pt too wide) in paragraph at lines 15--16
 \T1/ptm/m/n/12 tu-al-nej rze-czy-wi-sto-±ci znaj-duj¦ si¦ kilka kla-sy-ków. Prz
 ede wszyst-kim warto wspo-
  []
 
-[5] [6] [7] [8] [9] [10] [11]
+[3] [4] [5] [6] [7] [8] [9]
 <Images/pokemon.png, id=89, 523.9575pt x 295.1025pt>
 File: Images/pokemon.png Graphic file (type png)
 <use Images/pokemon.png>
-Package pdftex.def Info: Images/pokemon.png  used on input line 38.
+Package pdftex.def Info: Images/pokemon.png  used on input line 41.
 (pdftex.def)             Requested size: 314.37692pt x 177.06285pt.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 39
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 42
 .
 
 ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1pcr.fd"
@@ -917,12 +916,12 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12] [13 <./Images/pokemon.png>]) [14]
+[10] [11 <./Images/pokemon.png>]) [12]
 \openout2 = `Chapters/Prezentacja.aux'.
 
  (Chapters/Prezentacja.tex
-Rozdzia\l  3.
-) [15
+Rozdzia\l  2.
+) [13
 
 
 
@@ -930,17 +929,17 @@ Rozdzia\l  3.
 \openout2 = `Chapters/Kontrolery.aux'.
 
  (Chapters/Kontrolery.tex
-Rozdzia\l  4.
+Rozdzia\l  3.
 <Images/sayra.png, id=106, 1013.7875pt x 722.7pt>
 File: Images/sayra.png Graphic file (type png)
 <use Images/sayra.png>
 Package pdftex.def Info: Images/sayra.png  used on input line 9.
 (pdftex.def)             Requested size: 272.99881pt x 194.61331pt.
-[16
+[14
 
 
 
-] [17 <./Images/sayra.png (PNG copy)>]
+] [15 <./Images/sayra.png (PNG copy)>]
 <Images/manus.png, id=113, 249.93375pt x 353.06906pt>
 File: Images/manus.png Graphic file (type png)
 <use Images/manus.png>
@@ -953,11 +952,11 @@ File: Images/hi5.png Graphic file (type png)
 <use Images/hi5.png>
 Package pdftex.def Info: Images/hi5.png  used on input line 30.
 (pdftex.def)             Requested size: 132.59857pt x 187.31966pt.
- [18] [19]
+ [16] [17]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[20] [21 <./Images/manus.png> <./Images/hi5.png>] [22]
+[18] [19 <./Images/manus.png> <./Images/hi5.png>] [20]
 <Images/tactai.png, id=136, 97.86563pt x 89.58469pt>
 File: Images/tactai.png Graphic file (type png)
 <use Images/tactai.png>
@@ -982,79 +981,83 @@ File: Images/haptx.png Graphic file (type png)
 <use Images/haptx.png>
 Package pdftex.def Info: Images/haptx.png  used on input line 72.
 (pdftex.def)             Requested size: 179.40262pt x 179.4658pt.
-[23] [24 <./Images/tactai.png> <./Images/touchVr.png>] [25 <./Images/dexmo.png 
+[21] [22 <./Images/tactai.png> <./Images/touchVr.png>] [23 <./Images/dexmo.png 
 (PNG copy)>])
-Overfull \hbox (1.09473pt too wide) in paragraph at lines 76--83
+Overfull \hbox (1.09473pt too wide) in paragraph at lines 76--82
 \T1/ptm/m/n/12 do±¢ du-»ych roz-mia-rów, nie-zbyt zgrab-
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 76--83
+Underfull \hbox (badness 1173) in paragraph at lines 76--82
 \T1/ptm/m/n/12 tuj¡ na-cisk przed-mio-tów w ±wie-cie
  []
 
-[26 <./Images/haptx.png>] [27] [28]
+[24 <./Images/haptx.png>] [25] [26]
 \openout2 = `Chapters/Biznes.aux'.
 
  (Chapters/Biznes.tex
-Rozdzia\l  5.
-[29
+Rozdzia\l  4.
+[27
 
 
 
-] [30] [31] [32] [33] [34]
+] [28] [29] [30] [31] [32]
 Overfull \hbox (42.89566pt too wide) in paragraph at lines 15--16
 \T1/ptm/m/n/12 ci¡-gni¦-cia no-wych klien-tów. Jak wi-da¢ w za-le»-no-±ci od se
 k-tora a na-wet dziaªu,wizualizacje
  []
 
-[35] [36]) [37] [38] [39]
+[33] [34]) [35] [36] [37]
 \openout2 = `Chapters/Projekt.aux'.
 
  (Chapters/Projekt.tex
-Rozdzia\l  6.
+Rozdzia\l  5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
 <Images/arduino.png, id=195, 619.5948pt x 545.3976pt>
 File: Images/arduino.png Graphic file (type png)
 <use Images/arduino.png>
-Package pdftex.def Info: Images/arduino.png  used on input line 11.
+Package pdftex.def Info: Images/arduino.png  used on input line 12.
 (pdftex.def)             Requested size: 309.79665pt x 272.69812pt.
-[40
+[38
 
 
 
-] [41] [42 <./Images/arduino.png>] [43]
+] [39] [40 <./Images/arduino.png>] [41]
 <Images/flex-sensor.png, id=210, 743.77875pt x 361.35pt>
 File: Images/flex-sensor.png Graphic file (type png)
 <use Images/flex-sensor.png>
-Package pdftex.def Info: Images/flex-sensor.png  used on input line 26.
+Package pdftex.def Info: Images/flex-sensor.png  used on input line 27.
 (pdftex.def)             Requested size: 483.45045pt x 234.87471pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[44]
+[42]
 <Images/oporniki.png, id=214, 387.69844pt x 347.79938pt>
 File: Images/oporniki.png Graphic file (type png)
 <use Images/oporniki.png>
-Package pdftex.def Info: Images/oporniki.png  used on input line 39.
+Package pdftex.def Info: Images/oporniki.png  used on input line 40.
 (pdftex.def)             Requested size: 252.00099pt x 226.06691pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45 <./Images/flex-sensor.png>] [46 <./Images/oporniki.png>]
+[43 <./Images/flex-sensor.png>] [44 <./Images/oporniki.png>]
 <Images/glove.png, id=226, 746.79pt x 984.67876pt>
 File: Images/glove.png Graphic file (type png)
 <use Images/glove.png>
-Package pdftex.def Info: Images/glove.png  used on input line 59.
+Package pdftex.def Info: Images/glove.png  used on input line 60.
 (pdftex.def)             Requested size: 261.3804pt x 344.64273pt.
- [47 <./Images/glove.png>] [48]
-Overfull \hbox (10.02864pt too wide) in paragraph at lines 86--88
+ [45 <./Images/glove.png>] [46]
+Overfull \hbox (10.02864pt too wide) in paragraph at lines 87--89
 \T1/ptm/m/n/12 do-ª¡-czono wy-ma-gane bi-blio-teki dla po-praw-nej ob-sªugi wsz
 yst-kich sen-so-rów. Pierw-
  []
 
-[49] [50] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+[47] [48] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
@@ -1062,83 +1065,56 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [51]
-
-LaTeX Warning: Reference `subsec:sensory' on page 52 undefined on input line 11
-7.
-
+) [49]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 117.
-[52] [53] [54]
-
-LaTeX Warning: Marginpar on page 55 moved.
-
-
-LaTeX Warning: Reference `ch:rekawica' on page 55 undefined on input line 149.
-
-
-LaTeX Warning: Reference `ch:aplikacja' on page 55 undefined on input line 149.
-
-
-[55] [56] [57]
-
-LaTeX Warning: Reference `fig:ifceAnimacja' on page 58 undefined on input line 
-162.
-
-[58] [59]
-
-LaTeX Warning: Reference `ch:aplikacja' on page 60 undefined on input line 175.
-
-
-) [60]
+(Font)              <17.28> on input line 118.
+ [50]
+[51] [52]) [53] [54]
 \openout2 = `Chapters/Podsumowanie.aux'.
 
  (Chapters/Podsumowanie.tex
-Rozdzia\l  7.
-) [61
+Rozdzia\l  6.
+) [55
 
 
 
-] (main.bbl [62
+] (main.bbl [56
 
 
-] [63] [64] [65] [66] [67]) [68] (main.tdo)
+] [57] [58] [59] [60] [61]) [62] (main.tdo)
 \tf@tdo=\write7
 \openout7 = `main.tdo'.
 
- [69
+ [63
 
 ] (main.aux
 (Chapters/Abstrakt.aux) (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux)
 (Chapters/Prezentacja.aux) (Chapters/Kontrolery.aux) (Chapters/Biznes.aux)
-(Chapters/Projekt.aux) (Chapters/Podsumowanie.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(Chapters/Projekt.aux) (Chapters/Podsumowanie.aux)) ) 
 Here is how much of TeX's memory you used:
- 27692 strings out of 492482
- 534925 string characters out of 3130125
- 922635 words of memory out of 3000000
- 31586 multiletter control sequences out of 15000+200000
- 585735 words of font info for 74 fonts, out of 3000000 for 9000
+ 27651 strings out of 492482
+ 534098 string characters out of 3130125
+ 908124 words of memory out of 3000000
+ 31542 multiletter control sequences out of 15000+200000
+ 593901 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,103p,5288b,1330s stack positions out of 5000i,500n,10000p,200000b,50000s
-{E:/Program Files (x86)/Miktex/fonts/enc/dvips/base/8r.enc}<E:/Program Files 
-(x86)/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/
-Miktex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Program Files (x86)/Miktex
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Program Files (x86)/Miktex/fonts/
-type1/public/amsfonts/cm/cmr10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/a
-msfonts/cm/cmr6.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/
-cm/cmr8.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/Pro
-gram Files (x86)/Miktex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (x86
-)/Miktex/fonts/type1/urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fonts/
-type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (76 pages, 5961562 bytes).
+{E:/Program Files (x86)/Mi
+ktex/fonts/enc/dvips/base/8r.enc}<E:/Program Files (x86)/Miktex/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/am
+sfonts/cm/cmmi12.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts
+/cm/cmmi8.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<E:/Program Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/Prog
+ram Files (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/Program File
+s (x86)/Miktex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Program Files (x86
+)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/Program Files (x86)/Miktex/font
+s/type1/urw/times/utmb8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/tim
+es/utmr8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmri8a.pfb>
+
+Output written on main.pdf (72 pages, 5948385 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
+ 330 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -164,11 +164,252 @@ title = {Touching Virtual Reality: a Review of Haptic Gloves},
 journal = {ResearchGate},
 year = {2018}
 }
+  @Misc{manus,
+  author =   {Manus VR},
+  title =    {Manus Prime},
+  howpublished = {\url{https://manus-vr.com/}},
+  month =    1,
+  year =     2019} 
+  @Misc{hi5,
+  author =   {Noitom},
+  title =    {Hi5},
+  howpublished = {\url{https://hi5vrglove.com/}},
+  month =    1,
+  year =     2019}   
+  @Misc{exo,
+  author =   {BreqLabs},
+  title =    {Exoglobe},
+  howpublished = {\url{
+						http://www.breqlabs.com/website/index.html
+					}},
+  month =    1,
+  year =     2019} 
+  @Misc{avatar,
+  author =   {NeuroDigital},
+  title =    {AvatarVR},
+  howpublished = {\url{
+						https://avatarvr.es/
+					}},
+  month =    1,
+  year =     2019}   
+    @Misc{capto,
+  author =   {CaptoGlove},
+  title =    {CaptoGlove},
+  howpublished = {\url{
+						https://www.captoglove.com/
+					}},
+  month =    1,
+  year =     2019} 
+      @Misc{tactai,
+  author =   {Tactai},
+  title =    {Tactai Haptic Module},
+  howpublished = {\url{
+					https://www.tactai.com/
+					}},
+  month =    1,
+  year =     2019} 
+  @Misc{touchVr,
+  author =   {GoTouchVr},
+  title =    {VrTouch},
+  howpublished = {\url{
+						https://www.gotouchvr.com/copy-of-technology-devices-1
+					}},
+  month =    1,
+  year =     2019} 
+  @Misc{dexta,
+  author =   {Dexmo Robotics},
+  title =    {Dexmo Glove},
+  howpublished = {\url{
+						https://www.dextarobotics.com/en-us
+					}},
+  month =    1,
+  year =     2019} 
+   @Misc{haptx,
+  author =   {HaptX},
+  title =    {HaptX Glove},
+  howpublished = {\url{
+						https://haptx.com/
+					}},
+  month =    1,
+  year =     2019} 
+   @Misc{cyber,
+  author =   {CyberGlove Systems},
+  title =    {CyberGlove},
+  howpublished = {\url{
+						http://www.cyberglovesystems.com/cybergrasp/
+					}},
+  month =    1,
+  year =     2019}   
+   @Misc{act,
+  author =   {CynterAct},
+  title =    {CynterAct Glove},
+  howpublished = {\url{
+						https://cynteract.com/
+					}},
+  month =    1,
+  year =     2019}   
+  
+     @Misc{raportVR,
+  author =   {NaSluhcawkach},
+  title =    {Czym jest VR?},
+  howpublished = {\url{
+						https://nasluchawkach.pl/technologia/czym-jest-vr/
+					}},
+  month =    7,
+  year =     2020} 
+  @Misc{firmy,
+  author =   {Victor Mangur},
+  title =    {Virtual Reality companies in 2020},
+  howpublished = {\url{
+						https://thinkmobiles.com/blog/virtual-reality-companies/
+					}},
+  month =    7,
+  year =     2020}   
 
+  @Misc{del,
+  author =   {Deloitte},
+  title =    {Virtual reality: a billion dollar niche},
+  howpublished = {\url{
+						https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Technology-Media-Telecommunications/gx-tmt-prediction-virtual-reality-hardware-sales.pdf
+					}},
+  year =     2016}  
+  @Misc{nasa1,
+  author =   {vrHunter},
+  title =    {NASA wykorzystuje gogle HTC Vive do szkolenia astronautów},
+  howpublished = {\url{
+						https://www.vrhunters.pl/nasa-wykorzystuje-gogle-htc-vive-do-szkolenia-astronautow/
+					}},
+  month = 4,						
+  year =     2016}  
+  @Misc{nasa2,
+  author =   {techcrunch},
+  title =    {Nasa finds real uses for vr and ar in astronomy and engineering},
+  howpublished = {\url{
+						https://techcrunch.com/2020/01/29/nasa-finds-real-uses-for-vr-and-ar-in-astronomy-and-engineering/?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAGQyfFH7JO5BnyBPnrVuHxG00hXTrQHjMpcXXT3DQ94JfEzVsa4Wjd0cIhdf7wQzvH0o6b6vlu-jBQzGX8yBUpQF1YFoZLJanVb3eyJfHttSmqF3UD0pnkA0Dlvt4VayLG0zig9RLoixTRZQEy1VXeRlHiuTlUjpb7X60WaRQHaA&guccounter=2
+					}},
+  month = 1,						
+  year =     2020}   
+ 
+ @Misc{epicvr,
+  author =   {EpicVR},
+  title =    {LOTNICZA AKADEMIA WOJSKOWA W DĘBLINIE - SZKOLENIE VR},
+  howpublished = {\url{
+						https://epicvr.pl/pl/case-study-najciekawsze-innowacyjne-projekty-vr-ar/
+					}},
+  month = 7,						
+  year =     2020}  
+ @Misc{ford1,
+  author =   {Ford},
+  title =    {FORD REDUCES PRODUCTION LINE INJURY RATE BY 70 PERCENT FOR ITS MORE THAN 50,000 'INDUSTRIAL ATHLETES'},
+  howpublished = {\url{
+						https://media.ford.com/content/fordmedia/fna/us/en/news/2015/07/16/ford-reduces-production-line-injury-rate-by-70-percent.html
+					}},
+  month = 7,						
+  year =     2015}
+  @Misc{arch,
+  author =   {Stephen Chapman},
+  title =    {DigitalVR develops virtual reality platform for architects},
+  howpublished = {\url{
+						https://www.prolificnorth.co.uk/digital/featured/2015/10/digitalvr-develops-virtual-reality-platform-architects
+					}},
+  month = 10,						
+  year =     2015} 
+  
+    @Misc{hotel1,
+  author =   {Revfine},
+  title =    {VR Hotel Tour; 10 Amazing Examples of Virtual Reality Hotel Tours},
+  howpublished = {\url{
+						https://www.revfine.com/vr-hotel-tour/
+					}},
+  month = 10,						
+  year =     2015} 
+  
+    @Misc{hotel2,
+  author =   {Abi Mandelbaum},
+  title =    {How Virtual Reality Can Help Hotels Compete With Airbnb},
+  howpublished = {\url{
+						https://www.hospitalitynet.org/opinion/4072363.html
+					}},
+  month = 10,						
+  year =     2015} 
 
+    @Misc{wiz1,
+  author =   {Steven Brand},
+  title =    {How Virtual Reality is Changing the Manufacturing Game},
+  howpublished = {\url{
+						https://www.cmtc.com/blog/how-virtual-reality-is-changing-the-manufacturing-game
+					}},
+  month = 7,						
+  year =     2020}   
 
+    @Misc{pana,
+  author =   {Wiesław Pawłowicz},
+  title =    {Wirtualna rzeczywistość pomaga serwisantom sprzętu},
+  howpublished = {\url{
+						https://www.computerworld.pl/news/Wirtualna-rzeczywistosc-pomaga-serwisantom-sprzetu,422109.html?utm_source=news&utm_campaign=polecane&utm_medium=tags
+					}},
+  month = 7,						
+  year =     2020}    
+    @Misc{snow,
+  author =   {University of Washington Seattle and U.W. Harborview Burn Center},
+  title =    {Virtual Reality Pain Reduction},
+  howpublished = {\url{
+						http://www.hitl.washington.edu/projects/vrpain/
+					}},						
+  year =     2003} 
+    @Misc{medycyna,
+  author =   {Alex Senson},
+  title =    {Virtual Reality In Healthcare: Where’s The Innovation?},
+  howpublished = {\url{
+						https://techcrunch.com/2015/09/16/virtual-reality-in-healthcare-wheres-the-innovation/
+					}},	
+  month = 9,
+  year =     2015}   
 
+    @Misc{gry1,
+  author =   {Nadia Kovach},
+  title =    {Virtual Reality in Gaming},
+  howpublished = {\url{
+						https://thinkmobiles.com/blog/virtual-reality-gaming/
+					}},
+  month = 7,						
+  year =     2020} 
 
+    @Misc{gry2,
+  author =   {Jesse Damiani},
+  title =    {The Top 25 VR Games Of 2018},
+  howpublished = {\url{
+						https://www.forbes.com/sites/jessedamiani/2018/12/30/the-top-25-vr-games-of-2018/#563eda7d6597
+					}},
+  month = 12,						
+  year =     2018}   
+  
+      @Misc{gry3,
+  author =   {Autor nieznany},
+  title =    {7 Top Educational Virtual Reality Apps},
+  howpublished = {\url{
+					https://www.gettingsmart.com/2017/05/7-best-educational-virtual-reality-apps/
+					}},
+  month = 6,						
+  year =     2017}  
+  
+  @Misc{displacement,
+  author =   {ChRobotics},
+  title =    {Using Accelerometers to Estimate Position and Velocity},
+  howpublished = {\url{http://www.chrobotics.com/library/accel-position-velocity}},
+  month =    7,
+  year =     2020}
+  
+  @Misc{bleSpec,
+  author =   {Bluetooth},
+  title =    {Specyfikacja},
+  howpublished = {\url{https://www.bluetooth.com/specifications/}},
+  month =    7,
+  year =     2020} 
 
-
+    @Misc{H,
+  author =   {Kamil Kacprzak},
+  title =    {Rozwój technologii wirtualnej rzeczywistości na przykładzie rękawicy-kontrolera},
+  howpublished = {Polsko-Japońska Akademia Technik Komputerowych},
+  year =     2020} 
   

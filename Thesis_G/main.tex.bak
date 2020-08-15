@@ -73,11 +73,10 @@ numberstyle = \tiny,
 %\listoftables
 
 \include{Chapters/Abstrakt}
-
 \selectlanguage{polish} 
+\include{Chapters/Wstep}
 \pagenumbering{arabic}
 \baselineskip=22pt
-\include{Chapters/Wstep}
 \include{Chapters/Zagadnienia}
 \include{Chapters/Prezentacja}
 \include{Chapters/Kontrolery}
