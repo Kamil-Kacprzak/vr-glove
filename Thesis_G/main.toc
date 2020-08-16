@@ -2,35 +2,30 @@
 \babel@toc {polish}{}
 \babel@toc {english}{}
 \babel@toc {polish}{}
-\contentsline {chapter}{\numberline {1}Zagadnienia}{1}%
-\contentsline {section}{\numberline {1.1}Historia kreowania rzeczywistości}{1}%
-\contentsline {section}{\numberline {1.2}Wpływ kultury na rozwój technologii}{3}%
-\contentsline {subsection}{\numberline {1.2.1}Kinematografia}{3}%
-\contentsline {subsection}{\numberline {1.2.2}Marzenia senne}{5}%
-\contentsline {section}{\numberline {1.3}Rodzaje rzeczywistości}{8}%
-\contentsline {chapter}{\numberline {2}Interakcja z kreowaną rzeczywistością}{13}%
-\contentsline {section}{\numberline {2.1}Okulary VR}{13}%
-\contentsline {section}{\numberline {2.2}Smart-fon jako urządzenie do prezentacji}{13}%
-\contentsline {section}{\numberline {2.3}Kontrolery i IoT}{13}%
-\contentsline {subsection}{\numberline {2.3.1}Problemy kontrolerów}{13}%
-\contentsline {subsection}{\numberline {2.3.2}Działanie czujników}{13}%
-\contentsline {section}{\numberline {2.4}Dłoń jako kontroler}{13}%
-\contentsline {chapter}{\numberline {3}Rękawice jako kontrolery}{14}%
-\contentsline {section}{\numberline {3.1}Rozwój rękawicy jako kontrolera}{14}%
-\contentsline {section}{\numberline {3.2}Podział rękawic-kontrolerów}{16}%
-\contentsline {subsection}{\numberline {3.2.1}Klasyczne}{16}%
-\contentsline {subsection}{\numberline {3.2.2}Nasadowe}{20}%
-\contentsline {subsection}{\numberline {3.2.3}Egzoszkielety}{22}%
-\contentsline {chapter}{\numberline {4}Zastosowania w biznesie}{27}%
-\contentsline {section}{\numberline {4.1}Lotnictwo i przemysł}{28}%
-\contentsline {section}{\numberline {4.2}Architektura i wizualizacje}{31}%
-\contentsline {section}{\numberline {4.3}Medycyna}{34}%
-\contentsline {section}{\numberline {4.4}Rozrywka}{35}%
-\contentsline {chapter}{\numberline {5}Projekt rękawicy}{38}%
-\contentsline {section}{\numberline {5.1}Mikrokontroler}{39}%
-\contentsline {section}{\numberline {5.2}Czujnik wygięcia}{41}%
-\contentsline {section}{\numberline {5.3}Rezystor}{42}%
-\contentsline {section}{\numberline {5.4}Budowa rękawicy}{44}%
-\contentsline {section}{\numberline {5.5}Oprogramowanie mikrokontrolera}{47}%
-\contentsline {section}{\numberline {5.6}Podsumowanie projektu}{53}%
-\contentsline {chapter}{\numberline {6}Podsumowanie}{55}%
+\contentsline {chapter}{\numberline {1}Zagadnienia}{3}%
+\contentsline {section}{\numberline {1.1}Historia kreowania rzeczywistości}{3}%
+\contentsline {section}{\numberline {1.2}Wpływ kultury na rozwój technologii}{5}%
+\contentsline {subsection}{\numberline {1.2.1}Kinematografia}{5}%
+\contentsline {subsection}{\numberline {1.2.2}Marzenia senne}{7}%
+\contentsline {section}{\numberline {1.3}Rodzaje rzeczywistości}{10}%
+\contentsline {chapter}{\numberline {2}Interakcja z kreowaną rzeczywistością}{15}%
+\contentsline {section}{\numberline {2.1}Prezentacja tworzonej rzeczywistości}{16}%
+\contentsline {section}{\numberline {2.2}Urządzenia peryferyjne}{18}%
+\contentsline {chapter}{\numberline {3}Rękawice jako kontrolery}{21}%
+\contentsline {section}{\numberline {3.1}Rozwój rękawicy jako kontrolera}{21}%
+\contentsline {section}{\numberline {3.2}Podział rękawic-kontrolerów}{23}%
+\contentsline {subsection}{\numberline {3.2.1}Klasyczne}{23}%
+\contentsline {subsection}{\numberline {3.2.2}Nasadowe}{27}%
+\contentsline {subsection}{\numberline {3.2.3}Egzoszkielety}{29}%
+\contentsline {chapter}{\numberline {4}Zastosowania w biznesie}{34}%
+\contentsline {section}{\numberline {4.1}Lotnictwo i przemysł}{35}%
+\contentsline {section}{\numberline {4.2}Architektura i wizualizacje}{38}%
+\contentsline {section}{\numberline {4.3}Medycyna}{41}%
+\contentsline {section}{\numberline {4.4}Rozrywka}{42}%
+\contentsline {chapter}{\numberline {5}Projekt rękawicy}{45}%
+\contentsline {section}{\numberline {5.1}Mikrokontroler}{46}%
+\contentsline {section}{\numberline {5.2}Czujnik wygięcia}{48}%
+\contentsline {section}{\numberline {5.3}Rezystor}{49}%
+\contentsline {section}{\numberline {5.4}Budowa rękawicy}{51}%
+\contentsline {section}{\numberline {5.5}Oprogramowanie mikrokontrolera}{54}%
+\contentsline {section}{\numberline {5.6}Podsumowanie projektu}{60}%

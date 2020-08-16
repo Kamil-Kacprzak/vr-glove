@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  30 JUL 2020 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  15 AUG 2020 16:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -1142,7 +1142,7 @@ Rozdzia\l  7.
 (Chapters/Rozwoj.aux) (Chapters/Podsumowanie.aux)) ) 
 Here is how much of TeX's memory you used:
  28117 strings out of 492482
- 540676 string characters out of 3130125
+ 540742 string characters out of 3130125
  933789 words of memory out of 3000000
  32009 multiletter control sequences out of 15000+200000
  585735 words of font info for 74 fonts, out of 3000000 for 9000
@@ -1160,7 +1160,7 @@ es (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/Program Files (x86)/Mikt
 ex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/
 urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmri
 8a.pfb>
-Output written on main.pdf (82 pages, 5195112 bytes).
+Output written on main.pdf (82 pages, 5195293 bytes).
 PDF statistics:
  365 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

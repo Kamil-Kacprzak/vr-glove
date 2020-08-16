@@ -26,8 +26,7 @@
 \usepackage[pdftex,dvipsnames]{xcolor}
 %
 %TODO Show \thiswillnotshow notes, remove line below for final version, and review after
-\setlength {\marginparwidth }{2cm}
-\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes} % use \usepackage[disable]{todonotes} to switch off
+\usepackage[disable,colorinlistoftodos,prependcaption,textsize=tiny]{todonotes} % use \usepackage[disable]{todonotes} to switch off
 \newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
 \newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
 \newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
@@ -74,9 +73,9 @@ numberstyle = \tiny,
 
 \include{Chapters/Abstrakt}
 \selectlanguage{polish} 
-\include{Chapters/Wstep}
 \pagenumbering{arabic}
 \baselineskip=22pt
+\include{Chapters/Wstep}
 \include{Chapters/Zagadnienia}
 \include{Chapters/Prezentacja}
 \include{Chapters/Kontrolery}

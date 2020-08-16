@@ -3,18 +3,17 @@
 \babel@toc {english}{}
 \babel@toc {polish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Interfejs aplikacji \textit {Pokemon Go} wykorzystujący AR.}}{11}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Interfejs aplikacji \textit {Pokemon Go} wykorzystujący AR.}}{13}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Pierwsza rękawica VR - Sayra Glove}}{15}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Przykładowe klasyczne rękawice VR.\relax }}{19}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Urządzenia nasadowe.\relax }}{22}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Egzoszkielet firmy Dexta Robotics}}{23}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Egzoszkielet firmy HaptX}}{24}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Pierwsza rękawica VR - Sayra Glove}}{22}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Przykładowe klasyczne rękawice VR.\relax }}{26}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Urządzenia nasadowe.\relax }}{29}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Egzoszkielet firmy Dexta Robotics}}{30}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Egzoszkielet firmy HaptX}}{31}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Opis wejść oraz wyjść Arduino Nano 33 BLE}}{40}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Sensor wygięcia własnego wykonania\relax }}{43}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Oznaczenia rezystorów}}{44}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Efekt końcowy rękawicy-kontrolera\relax }}{45}%
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Opis wejść oraz wyjść Arduino Nano 33 BLE}}{47}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Sensor wygięcia własnego wykonania\relax }}{50}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Oznaczenia rezystorów}}{51}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Efekt końcowy rękawicy-kontrolera\relax }}{52}%

@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{vr4bus}
+{\em Virtual Reality Systems for Business (Pages 144-148)}.
+\newblock Quorum Books, 1995.
+
 \bibitem{v-divider}
 K.~Academy.
 \newblock Voltage divider.
@@ -21,6 +25,14 @@ Arduino.
 Bluetooth.
 \newblock Specyfikacja.
 \newblock \url{https://www.bluetooth.com/specifications/}, 7 2020.
+
+\bibitem{holo}
+D.~Bohn.
+\newblock Microsoft’s hololens 2: A 3,500 dollars mixed reality headset for
+  the factory, not the living room.
+\newblock \url{
+  https://www.theverge.com/2019/2/24/18235460/microsoft-hololens-2-price-specs-mixed-reality-ar-vr-business-work-features-mwc-2019
+  }, 2 2019.
 
 \bibitem{botland-arduino}
 Botland.com.
@@ -101,6 +113,14 @@ J.~D'Onfro.
   \url{https://businessinsider.com.pl/technologie/nowe-technologie/ready-player-one-inspiracja-dla-oculusa/rh7ml9x},
   8 2016.
 
+\bibitem{hd1}
+L.~Dormehl.
+\newblock 8 virtual reality milestones that took it from sci-fi to your living
+  room.
+\newblock
+  \url{https://www.digitaltrends.com/cool-tech/history-of-virtual-reality/}, 11
+  2017.
+
 \bibitem{sen2}
 Dreams.
 \newblock What happens in your brain while you dream?
@@ -135,6 +155,11 @@ A.~Gibbs.
   \url{https://www.cnbc.com/2015/01/14/back-to-the-future-inventions-how-movies-inspired-todays-technology.html},
   1 2015.
 
+\bibitem{daydream}
+Google.
+\newblock Google daydream.
+\newblock \url{ https://arvr.google.com/daydream/ }, 7 2020.
+
 \bibitem{touchVr}
 GoTouchVr.
 \newblock Vrtouch.
@@ -145,6 +170,11 @@ GoTouchVr.
 HaptX.
 \newblock Haptx glove.
 \newblock \url{ https://haptx.com/ }, 1 2019.
+
+\bibitem{sledzenie}
+D.~Heaney.
+\newblock How vr positional tracking systems work.
+\newblock \url{https://uploadvr.com/how-vr-tracking-works/}, 4 2019.
 
 \bibitem{ewolucja}
 A.~Jan.
@@ -163,6 +193,11 @@ K.~Kacprzak.
 \newblock Rozwój technologii wirtualnej rzeczywistości na przykładzie
   rękawicy-kontrolera.
 \newblock Polsko-Japońska Akademia Technik Komputerowych, 2020.
+
+\bibitem{cat}
+KatVR.
+\newblock Vr omni-directional treadmill.
+\newblock \url{ https://www.kat-vr.com/ }, 7 2020.
 
 \bibitem{gry1}
 N.~Kovach.
@@ -207,6 +242,11 @@ A.~nieznany.
 Noitom.
 \newblock Hi5.
 \newblock \url{https://hi5vrglove.com/}, 1 2019.
+
+\bibitem{body}
+P.~Nuzhdin.
+\newblock Vr full body tracking: do you really need it?
+\newblock \url{ https://exyte.com/blog/vr-full-body-tracking }, 3 2020.
 
 \bibitem{snow}
 U.~of~Washington~Seattle and U.~H.~B. Center.
@@ -264,6 +304,13 @@ SM.
 L.~D. Society.
 \newblock Lucid dream guides.
 \newblock \url{https://www.luciddreamsociety.com/how-to/}, 7 2020.
+
+\bibitem{hd2}
+Statista.
+\newblock Vr device market share by vendor worldwide 2018 and 2019.
+\newblock
+  \url{https://www.statista.com/statistics/755645/global-vr-device-market-share-by-vendor/},
+  4 2020.
 
 \bibitem{chorobaVR}
 Systel.
