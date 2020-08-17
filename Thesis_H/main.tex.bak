@@ -1,0 +1,93 @@
+\documentclass[inf, h]{pjatkThesis}
+%
+\usepackage{xurl}
+\usepackage{float}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\usepackage{times}
+\usepackage[polish,english]{babel}
+%
+\usepackage{sidecap}
+\usepackage{graphicx}
+\graphicspath{ {Images/} }
+\usepackage{wrapfig}
+\usepackage{subcaption}
+\newcommand*{\captionsource}[2]{%
+  \caption[{#1}]{%
+    #1%
+    \\\hspace{\linewidth}%
+    {Źródło:} #2%
+  }%
+}
+%
+\usepackage{makeidx}
+\usepackage{xargs} 
+\usepackage{lipsum}
+\usepackage[pdftex,dvipsnames]{xcolor}
+%
+%TODO Show \thiswillnotshow notes, remove line below for final version, and review after
+%\setlength {\marginparwidth }{2cm}
+\usepackage[disable,colorinlistoftodos,prependcaption,textsize=tiny]{todonotes} % use \usepackage[disable]{todonotes} to switch off
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+%
+%
+\usepackage{listings,xcolor}
+%Listings settings
+\lstset{
+tabsize = 4, 
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, 
+commentstyle = \color{green}, 
+keywordstyle = \color{blue}, 
+stringstyle = \color{red}, 
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, 
+numberstyle = \tiny,
+}
+%
+%
+%
+
+\author{Kamil Kacprzak}
+\album{s14004}
+\title{Rozwój technologii wirtualnej rzeczywistości na przykładzie rękawicy-kontrolera}
+\type{Praca inżynierska}
+\supervisor{dr inż. Michał Tomaszewski}
+\location{Warszawa}
+\date{Czerwiec, 2020}
+%
+%
+%
+\begin{document}
+\selectlanguage{polish} 
+\tableofcontents
+\listoffigures
+%\listoftables
+
+\include{Chapters/Abstrakt}
+
+\selectlanguage{polish} 
+\pagenumbering{arabic}
+\baselineskip=22pt
+\include{Chapters/Wstep}
+\include{Chapters/Zagadnienia}
+\include{Chapters/Komponenty}
+\include{Chapters/Projekt_rekawicy}
+\include{Chapters/Dedykowana_aplikacja}
+\include{Chapters/Rozwoj}
+\include{Chapters/Podsumowanie}
+%
+%
+%\addcontentsline{toc}{chapter}{Literatura}
+%
+\bibliographystyle{abbrv}
+\bibliography{bibliografia}
+%   
+\listoftodos[TODOs:]
+%
+\end{document}
