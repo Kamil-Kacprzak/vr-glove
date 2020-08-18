@@ -1,19 +1,23 @@
 \babel@toc {english}{}
-\babel@toc {polish}{}
 \babel@toc {english}{}
+\babel@toc {polish}{}
 \babel@toc {polish}{}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Interfejs aplikacji \textit {Pokemon Go} wykorzystujący AR.}}{13}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Udział producentów w rynku urządzeń VR}}{17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Pierwsza rękawica VR - Sayra Glove}}{22}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Przykładowe klasyczne rękawice VR.\relax }}{26}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Urządzenia nasadowe.\relax }}{29}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Egzoszkielet firmy Dexta Robotics}}{30}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Egzoszkielet firmy HaptX}}{31}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Pierwsza rękawica VR - Sayra Glove}}{23}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Przykładowe klasyczne rękawice VR.\relax }}{27}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Urządzenia nasadowe.\relax }}{30}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Egzoszkielet firmy Dexta Robotics}}{31}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Egzoszkielet firmy HaptX}}{32}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Przewidywania wartości rynku AR i VR pomiędzy 2019 a 2023 rokiem}}{36}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Światowy podział rynku VR pod względem wykorzystania aplikacji na rok 2019}}{37}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Światowy podział rynku gier VR pod względem komponentów na rok 2019}}{47}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Opis wejść oraz wyjść Arduino Nano 33 BLE}}{47}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Sensor wygięcia własnego wykonania\relax }}{50}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Oznaczenia rezystorów}}{51}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Efekt końcowy rękawicy-kontrolera\relax }}{52}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Opis wejść oraz wyjść Arduino Nano 33 BLE}}{50}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Sensor wygięcia własnego wykonania\relax }}{53}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Oznaczenia rezystorów}}{54}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Efekt końcowy rękawicy-kontrolera\relax }}{55}%

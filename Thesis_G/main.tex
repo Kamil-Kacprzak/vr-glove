@@ -57,7 +57,7 @@ numberstyle = \tiny,
 % na przykładzie - gdyby było za dużo 
 %Zastosowanie technologii rzeczywistości
 %A+B
-\title{Analiza technologii rzeczywistości rozszerzonej w biznesie, ze szczególnym uwzględnieniem rękawicy-kontrolera}
+\title{Analiza technologii rzeczywistości rozszerzonej w biznesie ze szczególnym uwzględnieniem rękawicy-kontrolera}
 \type{Praca inżynierska}
 \supervisor{dr Krzysztof Barteczko}
 \location{Warszawa}
@@ -67,12 +67,10 @@ numberstyle = \tiny,
 %
 \begin{document}
 \selectlanguage{polish} 
-\tableofcontents
-\listoffigures
-%\listoftables
-
 \include{Chapters/Abstrakt}
-\selectlanguage{polish} 
+\selectlanguage{polish}
+\tableofcontents
+%\listoftables
 \pagenumbering{arabic}
 \baselineskip=22pt
 \include{Chapters/Wstep}
@@ -84,11 +82,13 @@ numberstyle = \tiny,
 \include{Chapters/Podsumowanie}
 %
 %
-%\addcontentsline{toc}{chapter}{Literatura}
+\addcontentsline{toc}{chapter}{Bibliografia}
 %
 \bibliographystyle{abbrv}
 \bibliography{bibliografia}
 %   
+\listoffigures
+%
 \listoftodos[TODOs:]
 %
 \end{document}
