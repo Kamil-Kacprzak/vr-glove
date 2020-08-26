@@ -349,7 +349,9 @@
     \maketitlepage
     
     \fancyhead{}
-
+	%TODO Changed class
+	\renewcommand{\headrulewidth}{0pt}
+	
 \lfoot[\fancyplain{}{}]                 {\fancyplain{}{}}
 \cfoot[\fancyplain{\thepage}{\thepage}] {\fancyplain{\thepage}{\thepage}}
 \rfoot[\fancyplain{}{}]                 {\fancyplain{}{}}

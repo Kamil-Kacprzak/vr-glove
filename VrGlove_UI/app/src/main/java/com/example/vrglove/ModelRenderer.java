@@ -399,18 +399,17 @@ public class ModelRenderer extends Fragment
 
             if(invMatrix != null){
                 accDataWithoutG = multiplyMatrix3xVector(invMatrix, accDataPostRotation );
-            }else{
-                accDataWithoutG = new float[3];
+                //Double integral to obtain velocity from linear acceleration, and position from velocity
+                for(int i = 0; i < velocity.length; i++){
+                    velocity[i] += accDataWithoutG[i]*dT;
+                }
+                for(int i = 0; i < pos.length; i++){
+                    pos[i] += velocity[i]*dT;
+                }
+                 normalizePosition();
             }
 
-            //Double integral to obtain velocity from linear acceleration, and position from velocity
-            for(int i = 0; i < velocity.length; i++){
-                velocity[i] += accDataWithoutG[i]*dT;
-            }
-            for(int i = 0; i < pos.length; i++){
-                pos[i] += velocity[i]*dT;
-            }
-            normalizePosition();
+
         }
         lastTimestamp = currentTime;
     }
