@@ -370,7 +370,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \include{Chapters/Podsumowanie}
 \addcontentsline{toc}{chapter}{Bibliografia}
-\bibliographystyle{abbrv}
+\bibliographystyle{unsrt}
 \bibliography{bibliografia}
 \listoffigures
     %\cleardoublepage
