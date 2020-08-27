@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  27 AUG 2020 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  28 AUG 2020 00:50
 entering extended mode
 **./main.tex
 (main.tex
@@ -975,7 +975,7 @@ File: Images/gimbal.png Graphic file (type png)
 <use Images/gimbal.png>
 Package pdftex.def Info: Images/gimbal.png  used on input line 23.
 (pdftex.def)             Requested size: 390.0pt x 185.82388pt.
- [11] [12 <./Images/RPY.png>] [13 <./Images/gimbal.png>] [14]) [15]
+ [11] [12 <./Images/RPY.png>] [13 <./Images/gimbal.png>] [14] [15])
 [16]
 \openout2 = `Chapters/Projekt_rekawicy.aux'.
 
@@ -998,59 +998,64 @@ File: Images/arduino.png Graphic file (type png)
 <use Images/arduino.png>
 Package pdftex.def Info: Images/arduino.png  used on input line 22.
 (pdftex.def)             Requested size: 309.79665pt x 272.69812pt.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 23
-.
-
-("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [18] [19 <./Images/arduino.png>] [20] [21]
-<Images/flex-sensor.png, id=138, 743.77875pt x 361.35pt>
+ [18] [19 <./Images/arduino.png>] [20] [21]
+<Images/flex-sensor.png, id=137, 743.77875pt x 361.35pt>
 File: Images/flex-sensor.png Graphic file (type png)
 <use Images/flex-sensor.png>
 Package pdftex.def Info: Images/flex-sensor.png  used on input line 38.
 (pdftex.def)             Requested size: 483.45045pt x 234.87471pt.
  [22 <./Images/flex-sensor.png>]
+<Images/v-divider.png, id=141, 220.825pt x 284.06125pt>
+File: Images/v-divider.png Graphic file (type png)
+<use Images/v-divider.png>
+Package pdftex.def Info: Images/v-divider.png  used on input line 51.
+(pdftex.def)             Requested size: 187.19833pt x 240.81602pt.
 <Images/oporniki.png, id=142, 387.69844pt x 347.79938pt>
 File: Images/oporniki.png Graphic file (type png)
 <use Images/oporniki.png>
-Package pdftex.def Info: Images/oporniki.png  used on input line 51.
+Package pdftex.def Info: Images/oporniki.png  used on input line 64.
 (pdftex.def)             Requested size: 252.00099pt x 226.06691pt.
-<Images/v-divider.png, id=143, 220.825pt x 284.06125pt>
-File: Images/v-divider.png Graphic file (type png)
-<use Images/v-divider.png>
-Package pdftex.def Info: Images/v-divider.png  used on input line 61.
-(pdftex.def)             Requested size: 187.19833pt x 240.81602pt.
- [23 <./Images/oporniki.png>] [24 <./Images/v-divider.png>]
-<Images/circuit.png, id=155, 569.12625pt x 373.395pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23 <./Images/v-divider.png>]
+<Images/circuit.png, id=149, 569.12625pt x 373.395pt>
 File: Images/circuit.png Graphic file (type png)
 <use Images/circuit.png>
-Package pdftex.def Info: Images/circuit.png  used on input line 80.
+Package pdftex.def Info: Images/circuit.png  used on input line 75.
 (pdftex.def)             Requested size: 390.0pt x 255.88228pt.
-<Images/glove.png, id=156, 746.79pt x 984.67876pt>
+ [24 <./Images/oporniki.png>]
+<Images/glove.png, id=155, 746.79pt x 984.67876pt>
 File: Images/glove.png Graphic file (type png)
 <use Images/glove.png>
-Package pdftex.def Info: Images/glove.png  used on input line 88.
+Package pdftex.def Info: Images/glove.png  used on input line 83.
 (pdftex.def)             Requested size: 261.3804pt x 344.64273pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25 <./Images/circuit.png>] [26 <./Images/glove.png>] [27] [28]
-Overfull \hbox (10.02864pt too wide) in paragraph at lines 122--123
+[25 <./Images/circuit.png>] [26 <./Images/glove.png>] [27]
+Overfull \hbox (10.02864pt too wide) in paragraph at lines 117--118
 \T1/ptm/m/n/12 do-ª¡-czono wy-ma-gane bi-blio-teki dla po-praw-nej ob-sªugi wsz
 yst-kich sen-so-rów. Pierw-
  []
 
-[29] [30] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+[28] [29] [30] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+) ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [31] [32]
-[33] [34] [35] [36]) [37]
+)
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 14
+1.
+
+("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [31] [32] [33]
+[34] [35]) [36] [37]
 \openout2 = `Chapters/Dedykowana_aplikacja.aux'.
 
  (Chapters/Dedykowana_aplikacja.tex
@@ -1134,21 +1139,21 @@ nk-cji r¦kawicy-kontrolera.
 [72
 
 
-] [73] [74]) [75] (main.lof)
+] [73] [74] [75]) [76] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [76
+ [77
 
 ] (main.aux (Chapters/Abstrakt.aux)
 (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux) (Chapters/Komponenty.aux)
 (Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
 (Chapters/Rozwoj.aux) (Chapters/Podsumowanie.aux)) ) 
 Here is how much of TeX's memory you used:
- 28206 strings out of 492482
- 541845 string characters out of 3130125
- 934934 words of memory out of 3000000
- 32093 multiletter control sequences out of 15000+200000
+ 28211 strings out of 492482
+ 541868 string characters out of 3130125
+ 934953 words of memory out of 3000000
+ 32098 multiletter control sequences out of 15000+200000
  587606 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,103p,3596b,1905s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1164,9 +1169,9 @@ es (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/Program Files (x86)/Mikt
 ex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/
 urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmr8
 a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (83 pages, 5215223 bytes).
+Output written on main.pdf (84 pages, 5215630 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
+ 375 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

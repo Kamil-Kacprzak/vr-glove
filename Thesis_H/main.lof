@@ -9,11 +9,11 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Model prezentujący sześć stopni swobody~\cite {sam1}\relax }}{12}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Problem blokady gimbala (Przed i po obrocie)~\cite {sam2}\relax }}{13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Opis wejść oraz wyjść Arduino Nano 33 BLE}}{19}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Opis wejść oraz wyjść Arduino Nano 33 BLE~\cite {a1}\relax }}{19}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Sensor wygięcia własnego wykonania\relax }}{22}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Oznaczenia rezystorów}}{23}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Układ dzielnika napięcia}}{24}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Poglądowy układ kontrolera przedstawiający sposób podłączenia dzielnika napięcia}}{25}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Układ dzielnika napięcia~\cite {r2}\relax }}{23}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Oznaczenia rezystorów~\cite {r1}\relax }}{24}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Poglądowy układ kontrolera przedstawiający sposób podłączenia dzielnika napięcia~\cite {r3}\relax }}{25}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Efekt końcowy rękawicy-kontrolera\relax }}{26}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Interfejs użytkownika\relax }}{40}%

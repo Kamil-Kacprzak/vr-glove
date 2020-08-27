@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.1.1}Sensory}{10}%
 \contentsline {subsection}{\numberline {2.1.2}Stopnie swobody}{11}%
 \contentsline {section}{\numberline {2.2}Śledzenie położenia palców}{14}%
-\contentsline {section}{\numberline {2.3}Łączność przy użyciu Bluetooth}{14}%
+\contentsline {section}{\numberline {2.3}Łączność bezprzewodowa}{14}%
 \contentsline {chapter}{\numberline {3}Projekt rękawicy}{17}%
 \contentsline {section}{\numberline {3.1}Przegląd podzespołów użytych w projekcie}{17}%
 \contentsline {subsection}{\numberline {3.1.1}Mikrokontroler}{18}%
@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {3.1.3}Rezystor}{22}%
 \contentsline {section}{\numberline {3.2}Budowa rękawicy}{24}%
 \contentsline {section}{\numberline {3.3}Oprogramowanie mikrokontrolera}{28}%
-\contentsline {section}{\numberline {3.4}Podsumowanie}{37}%
+\contentsline {section}{\numberline {3.4}Podsumowanie}{36}%
 \contentsline {chapter}{\numberline {4}Dedykowana aplikacja w systemie Android}{38}%
 \contentsline {section}{\numberline {4.1}Interfejs użytkownika}{39}%
 \contentsline {section}{\numberline {4.2}Komunikacja}{42}%

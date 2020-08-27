@@ -86,10 +86,23 @@ Botland.com.
   \url{https://botland.com.pl/pl/czujniki-nacisku/2406-czujnik-ugiecia-112-x-63-mm-sparkfun-sen-08606.html},
   7 2020.
 
+\bibitem{sieci}
+Dariusz Chaładyniak.
+\newblock Warszawska wyższa szkoła informatyki.
+\newblock
+  \url{http://zeszyty-naukowe.wwsi.edu.pl/zeszyty/zeszyt5/Wybrane_Technologie_Bezprzewodowej_Transmisji_Danych.pdf},
+  7 2015.
+
 \bibitem{bleSpec}
 Bluetooth.
 \newblock Specyfikacja.
 \newblock \url{https://www.bluetooth.com/specifications/}, 7 2020.
+
+\bibitem{a1}
+Arduino.
+\newblock Arduino nano 33 ble.
+\newblock \url{https://content.arduino.cc/assets/Pinout-NANOble_latest.pdf}, 7
+  2020.
 
 \bibitem{velostat}
 Adafruit.
@@ -101,12 +114,31 @@ Forbot.
 \newblock Rezystor - co warto wiedzieć.
 \newblock \url{https://forbot.pl/blog/leksykon/rezystor}, 7 2020.
 
+\bibitem{r2}
+Wikiwand.
+\newblock Voltage divider.
+\newblock \url{https://www.wikiwand.com/en/Voltage_divider}, 7 2020.
+
 \bibitem{v-divider}
 Khan Academy.
 \newblock Voltage divider.
 \newblock
   \url{https://www.khanacademy.org/science/electrical-engineering/ee-circuit-analysis-topic/ee-resistor-circuits/a/ee-voltage-divider},
   7 2020.
+
+\bibitem{r1}
+Informatyka Unijna.
+\newblock Rezystor.
+\newblock
+  \url{https://sites.google.com/site/informatykaunijna/home/poszczegolne-czesci/rezystor},
+  7 2020.
+
+\bibitem{r3}
+circuito.io.
+\newblock How to connect arduino nano to flex sensor.
+\newblock
+  \url{https://www.circuito.io/app?components=514,8606,8606,8606,8606,11022}, 7
+  2020.
 
 \bibitem{jArduino}
 Piotr Bugalski.
