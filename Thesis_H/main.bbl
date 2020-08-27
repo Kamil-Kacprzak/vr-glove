@@ -5,6 +5,18 @@ Systel.
 \newblock Virtual reality, czyli czym jest wirtualna rzeczywistość?
 \newblock \url{https://systel.pl/virtual-reality/}, 7 2020.
 
+\bibitem{con1}
+Oculus.
+\newblock Third-party accessories.
+\newblock \url{https://www.oculus.com/rift-s/accessories/}, 7 2020.
+
+\bibitem{con2}
+X-Kom.
+\newblock Htc vive controller.
+\newblock
+  \url{https://www.x-kom.pl/p/381876-akcesorium-do-gogli-vr-htc-vive-controller.html},
+  7 2020.
+
 \bibitem{sledzenie}
 David Heaney.
 \newblock How vr positional tracking systems work.
@@ -41,6 +53,11 @@ IRM Szczecin.
 {\em Professional Android Sensor Programming(Chapter 5 and 6)}.
 \newblock wrox, 2012.
 
+\bibitem{sam1}
+Encyklopedia RC.
+\newblock Roll, pitch, yaw – kąty rpy.
+\newblock \url{http://www.rc.info.pl/slownik/roll-pitch-yaw-katy-rpy/}, 7 2020.
+
 \bibitem{rotations}
 D.~Rose.
 \newblock Rotations in three-dimensions: Euler angles and rotation matrices.
@@ -53,6 +70,13 @@ Botland.com.
 \newblock Arduino nano 33 ble - abx00030.
 \newblock
   \url{https://botland.com.pl/pl/arduino-seria-nano-oryginalne-plytki/14758-arduino-nano-33-ble-abx00030-7630049201491.html},
+  7 2020.
+
+\bibitem{sam2}
+Halim Tannous.
+\newblock Gimbal lock problem for euler angles.
+\newblock
+  \url{https://www.researchgate.net/figure/Gimbal-lock-problem-for-Euler-angles-A-no-gimbal-lock-B-yaw-and-roll-angles-are_fig14_332394380},
   7 2020.
 
 \bibitem{flex-sensor}

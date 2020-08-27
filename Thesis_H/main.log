@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  27 AUG 2020 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  27 AUG 2020 19:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -128,6 +128,11 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language72) on input line 108.
 ))
+("E:\Program Files (x86)\Miktex\tex/latex/cite\cite.sty"
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 ("E:\Program Files (x86)\Miktex\tex/latex/sidecap\sidecap.sty"
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
 \SC@BOXWD=\dimen109
@@ -759,19 +764,19 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 (Chapters/Podsumowanie.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 67
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 68
 .
 
 ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1ptm.fd"
@@ -798,35 +803,35 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 <head.jpg, id=28, 417.7206pt x 62.1522pt>
 File: head.jpg Graphic file (type jpg)
 <use head.jpg>
-Package pdftex.def Info: head.jpg  used on input line 67.
+Package pdftex.def Info: head.jpg  used on input line 68.
 (pdftex.def)             Requested size: 334.17693pt x 49.72182pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 68.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 68.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 67.
+(Font)              <12> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 67.
+(Font)              <8> on input line 68.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 67.
+(Font)              <6> on input line 68.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
 
 [1
 
 {C:/Users/Kamil/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./head.jpg>
 ] [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 67.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
  (main.toc [1
 
 
@@ -866,7 +871,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 \openout2 = `Chapters/Wstep.aux'.
 
  (Chapters/Wstep.tex)
-Overfull \hbox (1.03365pt too wide) in paragraph at lines 8--67
+Overfull \hbox (1.03365pt too wide) in paragraph at lines 8--68
 []\T1/ptm/m/n/12 Celem tej pracy jest stwo-rze-nie wªa-snego, uprosz-czo-nego k
 ontrolera-r¦kawicy,
  []
@@ -911,7 +916,7 @@ Package caption Info: End \AtBeginDocument code.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 67.
+loading the todonotes package. on input line 68.
 
 \c@lstlisting=\count299
 \openout2 = `Chapters/Zagadnienia.aux'.
@@ -941,24 +946,12 @@ File: Images/rift.png Graphic file (type png)
 <use Images/rift.png>
 Package pdftex.def Info: Images/rift.png  used on input line 14.
 (pdftex.def)             Requested size: 175.49881pt x 175.49347pt.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
-.
- ("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 15.
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--15
-
- []
-
 <Images/vive.png, id=71, 602.25pt x 451.6875pt>
 File: Images/vive.png Graphic file (type png)
 <use Images/vive.png>
 Package pdftex.def Info: Images/vive.png  used on input line 20.
 (pdftex.def)             Requested size: 175.49881pt x 131.62698pt.
-[5] [6 <./Images/rift.png> <./Images/vive.png>] [7]) [8]
+ [5] [6 <./Images/rift.png> <./Images/vive.png>] [7]) [8]
 \openout2 = `Chapters/Komponenty.aux'.
 
 
@@ -972,35 +965,18 @@ Rozdzia\l  2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 10.
  [10]
-<Images/RPY.png, id=97, 682.04813pt x 477.28313pt>
+<Images/RPY.png, id=96, 682.04813pt x 477.28313pt>
 File: Images/RPY.png Graphic file (type png)
 <use Images/RPY.png>
 Package pdftex.def Info: Images/RPY.png  used on input line 16.
 (pdftex.def)             Requested size: 272.99881pt x 191.04095pt.
-<Images/gimbal.png, id=98, 639.89063pt x 304.88907pt>
+<Images/gimbal.png, id=97, 639.89063pt x 304.88907pt>
 File: Images/gimbal.png Graphic file (type png)
 <use Images/gimbal.png>
 Package pdftex.def Info: Images/gimbal.png  used on input line 23.
 (pdftex.def)             Requested size: 390.0pt x 185.82388pt.
- [11] [12 <./Images/RPY.png>] [13 <./Images/gimbal.png>]
-Overfull \hbox (1.31921pt too wide) in paragraph at lines 32--32
-[]\T1/ptm/b/n/17.28 Š¡czno±¢ przy u»y-ciu Blu-eto-oth ni-skiego po-boru
- []
-
-[14]
-Overfull \hbox (7.28537pt too wide) in paragraph at lines 36--37
-[]\T1/ptm/m/n/12 Gdy mowa o po-ª¡-cze-niu BLE warto zna¢ kilka pod-sta-wo-wych 
-ter-mi-nów. Przede
- []
-
-)
-
-Package Fancyhdr Warning: \headheight is too small (15.13202pt): 
-Make it at least 29.63202pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[15]
+ [11] [12 <./Images/RPY.png>] [13 <./Images/gimbal.png>] [14]) [15]
+[16]
 \openout2 = `Chapters/Projekt_rekawicy.aux'.
 
  (Chapters/Projekt_rekawicy.tex
@@ -1012,40 +988,45 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
- [16
+ [17
 
 
 
 ]
-<Images/arduino.png, id=120, 619.5948pt x 545.3976pt>
+<Images/arduino.png, id=122, 619.5948pt x 545.3976pt>
 File: Images/arduino.png Graphic file (type png)
 <use Images/arduino.png>
 Package pdftex.def Info: Images/arduino.png  used on input line 22.
 (pdftex.def)             Requested size: 309.79665pt x 272.69812pt.
- [17] [18 <./Images/arduino.png>] [19] [20]
-<Images/flex-sensor.png, id=135, 743.77875pt x 361.35pt>
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 23
+.
+
+("E:\Program Files (x86)\Miktex\tex/latex/psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [18] [19 <./Images/arduino.png>] [20] [21]
+<Images/flex-sensor.png, id=138, 743.77875pt x 361.35pt>
 File: Images/flex-sensor.png Graphic file (type png)
 <use Images/flex-sensor.png>
 Package pdftex.def Info: Images/flex-sensor.png  used on input line 38.
 (pdftex.def)             Requested size: 483.45045pt x 234.87471pt.
- [21 <./Images/flex-sensor.png>]
-<Images/oporniki.png, id=139, 387.69844pt x 347.79938pt>
+ [22 <./Images/flex-sensor.png>]
+<Images/oporniki.png, id=142, 387.69844pt x 347.79938pt>
 File: Images/oporniki.png Graphic file (type png)
 <use Images/oporniki.png>
 Package pdftex.def Info: Images/oporniki.png  used on input line 51.
 (pdftex.def)             Requested size: 252.00099pt x 226.06691pt.
-<Images/v-divider.png, id=140, 220.825pt x 284.06125pt>
+<Images/v-divider.png, id=143, 220.825pt x 284.06125pt>
 File: Images/v-divider.png Graphic file (type png)
 <use Images/v-divider.png>
 Package pdftex.def Info: Images/v-divider.png  used on input line 61.
 (pdftex.def)             Requested size: 187.19833pt x 240.81602pt.
- [22 <./Images/oporniki.png>] [23 <./Images/v-divider.png>]
-<Images/circuit.png, id=151, 569.12625pt x 373.395pt>
+ [23 <./Images/oporniki.png>] [24 <./Images/v-divider.png>]
+<Images/circuit.png, id=155, 569.12625pt x 373.395pt>
 File: Images/circuit.png Graphic file (type png)
 <use Images/circuit.png>
 Package pdftex.def Info: Images/circuit.png  used on input line 80.
 (pdftex.def)             Requested size: 390.0pt x 255.88228pt.
-<Images/glove.png, id=152, 746.79pt x 984.67876pt>
+<Images/glove.png, id=156, 746.79pt x 984.67876pt>
 File: Images/glove.png Graphic file (type png)
 <use Images/glove.png>
 Package pdftex.def Info: Images/glove.png  used on input line 88.
@@ -1054,13 +1035,13 @@ Package pdftex.def Info: Images/glove.png  used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./Images/circuit.png>] [25 <./Images/glove.png>] [26] [27]
+[25 <./Images/circuit.png>] [26 <./Images/glove.png>] [27] [28]
 Overfull \hbox (10.02864pt too wide) in paragraph at lines 122--123
 \T1/ptm/m/n/12 do-ª¡-czono wy-ma-gane bi-blio-teki dla po-praw-nej ob-sªugi wsz
 yst-kich sen-so-rów. Pierw-
  []
 
-[28] [29] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
+[29] [30] ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
@@ -1068,66 +1049,66 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [30] [31]
-[32] [33] [34] [35]) [36]
+) [31] [32]
+[33] [34] [35] [36]) [37]
 \openout2 = `Chapters/Dedykowana_aplikacja.aux'.
 
  (Chapters/Dedykowana_aplikacja.tex
 Rozdzia\l  4.
 ("E:\Program Files (x86)\Miktex\tex/latex/listings\lstlang1.sty"
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [37
+) [38
 
 
 
-] [38]
-<Images/UI1.png, id=202, 785.93625pt x 1659.19875pt>
+] [39]
+<Images/UI1.png, id=205, 785.93625pt x 1659.19875pt>
 File: Images/UI1.png Graphic file (type png)
 <use Images/UI1.png>
 Package pdftex.def Info: Images/UI1.png  used on input line 28.
 (pdftex.def)             Requested size: 175.49881pt x 370.4934pt.
-<Images/UI2.png, id=203, 785.93625pt x 1659.19875pt>
+<Images/UI2.png, id=206, 785.93625pt x 1659.19875pt>
 File: Images/UI2.png Graphic file (type png)
 <use Images/UI2.png>
 Package pdftex.def Info: Images/UI2.png  used on input line 34.
 (pdftex.def)             Requested size: 175.49881pt x 370.4934pt.
 
-[39 <./Images/UI1.png> <./Images/UI2.png>] [40] [41] [42] [43]
+[40 <./Images/UI1.png> <./Images/UI2.png>] [41] [42] [43] [44]
 Overfull \hbox (18.94536pt too wide) in paragraph at lines 110--110
 \T1/ptm/m/n/12 szym przy-padku jako pa-ra-metr typu \T1/ptm/m/it/12 String\T1/p
 tm/m/n/12 , zo-staje po-dany ad-res \T1/ptm/m/it/12 D0:6B:F2:A7:95:03\T1/ptm/m/
 n/12 ,
  []
 
-[44] [45] [46] [47] [48] [49] [50]
-<Images/OK.png, id=244, 225.84375pt x 346.29375pt>
+[45] [46] [47] [48] [49] [50] [51]
+<Images/OK.png, id=247, 225.84375pt x 346.29375pt>
 File: Images/OK.png Graphic file (type png)
 <use Images/OK.png>
 Package pdftex.def Info: Images/OK.png  used on input line 216.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
-<Images/PEACE.png, id=245, 225.84375pt x 346.29375pt>
+<Images/PEACE.png, id=248, 225.84375pt x 346.29375pt>
 File: Images/PEACE.png Graphic file (type png)
 <use Images/PEACE.png>
 Package pdftex.def Info: Images/PEACE.png  used on input line 222.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
-<Images/MAHALO.png, id=246, 225.84375pt x 346.29375pt>
+<Images/MAHALO.png, id=249, 225.84375pt x 346.29375pt>
 File: Images/MAHALO.png Graphic file (type png)
 <use Images/MAHALO.png>
 Package pdftex.def Info: Images/MAHALO.png  used on input line 228.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
-<Images/FIST.png, id=247, 225.84375pt x 346.29375pt>
+<Images/FIST.png, id=250, 225.84375pt x 346.29375pt>
 File: Images/FIST.png Graphic file (type png)
 <use Images/FIST.png>
 Package pdftex.def Info: Images/FIST.png  used on input line 234.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
- [51] [52 <./Images/OK.png> <./Images/PEACE.png> <./Images/MAHALO.png> <./Image
-s/FIST.png>] [53] [54] [55] [56]
+ [52] [53 <./Images/OK.png> <./Images/PEACE.png> <./Images/MAHALO.png> <./Image
+s/FIST.png>] [54] [55] [56] [57]
 Overfull \hbox (3.71739pt too wide) in paragraph at lines 337--337
 \T1/ptm/m/it/12 del-To-Node(ModelRenderable)\T1/ptm/m/n/12 , roz-po-czy-na-j¡c 
 od spraw-dze-nia czy prze-ka-zany mo-
  []
 
-[57] [58] [59] [60] [61] [62]) [63]
+[58] [59] [60] [61] [62] [63]) [64]
 \openout2 = `Chapters/Rozwoj.aux'.
 
  (Chapters/Rozwoj.tex
@@ -1138,37 +1119,37 @@ Overfull \hbox (18.4533pt too wide) in paragraph at lines 3--4
 nk-cji r¦kawicy-kontrolera.
  []
 
-[64
+[65
 
 
 
-] [65] [66] [67]) [68]
+] [66] [67] [68]) [69]
 \openout2 = `Chapters/Podsumowanie.aux'.
 
- (Chapters/Podsumowanie.tex) [69
+ (Chapters/Podsumowanie.tex) [70
 
 
 
-] [70] (main.bbl
-[71
+] [71] (main.bbl
+[72
 
 
-] [72] [73]) [74] (main.lof)
+] [73] [74]) [75] (main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [75
+ [76
 
 ] (main.aux (Chapters/Abstrakt.aux)
 (Chapters/Wstep.aux) (Chapters/Zagadnienia.aux) (Chapters/Komponenty.aux)
 (Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
 (Chapters/Rozwoj.aux) (Chapters/Podsumowanie.aux)) ) 
 Here is how much of TeX's memory you used:
- 28122 strings out of 492482
- 540805 string characters out of 3130125
- 934063 words of memory out of 3000000
- 32012 multiletter control sequences out of 15000+200000
- 588522 words of font info for 76 fonts, out of 3000000 for 9000
+ 28206 strings out of 492482
+ 541845 string characters out of 3130125
+ 934934 words of memory out of 3000000
+ 32093 multiletter control sequences out of 15000+200000
+ 587606 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,103p,3596b,1905s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files (x86)/Mik
@@ -1183,9 +1164,9 @@ es (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/Program Files (x86)/Mikt
 ex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/
 urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmr8
 a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (82 pages, 5213384 bytes).
+Output written on main.pdf (83 pages, 5215223 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
+ 372 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
