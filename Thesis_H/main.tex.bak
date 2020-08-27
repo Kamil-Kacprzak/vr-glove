@@ -66,29 +66,16 @@ numberstyle = \tiny,
 %
 \begin{document}
 \selectlanguage{polish} 
-\tableofcontents
+%\tableofcontents
 %\listoftables
 
-\include{Chapters/Abstrakt}
 
-\selectlanguage{polish} 
-\pagenumbering{arabic}
-\baselineskip=22pt
-\include{Chapters/Wstep}
 \include{Chapters/Zagadnienia}
 \include{Chapters/Komponenty}
 \include{Chapters/Projekt_rekawicy}
 \include{Chapters/Dedykowana_aplikacja}
 \include{Chapters/Rozwoj}
-\include{Chapters/Podsumowanie}
-\addcontentsline{toc}{chapter}{Bibliografia}
-%
-%
-%\addcontentsline{toc}{chapter}{Literatura}
-%
-\bibliographystyle{abbrv}
-\bibliography{bibliografia}
-\listoffigures
+
 %   
 \listoftodos[TODOs:]
 %

@@ -273,12 +273,13 @@
 % koniec strony tytułowej
 
 \renewcommand\tableofcontents{
+	\thispagestyle{empty}
     \if@twocolumn
       \@restonecoltrue\onecolumn
     \else
       \@restonecolfalse
     \fi
-    \pagestyle{fancyplain}
+  %  \pagestyle{fancyplain}
     \pagenumbering{roman}    
     \chapter*{\contentsname
         \@mkboth{\contentsname}{\contentsname}}%
@@ -347,8 +348,17 @@
 
 \AtBeginDocument{
     \maketitlepage
+    \selectlanguage{polish} 
+	\tableofcontents
+	\include{Chapters/Abstrakt}
+
+\selectlanguage{polish} 
+\pagenumbering{arabic}
+\baselineskip=22pt
     
-    \fancyhead{}
+\include{Chapters/Wstep}
+    \pagestyle{fancyplain}
+	\fancyhead[R]{}
 
 \lfoot[\fancyplain{}{}]                 {\fancyplain{}{}}
 \cfoot[\fancyplain{\thepage}{\thepage}] {\fancyplain{\thepage}{\thepage}}
@@ -356,6 +366,13 @@
 }
 
 \AtEndDocument{
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\include{Chapters/Podsumowanie}
+\addcontentsline{toc}{chapter}{Bibliografia}
+\bibliographystyle{abbrv}
+\bibliography{bibliografia}
+\listoffigures
     %\cleardoublepage
     %\small
 
