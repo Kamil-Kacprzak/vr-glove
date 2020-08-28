@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  28 AUG 2020 01:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.28)  28 AUG 2020 02:58
 entering extended mode
 **./main.tex
 (main.tex
@@ -1079,40 +1079,35 @@ Package pdftex.def Info: Images/UI2.png  used on input line 34.
 (pdftex.def)             Requested size: 175.49881pt x 370.4934pt.
 
 [40 <./Images/UI1.png> <./Images/UI2.png>] [41] [42] [43] [44]
-Overfull \hbox (16.98878pt too wide) in paragraph at lines 110--110
+Overfull \hbox (1.98878pt too wide) in paragraph at lines 110--110
 \T1/ptm/m/n/12 szym przy-padku jako pa-ra-metr typu \T1/ptm/m/it/12 String\T1/p
-tm/m/n/12 , zo-staje po-dany ad-res D0:6B:F2:A7:95:03,
+tm/m/n/12 , zo-staje po-dany ad-res D0:6B:F2:A7:95:
  []
 
 [45] [46] [47] [48] [49] [50] [51]
 <Images/OK.png, id=247, 225.84375pt x 346.29375pt>
 File: Images/OK.png Graphic file (type png)
 <use Images/OK.png>
-Package pdftex.def Info: Images/OK.png  used on input line 217.
+Package pdftex.def Info: Images/OK.png  used on input line 216.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
 <Images/PEACE.png, id=248, 225.84375pt x 346.29375pt>
 File: Images/PEACE.png Graphic file (type png)
 <use Images/PEACE.png>
-Package pdftex.def Info: Images/PEACE.png  used on input line 223.
+Package pdftex.def Info: Images/PEACE.png  used on input line 222.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
 <Images/MAHALO.png, id=249, 225.84375pt x 346.29375pt>
 File: Images/MAHALO.png Graphic file (type png)
 <use Images/MAHALO.png>
-Package pdftex.def Info: Images/MAHALO.png  used on input line 229.
+Package pdftex.def Info: Images/MAHALO.png  used on input line 228.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
 <Images/FIST.png, id=250, 225.84375pt x 346.29375pt>
 File: Images/FIST.png Graphic file (type png)
 <use Images/FIST.png>
-Package pdftex.def Info: Images/FIST.png  used on input line 235.
+Package pdftex.def Info: Images/FIST.png  used on input line 234.
 (pdftex.def)             Requested size: 85.80048pt x 131.56128pt.
  [52] [53 <./Images/OK.png> <./Images/PEACE.png> <./Images/MAHALO.png> <./Image
-s/FIST.png>] [54] [55] [56] [57]
-Overfull \hbox (3.71739pt too wide) in paragraph at lines 338--338
-\T1/ptm/m/it/12 del-To-Node(ModelRenderable)\T1/ptm/m/n/12 , roz-po-czy-na-j¡c 
-od spraw-dze-nia czy prze-ka-zany mo-
- []
-
-[58] [59] [60] [61] [62] [63]) [64]
+s/FIST.png>] [54] [55] [56] [57] [58]
+[59] [60] [61] [62] [63]) [64]
 \openout2 = `Chapters/Rozwoj.aux'.
 
  (Chapters/Rozwoj.tex
@@ -1149,13 +1144,13 @@ nk-cji r¦kawicy-kontrolera.
 (Chapters/Projekt_rekawicy.aux) (Chapters/Dedykowana_aplikacja.aux)
 (Chapters/Rozwoj.aux) (Chapters/Podsumowanie.aux)) ) 
 Here is how much of TeX's memory you used:
- 28211 strings out of 492482
- 541868 string characters out of 3130125
- 934953 words of memory out of 3000000
- 32098 multiletter control sequences out of 15000+200000
+ 28210 strings out of 492482
+ 541854 string characters out of 3130125
+ 934553 words of memory out of 3000000
+ 32097 multiletter control sequences out of 15000+200000
  587606 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,103p,3596b,1905s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,12n,103p,3596b,1887s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Program Files (x86)/Mik
 tex/fonts/enc/dvips/base/8r.enc}<E:/Program Files (x86)/Miktex/fonts/type1/publ
 ic/amsfonts/cm/cmex10.pfb><E:/Program Files (x86)/Miktex/fonts/type1/public/ams
@@ -1168,7 +1163,7 @@ es (x86)/Miktex/fonts/type1/urw/courier/ucrr8a.pfb><E:/Program Files (x86)/Mikt
 ex/fonts/type1/urw/times/utmb8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/
 urw/times/utmr8a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmr8
 a.pfb><E:/Program Files (x86)/Miktex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (84 pages, 5215361 bytes).
+Output written on main.pdf (84 pages, 5215189 bytes).
 PDF statistics:
  375 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
